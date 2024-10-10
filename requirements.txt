@@ -1,0 +1,11 @@
+alfworld==0.3.5
+backoff==2.2.1
+langchain==0.3.3
+langchain_chroma==0.1.4
+langchain_openai==0.2.2
+numpy==1.24.1
+openai==1.43.0
+PyYAML==6.0.1
+tenacity==8.5.0
+tqdm==4.66.2
+typing_extensions==4.12.2
