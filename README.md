@@ -1,7 +1,7 @@
 # AgentSquare
 The official implementation of the paper "AgentSquare: Automatic LLM Agent Search in Modular Design Space"
 
-![intro](pics/f1.png)
+![intro](pics/intro.png)
 
 Official implementation for paper [AgentSquare: Automatic LLM Agent Search in Modular Design Space](https://arxiv.org/abs/2410.06153) with code, prompts, model outputs.
 
