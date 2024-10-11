@@ -1,4 +1,4 @@
-<div align="center">
+![image](https://github.com/user-attachments/assets/2dfff8fb-b33f-46ed-b3aa-bc150a51929c)<div align="center">
 <img src="pics/logo1.png" style="width: 20%;height: 10%">
 <h1> AgentSquare: Automatic LLM Agent Search In Modular Design Space </h1>
 </div>
@@ -38,6 +38,8 @@ python3 alfworld_run.py \
     --memory dilu\
     --model gpt-3.5-turbo-0125 \
 ```
+## Contribute to AgentSquare
+Please see `standard_module_interface.docx` and design new modules.
 
 ## Citations
 Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any question.
