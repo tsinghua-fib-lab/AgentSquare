@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 
 ## Quick Start
-The following script will choose modules to solve the task of ALFworld:
+An exemplar script combining different agent modules to solve the task of ALFworld:
 ```bash
 cd meta-agent-alfworld
 sh run.sh or 
@@ -29,7 +29,7 @@ python3 alfworld_run.py \
 ```
 
 ## Citations
-Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any questions.
+Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any question.
 
 ```bibtex
 @misc{shang2024agentsquareautomaticllmagent,
