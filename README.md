@@ -35,7 +35,7 @@ python3 alfworld_run.py \
 ```
 
 ## Citations
-Please cite the paper and star this repo if you use ToT and find it interesting/useful, thanks! Feel free to contact shunyuyao.cs@gmail.com or open an issue if you have any questions.
+Please considering citing our paper and star this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any questions.
 
 ```bibtex
 @misc{shang2024agentsquareautomaticllmagent,
