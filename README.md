@@ -16,7 +16,7 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 
 
 ## Setup
-1. Set up OpenAI API key and store in environment variable ``OPENAI_API_KEY`` (see [here](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)). 
+1. Set up OpenAI API key and store in environment variable ``OPENAI_API_KEY`` (see [here](https://help.openai.com/en/collections/3675931-api)). 
 
 2. Install dependencies
 ```bash
