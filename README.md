@@ -45,7 +45,7 @@ Please see `standard_module_interface.docx` and design new modules.
 Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any question.
 
 ```bibtex
-@misc{shang2024agentsquareautomaticllmagent,
+@misc{shang2024agentsquare,
       title={AgentSquare: Automatic LLM Agent Search in Modular Design Space}, 
       author={Yu Shang and Yu Li and Keyu Zhao and Likai Ma and Jiahe Liu and Fengli Xu and Yong Li},
       year={2024},
