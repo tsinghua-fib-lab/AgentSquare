@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2dfff8fb-b33f-46ed-b3aa-bc150a51929c)<div align="center">
+<div align="center">
 <img src="pics/logo1.png" style="width: 20%;height: 10%">
 <h1> AgentSquare: Automatic LLM Agent Search In Modular Design Space </h1>
 </div>
