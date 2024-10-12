@@ -41,7 +41,7 @@ python3 alfworld_run.py \
 ## Contribute to AgentSquare
 We kindly invite you to contribute to AgentSquare by standardizing your own LLM agents with our proposed IO interfaces. Let's work together to offer a platform for fully exploiting the potential of successful agent designs and consolidating the collective efforts of LLM agent research community!
 
-For guidance on standardizing the I/O interfaces of the four types of agent modules, please refer to `standard_module_interface.docx`, and you can submit your standardized modules through this [link](https://cloud.tsinghua.edu.cn/d/c546f5360ca948ef9d3a/). The .py file format is preferred, examples can be seen in the `module pool` folder. We will check your submission timely, once approved we will cite and acknowledge your works in this repository. 
+For guidance on standardizing the I/O interfaces of the four types of agent modules, please refer to `standard_module_interface.docx`, and you can submit your standardized modules through this [link](https://cloud.tsinghua.edu.cn/u/d/698134791b1446cca0cc/). The .py file format is preferred, examples can be seen in the `module pool` folder. We will check your submission timely, once approved we will cite and acknowledge your works in this repository. 
 
 ## Citations
 Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any question.
