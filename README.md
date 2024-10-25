@@ -23,7 +23,7 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 pip install -r requirements.txt
 ```
 
-3. Install ``alfworld`` following instructions [here](https://github.com/alfworld/alfworld), and webshop [here](https://github.com/princeton-nlp/WebShop)
+3. Install `alfworld` environment following instructions [here](https://github.com/alfworld/alfworld), and `webshop` environment [here](https://github.com/princeton-nlp/WebShop)
 
 
 ## Quick Start
