@@ -4,7 +4,7 @@ def workflow(solver, env):
             task_description = env.task_description
             if solver.tooluse is not None:
                 solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
-            action = solver.reasoning(task_description=task_description, tool_instruction='', feedback='')
+            action = solver.reasoning(task_description=task_description, feedback='')
             observation, reward, done = env.step([action])
             print(f'Act {i}: {action}\nObs {i}: {observation}')
             if done:
@@ -29,7 +29,7 @@ def workflow(solver, env):
                 if solver.tooluse is not None:
                     solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
                 task_description = prompt_exp + init_prompt + env.prompt
-                action = solver.reasoning(task_description=task_description, tool_instruction='', feedback='')
+                action = solver.reasoning(task_description=task_description, feedback='')
                 observation, reward, done = env.step([action])
                 print(f'Act {i}: {action}\nObs {i}: {observation}')
                 i += 1
