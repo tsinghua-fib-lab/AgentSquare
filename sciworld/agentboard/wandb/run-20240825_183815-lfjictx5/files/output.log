@@ -1,0 +1,305 @@
+2024-08-25 18:38:34 | INFO | __main__ | Tested tasks:
+2024-08-25 18:38:34 | INFO | __main__ | Start evaluating task pddl
+[nltk_data] Downloading package punkt to /home/eric/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/core.py:329: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+2024-08-25 18:38:39 | GOAL | tasks.pddl | [1mExample 0 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. 
+2024-08-25 18:38:39 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:38:44 | INFO | tasks.pddl | Step 01 - Action: OK. The task is completed.
+2024-08-25 18:38:45 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:38:45 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:38:45 | INFO | tasks.pddl | Step 02 - Action: OK. The task is completed.
+2024-08-25 18:38:45 | INFO | tasks.pddl | Step 02 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:38:45 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:38:46 | INFO | tasks.pddl | Step 03 - Action: check valid actions
+2024-08-25 18:38:46 | INFO | tasks.pddl | Step 03 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball1 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , Pick up ball1 at rooma with arm right. , Move from rooma to roomb. , Pick up ball4 at rooma with arm right. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:38:46 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+reward:  0
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 04 - Action: Pick up ball2 at rooma with arm right.
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 04 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 05 - Action: OK. The task is completed.
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:38:47 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:38:48 | INFO | tasks.pddl | Step 06 - Action: check valid actions
+2024-08-25 18:38:48 | INFO | tasks.pddl | Step 06 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball1 at rooma with arm left. , drop ball2 rooma right, Move from rooma to roomb. , check valid actions
+2024-08-25 18:38:48 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 07 - Action: Pick up ball3 at rooma with arm left.
+reward:  0
+reward:  0
+reward:  0.25
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 08 - Action: Move from rooma to roomb.
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 08 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:38:49 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+2024-08-25 18:38:50 | INFO | tasks.pddl | Step 09 - Action: drop ball2 roomb right.
+2024-08-25 18:38:50 | INFO | tasks.pddl | Step 09 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:38:50 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.25
+2024-08-25 18:38:51 | INFO | tasks.pddl | Step 10 - Action: OK. The task is completed.
+2024-08-25 18:38:51 | INFO | tasks.pddl | Step 10 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:38:51 | INFO | tasks.pddl | Step 10 - Progress Rate: 0.25
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+2024-08-25 18:38:54 | FINISH | tasks.pddl | [1mExample 0 | Success: False , Progress Rate: 0.25 , Steps: 11
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/core.py:329: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+2024-08-25 18:38:54 | GOAL | tasks.pddl | [1mExample 1 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. 
+2024-08-25 18:38:54 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:38:58 | INFO | tasks.pddl | Step 01 - Action: Pick up ball6 at rooma with arm right.
+2024-08-25 18:38:58 | INFO | tasks.pddl | Step 01 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:38:58 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 02 - Action: Move from rooma to roomb
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+reward:  0
+reward:  0.16666666666666666
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 03 - Action: drop ball6 at roomb with arm right
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:38:59 | INFO | tasks.pddl | Step 03 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:00 | INFO | tasks.pddl | Step 04 - Action: OK.
+2024-08-25 18:39:00 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:39:00 | INFO | tasks.pddl | Step 04 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball6 at roomb with arm left. , Pick up ball6 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 06 - Action: Pick up ball6 at roomb with arm left.
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying left.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:01 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:02 | INFO | tasks.pddl | Step 07 - Action: Move from roomb to rooma
+2024-08-25 18:39:02 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying left.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:02 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:03 | INFO | tasks.pddl | Step 08 - Action: drop ball6 at rooma with arm left
+2024-08-25 18:39:03 | INFO | tasks.pddl | Step 08 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:03 | INFO | tasks.pddl | Step 08 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:39:04 | INFO | tasks.pddl | Step 09 - Action: OK.
+2024-08-25 18:39:04 | INFO | tasks.pddl | Step 09 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:39:04 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:05 | INFO | tasks.pddl | Step 10 - Action: check valid actions
+2024-08-25 18:39:05 | INFO | tasks.pddl | Step 10 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball1 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball6 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball6 at rooma with arm left. , Pick up ball1 at rooma with arm right. , Move from rooma to roomb. , Pick up ball4 at rooma with arm right. , Pick up ball5 at rooma with arm left. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:39:05 | INFO | tasks.pddl | Step 10 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:39:05 | INFO | tasks.pddl | Step 11 - Action: Pick up ball5 at rooma with arm right.
+2024-08-25 18:39:06 | INFO | tasks.pddl | Step 11 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:06 | INFO | tasks.pddl | Step 11 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:06 | INFO | tasks.pddl | Step 12 - Action: Move from rooma to roomb
+2024-08-25 18:39:06 | INFO | tasks.pddl | Step 12 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:06 | INFO | tasks.pddl | Step 12 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 13 - Action: drop ball5 at roomb with arm right
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 13 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 13 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 14 - Action: OK.
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 14 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:39:07 | INFO | tasks.pddl | Step 14 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:08 | INFO | tasks.pddl | Step 15 - Action: check valid actions
+2024-08-25 18:39:08 | INFO | tasks.pddl | Step 15 - Observation: Valid actions are: Pick up ball5 at roomb with arm left. , Pick up ball5 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:39:08 | INFO | tasks.pddl | Step 15 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:09 | INFO | tasks.pddl | Step 16 - Action: Pick up ball5 at roomb with arm left.
+2024-08-25 18:39:09 | INFO | tasks.pddl | Step 16 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:09 | INFO | tasks.pddl | Step 16 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 17 - Action: Move from roomb to rooma
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 17 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 17 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 18 - Action: drop ball5 at rooma with arm left
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 18 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:10 | INFO | tasks.pddl | Step 18 - Progress Rate: 0.16666666666666666
+2024-08-25 18:39:11 | INFO | tasks.pddl | Step 19 - Action: OK.
+2024-08-25 18:39:11 | INFO | tasks.pddl | Step 19 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:39:11 | INFO | tasks.pddl | Step 19 - Progress Rate: 0.16666666666666666
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:39:12 | FINISH | tasks.pddl | [1mExample 1 | Success: False , Progress Rate: 0.16666666666666666 , Steps: 20
+2024-08-25 18:39:12 | GOAL | tasks.pddl | [1mExample 2 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. 
+2024-08-25 18:39:12 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball1 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball6 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball8 at rooma with arm left. , Pick up ball6 at rooma with arm left. , Pick up ball7 at rooma with arm left. , Pick up ball1 at rooma with arm right. , Move from rooma to roomb. , Pick up ball4 at rooma with arm right. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:39:16 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+reward:  0
+reward:  0
+2024-08-25 18:39:17 | INFO | tasks.pddl | Step 03 - Action: Pick up ball4 at rooma with arm left.
+2024-08-25 18:39:17 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is carrying left.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:17 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 04 - Action: Move from rooma to roomb
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 04 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is carrying left.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 05 - Action: drop ball4 at roomb with arm left
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 05 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:18 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.125
+reward:  0.125
+reward:  0.125
+2024-08-25 18:39:19 | INFO | tasks.pddl | Step 06 - Action: Pick up ball5 at rooma with arm left.
+2024-08-25 18:39:19 | INFO | tasks.pddl | Step 06 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:39:19 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.125
+2024-08-25 18:39:20 | INFO | tasks.pddl | Step 07 - Action: check valid actions
+2024-08-25 18:39:20 | INFO | tasks.pddl | Step 07 - Observation: Valid actions are: Pick up ball4 at roomb with arm right. , Move from roomb to rooma. , Pick up ball4 at roomb with arm left. , check valid actions
+2024-08-25 18:39:20 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.125
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 08 - Action: Pick up ball4 at roomb with arm right
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 08 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is carrying right.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 08 - Progress Rate: 0.125
+reward:  0.125
+reward:  0.125
+reward:  0.125
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 09 - Action: Move from roomb to rooma
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 09 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is carrying right.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:39:21 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.125
+2024-08-25 18:39:22 | INFO | tasks.pddl | Step 10 - Action: Pick up ball4 at rooma with arm left.
+2024-08-25 18:39:22 | INFO | tasks.pddl | Step 10 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:39:22 | INFO | tasks.pddl | Step 10 - Progress Rate: 0.125
+2024-08-25 18:39:23 | INFO | tasks.pddl | Step 11 - Action: check valid actions
+2024-08-25 18:39:23 | INFO | tasks.pddl | Step 11 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm left. , Pick up ball8 at rooma with arm left. , drop ball4 rooma right, Pick up ball6 at rooma with arm left. , Pick up ball7 at rooma with arm left. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , check valid actions
+2024-08-25 18:39:23 | INFO | tasks.pddl | Step 11 - Progress Rate: 0.125
+2024-08-25 18:39:24 | FINISH | tasks.pddl | [1mExample 2 | Success: False , Progress Rate: 0.125 , Steps: 12
+2024-08-25 18:39:24 | GOAL | tasks.pddl | [1mExample 3 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:39:24 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+Traceback (most recent call last):
+completion_tokens:0, prompt_tokens:0, price=0.0
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 205, in evaluate_env
+    sub_tasks = self.PddlSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/eric/AgentBoard/agentboard/PLANNING_IO.py", line 42, in __call__
+    string = get_chat(prompt=prompt, model=self.llm_type, temperature=0.1)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/eric/AgentBoard/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 579, in create
+    return self._post(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 921, in request
+    return self._request(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 952, in _request
+    response = self._client.send(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 205, in evaluate_env
+    sub_tasks = self.PddlSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/eric/AgentBoard/agentboard/PLANNING_IO.py", line 42, in __call__
+    string = get_chat(prompt=prompt, model=self.llm_type, temperature=0.1)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/eric/AgentBoard/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 579, in create
+    return self._post(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 921, in request
+    return self._request(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/openai/_base_client.py", line 952, in _request
+    response = self._client.send(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

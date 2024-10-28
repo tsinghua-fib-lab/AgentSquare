@@ -1,0 +1,34 @@
+2024-08-25 18:23:31 | INFO | __main__ | Tested tasks:
+2024-08-25 18:23:31 | INFO | __main__ | Start evaluating task pddl
+[nltk_data] Downloading package punkt to /home/eric/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/core.py:329: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+2024-08-25 18:23:32 | GOAL | tasks.pddl | [1mExample 0 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. 
+2024-08-25 18:23:32 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 305, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 244, in evaluate_env
+    action_raw = self.PddlSolver.reasoning(task_description, '', '')
+  File "/home/eric/AgentBoard/agentboard/REASONING_COT.py", line 17, in __call__
+    if memory is not None:
+UnboundLocalError: local variable 'memory' referenced before assignment
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 305, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 244, in evaluate_env
+    action_raw = self.PddlSolver.reasoning(task_description, '', '')
+  File "/home/eric/AgentBoard/agentboard/REASONING_COT.py", line 17, in __call__
+    if memory is not None:
+UnboundLocalError: local variable 'memory' referenced before assignment

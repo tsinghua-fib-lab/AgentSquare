@@ -1,0 +1,597 @@
+2024-08-25 18:30:39 | INFO | __main__ | Tested tasks:
+2024-08-25 18:30:39 | INFO | __main__ | Start evaluating task pddl
+[nltk_data] Downloading package punkt to /home/eric/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/core.py:329: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+2024-08-25 18:30:40 | GOAL | tasks.pddl | [1mExample 0 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. 
+2024-08-25 18:30:40 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:30:44 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:30:45 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:30:45 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:30:45 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:30:45 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:30:45 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 03 - Action: OK.
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 03 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 04 - Action: check valid actions
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 04 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:30:46 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:30:47 | INFO | tasks.pddl | Step 05 - Action: OK.
+2024-08-25 18:30:47 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:30:47 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 06 - Action: check valid actions
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 06 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 07 - Action: OK.
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 07 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:30:48 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+2024-08-25 18:30:52 | FINISH | tasks.pddl | [1mExample 0 | Success: False , Progress Rate: 0 , Steps: 8
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/core.py:329: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+2024-08-25 18:30:52 | GOAL | tasks.pddl | [1mExample 1 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. 
+2024-08-25 18:30:52 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 01 - Action: Pick up ball5 at rooma with arm right.
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 01 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 02 - Action: Move from rooma to roomb
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:30:56 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+reward:  0
+2024-08-25 18:30:57 | INFO | tasks.pddl | Step 03 - Action: drop ball5 roomb right
+2024-08-25 18:30:57 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:30:57 | INFO | tasks.pddl | Step 03 - Progress Rate: 0.16666666666666666
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 04 - Action: OK. Task completed.
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 04 - Progress Rate: 0.16666666666666666
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball5 at roomb with arm left. , Pick up ball5 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:30:58 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:30:59 | INFO | tasks.pddl | Step 06 - Action: Pick up ball5 at roomb with arm left.
+2024-08-25 18:30:59 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:30:59 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:00 | INFO | tasks.pddl | Step 07 - Action: Move from roomb to rooma
+2024-08-25 18:31:00 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:00 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 08 - Action: Pick up ball5 at rooma with arm right.
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 08 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 08 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 09 - Action: check valid actions
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 09 - Observation: Valid actions are: Pick up ball2 at rooma with arm right. , drop ball5 rooma left, Move from rooma to roomb. , Pick up ball6 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:31:01 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:02 | INFO | tasks.pddl | Step 10 - Action: Pick up ball2 at rooma with arm right.
+2024-08-25 18:31:02 | INFO | tasks.pddl | Step 10 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:02 | INFO | tasks.pddl | Step 10 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 11 - Action: Move from rooma to roomb
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 11 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 11 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+reward:  0.16666666666666666
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 12 - Action: drop ball2 roomb right
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 12 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying left.  Ball6 is a ball.  Ball6 is at rooma.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:03 | INFO | tasks.pddl | Step 12 - Progress Rate: 0.16666666666666666
+2024-08-25 18:31:04 | INFO | tasks.pddl | Step 13 - Action: OK. Task completed.
+2024-08-25 18:31:04 | INFO | tasks.pddl | Step 13 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:04 | INFO | tasks.pddl | Step 13 - Progress Rate: 0.16666666666666666
+reward:  0.16666666666666666
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:31:05 | FINISH | tasks.pddl | [1mExample 1 | Success: False , Progress Rate: 0.16666666666666666 , Steps: 14
+2024-08-25 18:31:05 | GOAL | tasks.pddl | [1mExample 2 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. 
+2024-08-25 18:31:05 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 01 - Action: OK. The task has been completed.
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball7 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball6 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball6 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball8 at rooma with arm left. , Pick up ball4 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:31:13 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 03 - Action: OK. The task has been completed.
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 03 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 04 - Action: check valid actions
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 04 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball7 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball6 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball6 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball8 at rooma with arm left. , Pick up ball4 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:31:14 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:31:15 | INFO | tasks.pddl | Step 05 - Action: OK. The task has been completed.
+2024-08-25 18:31:15 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:15 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:31:17 | FINISH | tasks.pddl | [1mExample 2 | Success: False , Progress Rate: 0 , Steps: 6
+2024-08-25 18:31:17 | GOAL | tasks.pddl | [1mExample 3 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:31:17 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 01 - Action: Pick up ball9 at rooma with arm right.
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 01 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 02 - Action: Move from rooma to roomb
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:21 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 03 - Action: drop ball9 roomb right
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 03 - Progress Rate: 0.1
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 04 - Action: OK. Task completed.
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:22 | INFO | tasks.pddl | Step 04 - Progress Rate: 0.1
+reward:  0
+reward:  0.1
+2024-08-25 18:31:23 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:31:23 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball9 at roomb with arm left. , Pick up ball9 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:31:23 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.1
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 06 - Action: Pick up ball9 at roomb with arm right.
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.1
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 07 - Action: OK. Task completed.
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 07 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:24 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.1
+reward:  0.1
+2024-08-25 18:31:27 | FINISH | tasks.pddl | [1mExample 3 | Success: False , Progress Rate: 0.1 , Steps: 8
+2024-08-25 18:31:27 | GOAL | tasks.pddl | [1mExample 4 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:31:27 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+2024-08-25 18:31:31 | INFO | tasks.pddl | Step 01 - Action: The task is to move ball11 and ball12 to roomb.
+2024-08-25 18:31:31 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:31:31 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball6 at rooma with arm right. , Pick up ball11 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball12 at rooma with arm right. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball7 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball8 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball1 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Pick up ball9 at rooma with arm right. , Pick up ball11 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball10 at rooma with arm right. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 03 - Action: Pick up ball11 at rooma with arm right.
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is carrying right.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:32 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+reward:  0
+reward:  0
+2024-08-25 18:31:33 | INFO | tasks.pddl | Step 04 - Action: Pick up ball12 at rooma with arm right.
+2024-08-25 18:31:33 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:31:33 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:31:34 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:31:34 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball7 at rooma with arm left. , Pick up ball6 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , drop ball11 rooma right, Pick up ball8 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:31:34 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:31:35 | FINISH | tasks.pddl | [1mExample 4 | Success: False , Progress Rate: 0 , Steps: 6
+2024-08-25 18:31:35 | GOAL | tasks.pddl | [1mExample 5 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. 
+2024-08-25 18:31:35 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:37 | INFO | tasks.pddl | Step 01 - Action: Pick up ball2 at rooma with arm right.
+2024-08-25 18:31:37 | INFO | tasks.pddl | Step 01 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:37 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:31:38 | INFO | tasks.pddl | Step 02 - Action: Move from rooma to roomb
+2024-08-25 18:31:38 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:38 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 03 - Action: drop ball2 roomb right
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 03 - Progress Rate: 0.25
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 04 - Action: OK.
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:39 | INFO | tasks.pddl | Step 04 - Progress Rate: 0.25
+2024-08-25 18:31:40 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:31:40 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball3 at roomb with arm left. , Pick up ball2 at roomb with arm left. , Pick up ball4 at roomb with arm right. , Pick up ball3 at roomb with arm right. , Pick up ball4 at roomb with arm left. , Pick up ball2 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:31:40 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.25
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 06 - Action: Pick up ball4 at roomb with arm right.
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.25
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+reward:  0
+reward:  0.25
+reward:  0.25
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 07 - Action: Move from roomb to rooma
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:41 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.25
+2024-08-25 18:31:42 | INFO | tasks.pddl | Step 08 - Action: drop ball4 at rooma with arm right
+2024-08-25 18:31:42 | INFO | tasks.pddl | Step 08 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:42 | INFO | tasks.pddl | Step 08 - Progress Rate: 0.5
+2024-08-25 18:31:43 | INFO | tasks.pddl | Step 09 - Action: OK.
+2024-08-25 18:31:43 | INFO | tasks.pddl | Step 09 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:43 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.5
+reward:  0.25
+reward:  0.5
+2024-08-25 18:31:45 | FINISH | tasks.pddl | [1mExample 5 | Success: False , Progress Rate: 0.5 , Steps: 10
+2024-08-25 18:31:45 | GOAL | tasks.pddl | [1mExample 6 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at rooma. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at rooma. , ball6 is at rooma. 
+2024-08-25 18:31:45 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:31:51 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:31:51 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:51 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 03 - Action: Pick up ball1 at rooma with arm right.
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is carrying right.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+reward:  0
+2024-08-25 18:31:52 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:31:53 | INFO | tasks.pddl | Step 04 - Action: Pick up ball3 at rooma with arm left.
+2024-08-25 18:31:53 | INFO | tasks.pddl | Step 04 - Observation: Ball1 is a ball.  Ball1 is carrying right.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:31:53 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 05 - Action: Move from rooma to roomb
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 05 - Observation: Ball1 is a ball.  Ball1 is carrying right.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 06 - Action: drop ball1 roomb right
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:54 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.16666666666666666
+reward:  0
+reward:  0
+reward:  0.16666666666666666
+reward:  0.3333333333333333
+2024-08-25 18:31:55 | INFO | tasks.pddl | Step 07 - Action: drop ball3 roomb left
+2024-08-25 18:31:55 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:55 | INFO | tasks.pddl | Step 07 - Progress Rate: 0.3333333333333333
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 08 - Action: drop ball5 roomb right
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 08 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 08 - Progress Rate: 0.3333333333333333
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 09 - Action: check valid actions
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 09 - Observation: Valid actions are: Pick up ball1 at roomb with arm left. , Pick up ball3 at roomb with arm left. , Pick up ball2 at roomb with arm left. , Pick up ball6 at roomb with arm left. , Pick up ball3 at roomb with arm right. , Pick up ball1 at roomb with arm right. , Pick up ball5 at roomb with arm right. , Pick up ball6 at roomb with arm right. , Pick up ball5 at roomb with arm left. , Pick up ball2 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:31:56 | INFO | tasks.pddl | Step 09 - Progress Rate: 0.3333333333333333
+reward:  0.3333333333333333
+2024-08-25 18:31:57 | INFO | tasks.pddl | Step 10 - Action: Pick up ball5 at roomb with arm right.
+2024-08-25 18:31:57 | INFO | tasks.pddl | Step 10 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:57 | INFO | tasks.pddl | Step 10 - Progress Rate: 0.3333333333333333
+2024-08-25 18:31:58 | INFO | tasks.pddl | Step 11 - Action: Pick up ball6 at roomb with arm left.
+2024-08-25 18:31:58 | INFO | tasks.pddl | Step 11 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is carrying left.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:31:58 | INFO | tasks.pddl | Step 11 - Progress Rate: 0.3333333333333333
+reward:  0.3333333333333333
+2024-08-25 18:31:59 | FINISH | tasks.pddl | [1mExample 6 | Success: False , Progress Rate: 0.3333333333333333 , Steps: 12
+2024-08-25 18:31:59 | GOAL | tasks.pddl | [1mExample 7 | Goal: The goal is to satisfy the following conditions: ball1 is at rooma. , ball2 is at rooma. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at rooma. , ball6 is at rooma. 
+2024-08-25 18:31:59 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:02 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:32:02 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:02 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:32:03 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:32:03 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball3 at rooma with arm right. , check valid actions
+2024-08-25 18:32:03 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 03 - Action: Pick up ball3 at rooma with arm left.
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 04 - Action: Move from rooma to roomb.
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 04 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:04 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+reward:  0
+reward:  0
+reward:  0
+2024-08-25 18:32:05 | INFO | tasks.pddl | Step 05 - Action: Pick up ball3 at roomb with arm left.
+2024-08-25 18:32:05 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:32:05 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 06 - Action: check valid actions
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 06 - Observation: Valid actions are: Pick up ball1 at roomb with arm right. , Pick up ball5 at roomb with arm right. , Pick up ball6 at roomb with arm right. , drop ball3 roomb left, Pick up ball2 at roomb with arm right. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 07 - Action: Pick up ball1 at roomb with arm right.
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is carrying right.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:06 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:07 | INFO | tasks.pddl | Step 08 - Action: Pick up ball5 at roomb with arm right.
+2024-08-25 18:32:07 | INFO | tasks.pddl | Step 08 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:07 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 09 - Action: check valid actions
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 09 - Observation: Valid actions are: drop ball3 roomb left, drop ball1 roomb right, Move from roomb to rooma. , check valid actions
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 09 - Progress Rate: 0
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 10 - Action: drop ball1 roomb right
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 10 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:08 | INFO | tasks.pddl | Step 10 - Progress Rate: 0
+reward:  0
+reward:  0
+2024-08-25 18:32:09 | INFO | tasks.pddl | Step 11 - Action: Move from roomb to rooma.
+2024-08-25 18:32:09 | INFO | tasks.pddl | Step 11 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is carrying left.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:09 | INFO | tasks.pddl | Step 11 - Progress Rate: 0
+2024-08-25 18:32:11 | FINISH | tasks.pddl | [1mExample 7 | Success: False , Progress Rate: 0 , Steps: 12
+2024-08-25 18:32:11 | GOAL | tasks.pddl | [1mExample 8 | Goal: The goal is to satisfy the following conditions: ball1 is at rooma. , ball10 is at rooma. , ball2 is at rooma. , ball3 is at rooma. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at rooma. 
+2024-08-25 18:32:11 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 01 - Action: Pick up ball9 at roomb with arm right.
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+reward:  0
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball7 at rooma with arm left. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball6 at rooma with arm right. , Pick up ball8 at rooma with arm left. , Pick up ball8 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , check valid actions
+2024-08-25 18:32:15 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:16 | INFO | tasks.pddl | Step 03 - Action: Pick up ball5 at rooma with arm right.
+2024-08-25 18:32:16 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is carrying right.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:16 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 04 - Action: Pick up ball10 at roomb with arm right.
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+reward:  0
+reward:  0
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball7 at rooma with arm left. , drop ball5 rooma right, Pick up ball6 at rooma with arm left. , Move from rooma to roomb. , Pick up ball8 at rooma with arm left. , Pick up ball4 at rooma with arm left. , check valid actions
+2024-08-25 18:32:17 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 06 - Action: drop ball5 rooma right
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 07 - Action: drop ball5 rooma right
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 07 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:18 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:19 | INFO | tasks.pddl | Step 08 - Action: check valid actions
+2024-08-25 18:32:19 | INFO | tasks.pddl | Step 08 - Observation: Valid actions are: Pick up ball7 at rooma with arm left. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball6 at rooma with arm right. , Pick up ball8 at rooma with arm left. , Pick up ball8 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , check valid actions
+2024-08-25 18:32:19 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+2024-08-25 18:32:20 | INFO | tasks.pddl | Step 09 - Action: Pick up ball6 at rooma with arm left.
+2024-08-25 18:32:20 | INFO | tasks.pddl | Step 09 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying left.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:20 | INFO | tasks.pddl | Step 09 - Progress Rate: 0
+2024-08-25 18:32:20 | INFO | tasks.pddl | Step 10 - Action: Pick up ball7 at rooma with arm right.
+reward:  0
+reward:  0
+2024-08-25 18:32:21 | INFO | tasks.pddl | Step 10 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying left.  Ball7 is a ball.  Ball7 is carrying right.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:21 | INFO | tasks.pddl | Step 10 - Progress Rate: 0
+2024-08-25 18:32:22 | FINISH | tasks.pddl | [1mExample 8 | Success: False , Progress Rate: 0 , Steps: 11
+2024-08-25 18:32:22 | GOAL | tasks.pddl | [1mExample 9 | Goal: The goal is to satisfy the following conditions: ball1 is at rooma. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:32:22 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:32:26 | INFO | tasks.pddl | Step 01 - Action: Pick up ball9 at rooma with arm right.
+2024-08-25 18:32:26 | INFO | tasks.pddl | Step 01 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:26 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+reward:  0
+reward:  0
+2024-08-25 18:32:27 | INFO | tasks.pddl | Step 02 - Action: Move from rooma to roomb
+2024-08-25 18:32:27 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is carrying right.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:27 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 03 - Action: drop ball9 roomb right
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 03 - Progress Rate: 0.1
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 04 - Action: OK. The task is completed.
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:28 | INFO | tasks.pddl | Step 04 - Progress Rate: 0.1
+2024-08-25 18:32:29 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+reward:  0.1
+2024-08-25 18:32:29 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball1 at roomb with arm left. , Pick up ball9 at roomb with arm right. , Pick up ball1 at roomb with arm right. , Pick up ball9 at roomb with arm left. , Move from roomb to rooma. , check valid actions
+2024-08-25 18:32:29 | INFO | tasks.pddl | Step 05 - Progress Rate: 0.1
+2024-08-25 18:32:30 | INFO | tasks.pddl | Step 06 - Action: OK. The task is completed.
+2024-08-25 18:32:30 | INFO | tasks.pddl | Step 06 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:30 | INFO | tasks.pddl | Step 06 - Progress Rate: 0.1
+2024-08-25 18:32:31 | FINISH | tasks.pddl | [1mExample 9 | Success: False , Progress Rate: 0.1 , Steps: 7
+2024-08-25 18:32:31 | GOAL | tasks.pddl | [1mExample 10 | Goal: The goal is to satisfy the following conditions: ball1 is at rooma. , ball10 is at rooma. , ball2 is at rooma. , ball3 is at rooma. , ball4 is at rooma. , ball5 is at rooma. , ball6 is at rooma. , ball7 is at rooma. , ball8 is at rooma. , ball9 is at rooma. 
+2024-08-25 18:32:31 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Ball7 is a ball.  Ball7 is at roomb.  Ball8 is a ball.  Ball8 is at roomb.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 01 - Action: Pick up ball9 at rooma with arm left.
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Move from rooma to roomb. , check valid actions
+2024-08-25 18:32:36 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 03 - Action: Move from rooma to roomb.
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Ball7 is a ball.  Ball7 is at roomb.  Ball8 is a ball.  Ball8 is at roomb.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 04 - Action: OK.
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:37 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:32:38 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:32:38 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball1 at roomb with arm left. , Pick up ball5 at roomb with arm right. , Pick up ball8 at roomb with arm right. , Pick up ball10 at roomb with arm left. , Pick up ball7 at roomb with arm right. , Pick up ball3 at roomb with arm left. , Pick up ball7 at roomb with arm left. , Pick up ball4 at roomb with arm right. , Pick up ball3 at roomb with arm right. , Pick up ball1 at roomb with arm right. , Pick up ball6 at roomb with arm left. , Pick up ball6 at roomb with arm right. , Pick up ball9 at roomb with arm left. , Pick up ball9 at roomb with arm right. , Pick up ball5 at roomb with arm left. , Pick up ball2 at roomb with arm right. , Move from roomb to rooma. , Pick up ball8 at roomb with arm left. , Pick up ball10 at roomb with arm right. , Pick up ball2 at roomb with arm left. , Pick up ball4 at roomb with arm left. , check valid actions
+2024-08-25 18:32:38 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:32:39 | INFO | tasks.pddl | Step 06 - Action: Pick up ball8 at roomb with arm right.
+2024-08-25 18:32:39 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Ball7 is a ball.  Ball7 is at roomb.  Ball8 is a ball.  Ball8 is carrying right.  Ball9 is a ball.  Ball9 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:39 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 07 - Action: Pick up ball9 at roomb with arm left.
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 07 - Observation: Ball1 is a ball.  Ball1 is at roomb.  Ball10 is a ball.  Ball10 is at roomb.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at roomb.  Ball6 is a ball.  Ball6 is at roomb.  Ball7 is a ball.  Ball7 is at roomb.  Ball8 is a ball.  Ball8 is carrying right.  Ball9 is a ball.  Ball9 is carrying left.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 08 - Action: Pick up ball8 at roomb with arm left.
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 08 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:40 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+2024-08-25 18:32:41 | INFO | tasks.pddl | Step 09 - Action: check valid actions
+2024-08-25 18:32:41 | INFO | tasks.pddl | Step 09 - Observation: Valid actions are: drop ball9 roomb left, drop ball8 roomb right, Move from roomb to rooma. , check valid actions
+2024-08-25 18:32:41 | INFO | tasks.pddl | Step 09 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:43 | FINISH | tasks.pddl | [1mExample 10 | Success: False , Progress Rate: 0 , Steps: 10
+2024-08-25 18:32:43 | GOAL | tasks.pddl | [1mExample 11 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. 
+2024-08-25 18:32:43 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:32:47 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:32:47 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:47 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Move from roomb to rooma. , check valid actions
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 03 - Action: Move from roomb to rooma.
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:48 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 04 - Action: OK.
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 04 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 05 - Action: check valid actions
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 05 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:32:49 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:32:50 | INFO | tasks.pddl | Step 06 - Action: Pick up ball2 at rooma with arm right.
+2024-08-25 18:32:50 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:50 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 07 - Action: OK.
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 07 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 08 - Action: check valid actions
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 08 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball4 at rooma with arm left. , drop ball2 rooma right, check valid actions
+2024-08-25 18:32:51 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 09 - Action: drop ball2 rooma right
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 09 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 09 - Progress Rate: 0
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 10 - Action: OK.
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 10 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:52 | INFO | tasks.pddl | Step 10 - Progress Rate: 0
+reward:  0
+2024-08-25 18:32:54 | FINISH | tasks.pddl | [1mExample 11 | Success: False , Progress Rate: 0 , Steps: 11
+2024-08-25 18:32:54 | GOAL | tasks.pddl | [1mExample 12 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at rooma. 
+2024-08-25 18:32:54 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:32:57 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:32:57 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:57 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 03 - Action: OK.
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 03 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:58 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 04 - Action: check valid actions
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 04 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 05 - Action: OK.
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:32:59 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:33:01 | FINISH | tasks.pddl | [1mExample 12 | Success: False , Progress Rate: 0 , Steps: 6
+2024-08-25 18:33:02 | GOAL | tasks.pddl | [1mExample 13 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at rooma. , ball3 is at rooma. , ball4 is at rooma. 
+2024-08-25 18:33:02 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Move from rooma to roomb. , Pick up ball1 at rooma with arm right. , check valid actions
+2024-08-25 18:33:05 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:33:06 | INFO | tasks.pddl | Step 03 - Action: Pick up ball1 at rooma with arm left.
+2024-08-25 18:33:06 | INFO | tasks.pddl | Step 03 - Observation: Ball1 is a ball.  Ball1 is carrying left.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:06 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+reward:  0
+2024-08-25 18:33:07 | INFO | tasks.pddl | Step 04 - Action: Move from rooma to roomb.
+2024-08-25 18:33:07 | INFO | tasks.pddl | Step 04 - Observation: Ball1 is a ball.  Ball1 is carrying left.  Ball2 is a ball.  Ball2 is at roomb.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:33:07 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:33:08 | INFO | tasks.pddl | Step 05 - Action: Pick up ball2 at roomb with arm right.
+2024-08-25 18:33:08 | INFO | tasks.pddl | Step 05 - Observation: Ball1 is a ball.  Ball1 is carrying left.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at roomb.  Room rooma Room roomb
+2024-08-25 18:33:08 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:33:09 | INFO | tasks.pddl | Step 06 - Action: Move from roomb to rooma.
+2024-08-25 18:33:09 | INFO | tasks.pddl | Step 06 - Observation: Ball1 is a ball.  Ball1 is carrying left.  Ball2 is a ball.  Ball2 is carrying right.  Ball3 is a ball.  Ball3 is at roomb.  Ball4 is a ball.  Ball4 is at roomb.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:09 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+reward:  0
+reward:  0
+reward:  0
+2024-08-25 18:33:10 | FINISH | tasks.pddl | [1mExample 13 | Success: False , Progress Rate: 0 , Steps: 7
+2024-08-25 18:33:10 | GOAL | tasks.pddl | [1mExample 14 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:33:10 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at roomb.  Room rooma Room roomb
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:33:14 | INFO | tasks.pddl | Step 01 - Action: check valid actions
+2024-08-25 18:33:14 | INFO | tasks.pddl | Step 01 - Observation: Valid actions are: Move from roomb to rooma. , check valid actions
+2024-08-25 18:33:14 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-25 18:33:15 | INFO | tasks.pddl | Step 02 - Action: Move from roomb to rooma.
+2024-08-25 18:33:15 | INFO | tasks.pddl | Step 02 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:15 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+reward:  0
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 03 - Action: OK.
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 03 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 04 - Action: check valid actions
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 04 - Observation: Valid actions are: Pick up ball6 at rooma with arm right. , Pick up ball11 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball12 at rooma with arm right. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball7 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball8 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball1 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Pick up ball9 at rooma with arm right. , Pick up ball11 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball10 at rooma with arm right. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:33:16 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:33:17 | INFO | tasks.pddl | Step 05 - Action: Pick up ball6 at rooma with arm right.
+2024-08-25 18:33:17 | INFO | tasks.pddl | Step 05 - Observation: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying right.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:17 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+2024-08-25 18:33:18 | INFO | tasks.pddl | Step 06 - Action: Pick up ball11 at rooma with arm right.
+2024-08-25 18:33:18 | INFO | tasks.pddl | Step 06 - Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions.
+2024-08-25 18:33:18 | INFO | tasks.pddl | Step 06 - Progress Rate: 0
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 07 - Action: check valid actions
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 07 - Observation: Valid actions are: Pick up ball1 at rooma with arm left. , Pick up ball7 at rooma with arm left. , drop ball6 rooma right, Pick up ball3 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Move from rooma to roomb. , Pick up ball5 at rooma with arm left. , Pick up ball8 at rooma with arm left. , Pick up ball11 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 07 - Progress Rate: 0
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 08 - Action: Pick up ball1 at rooma with arm left.
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 08 - Observation: Ball1 is a ball.  Ball1 is carrying left.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is carrying right.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Right is a gripper.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:19 | INFO | tasks.pddl | Step 08 - Progress Rate: 0
+reward:  0
+reward:  0
+reward:  0
+2024-08-25 18:33:21 | FINISH | tasks.pddl | [1mExample 14 | Success: False , Progress Rate: 0 , Steps: 9
+2024-08-25 18:33:21 | GOAL | tasks.pddl | [1mExample 15 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at rooma. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. 
+2024-08-25 18:33:21 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball10 is a ball.  Ball10 is at rooma.  Ball11 is a ball.  Ball11 is at rooma.  Ball12 is a ball.  Ball12 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at roomb.  Ball5 is a ball.  Ball5 is at rooma.  Ball6 is a ball.  Ball6 is at rooma.  Ball7 is a ball.  Ball7 is at rooma.  Ball8 is a ball.  Ball8 is at rooma.  Ball9 is a ball.  Ball9 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-25 18:33:25 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-25 18:33:25 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:33:25 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball6 at rooma with arm right. , Pick up ball11 at rooma with arm right. , Pick up ball12 at rooma with arm right. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball7 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball8 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball1 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Pick up ball9 at rooma with arm right. , Pick up ball11 at rooma with arm left. , Pick up ball10 at rooma with arm right. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 03 - Action: OK.
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 03 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:33:26 | INFO | tasks.pddl | Step 03 - Progress Rate: 0
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 04 - Action: check valid actions
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 04 - Observation: Valid actions are: Pick up ball6 at rooma with arm right. , Pick up ball11 at rooma with arm right. , Pick up ball12 at rooma with arm right. , Pick up ball2 at rooma with arm right. , Pick up ball5 at rooma with arm right. , Pick up ball6 at rooma with arm left. , Pick up ball9 at rooma with arm left. , Pick up ball5 at rooma with arm left. , Pick up ball7 at rooma with arm right. , Pick up ball8 at rooma with arm right. , Pick up ball1 at rooma with arm right. , Pick up ball7 at rooma with arm left. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball8 at rooma with arm left. , Pick up ball3 at rooma with arm right. , Pick up ball2 at rooma with arm left. , Pick up ball1 at rooma with arm left. , Pick up ball12 at rooma with arm left. , Pick up ball9 at rooma with arm right. , Pick up ball11 at rooma with arm left. , Pick up ball10 at rooma with arm right. , Pick up ball10 at rooma with arm left. , check valid actions
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 04 - Progress Rate: 0
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 05 - Action: OK.
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 05 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-25 18:33:27 | INFO | tasks.pddl | Step 05 - Progress Rate: 0
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 289, in evaluate_env
+    self.agentboard.log_example(id, False, progress_rate, grounding_acc_count / (step_id + 1), score_change_record, env_details, trajectory, example_prompt)
+  File "/home/eric/AgentBoard/agentboard/utils/logging/logger.py", line 523, in log_example
+    self.update()
+  File "/home/eric/AgentBoard/agentboard/utils/logging/logger.py", line 477, in update
+    wandb.log({"{task}/predictions".format(task=self.task_name) : new_table})
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 450, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1924, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1645, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1517, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 626, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 52, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 156, in val_to_json
+    art.add(val, key)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1427, in add
+    do_write(f)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1144, in new_file
+    yield f
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/util.py", line 1520, in fsync_open
+    os.fsync(f.fileno())
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/eric/AgentBoard/agentboard/tasks/pddl.py", line 289, in evaluate_env
+    self.agentboard.log_example(id, False, progress_rate, grounding_acc_count / (step_id + 1), score_change_record, env_details, trajectory, example_prompt)
+  File "/home/eric/AgentBoard/agentboard/utils/logging/logger.py", line 523, in log_example
+    self.update()
+  File "/home/eric/AgentBoard/agentboard/utils/logging/logger.py", line 477, in update
+    wandb.log({"{task}/predictions".format(task=self.task_name) : new_table})
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 450, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1924, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1645, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1517, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 626, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 52, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/data_types/utils.py", line 156, in val_to_json
+    art.add(val, key)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1427, in add
+    do_write(f)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1144, in new_file
+    yield f
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/util.py", line 1520, in fsync_open
+    os.fsync(f.fileno())
+KeyboardInterrupt

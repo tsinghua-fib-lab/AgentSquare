@@ -1,0 +1,42 @@
+2024-09-04 10:24:36 | INFO | __main__ | Tested tasks:
+2024-09-04 10:24:36 | INFO | __main__ | Start evaluating task scienceworld
+2024-09-04 10:24:36 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 10:24:36 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 10:24:36 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60771)
+2024-09-04 10:24:36 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60771)
+2024-09-04 10:24:37 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60805
+2024-09-04 10:24:37 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-09-04 10:24:37 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-09-04 10:24:37 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 235, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 280, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 169, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 25, in __call__
+    prompt = prompt.format(task_description=task_description, task_type=task_type)
+KeyError: "'description'"
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 235, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 280, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 169, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 25, in __call__
+    prompt = prompt.format(task_description=task_description, task_type=task_type)
+KeyError: "'description'"

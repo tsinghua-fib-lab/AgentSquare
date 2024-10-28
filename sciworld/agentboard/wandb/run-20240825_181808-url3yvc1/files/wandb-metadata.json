@@ -1,0 +1,102 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-08-25T10:18:11.250538",
+    "startedAt": "2024-08-25T10:18:08.547669",
+    "docker": null,
+    "cuda": "9.0.176",
+    "args": [
+        "--cfg-path",
+        "../eval_configs/main_results_all_tasks.yaml",
+        "--tasks",
+        "pddl",
+        "--wandb",
+        "--log_path",
+        "../results/gpt-3.5-turbo-0125",
+        "--project_name",
+        "evaluate-gpt-35-turbo-0125",
+        "--baseline_dir",
+        "../data/baseline_results",
+        "--planning",
+        "IO",
+        "--reasoning",
+        "CoT",
+        "--memory",
+        "None",
+        "--tooluse",
+        "None",
+        "--model",
+        "gpt-3.5-turbo-0125"
+    ],
+    "state": "running",
+    "program": "eval_main.py",
+    "codePathLocal": "eval_main.py",
+    "codePath": "agentboard/eval_main.py",
+    "git": {
+        "remote": "https://github.com/hkust-nlp/AgentBoard.git",
+        "commit": "bb7255e2daf1989069a186dad9e53f70680961db"
+    },
+    "email": null,
+    "root": "/home/eric/AgentBoard",
+    "host": "eric-VivoBook-15-ASUS-Laptop-X542UF",
+    "username": "eric",
+    "executable": "/home/eric/anaconda3/envs/agentboard/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1997.690125,
+        "min": 400.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1649.208,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1643.438,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1935.499,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1481.673,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1938.135,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2454.107,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2379.028,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2500.433,
+            "min": 400.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 109.44446182250977,
+            "used": 32.357635498046875
+        }
+    },
+    "memory": {
+        "total": 15.51889419555664
+    }
+}

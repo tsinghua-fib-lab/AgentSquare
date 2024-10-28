@@ -1,0 +1,197 @@
+2024-08-31 12:09:44 | INFO | __main__ | Tested tasks:
+2024-08-31 12:09:44 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 12:09:45 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 12:09:45 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 12:09:45 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60743)
+2024-08-31 12:09:45 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60743)
+2024-08-31 12:09:45 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60727
+2024-08-31 12:09:45 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-08-31 12:09:45 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 12:09:46 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-31 12:09:50 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-31 12:09:50 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:09:50 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-31 12:09:51 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-31 12:09:52 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:09:52 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-31 12:09:52 | INFO | tasks.scienceworld | Step 03 - Action: wait1
+2024-08-31 12:09:52 | INFO | tasks.scienceworld | Step 03 - Observation: You decide to wait for 1 iterations.
+2024-08-31 12:09:52 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-31 12:09:53 | INFO | tasks.scienceworld | Step 04 - Action: OK.
+2024-08-31 12:09:53 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-08-31 12:09:53 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-31 12:09:54 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-31 12:09:54 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:09:54 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-31 12:09:55 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-31 12:09:55 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:09:55 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-31 12:09:56 | INFO | tasks.scienceworld | Step 07 - Action: The task is to change the state of matter of the ice. To do this, we need to boil water. Here are the steps to accomplish this:
+2024-08-31 12:09:56 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-31 12:09:56 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-31 12:09:57 | INFO | tasks.scienceworld | Step 08 - Action: look around
+2024-08-31 12:09:57 | INFO | tasks.scienceworld | Step 08 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+2024-08-31 12:09:57 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-31 12:09:58 | INFO | tasks.scienceworld | Step 09 - Action: open door to hallway
+2024-08-31 12:09:58 | INFO | tasks.scienceworld | Step 09 - Observation: The door is already open.
+2024-08-31 12:09:58 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-31 12:09:59 | INFO | tasks.scienceworld | Step 10 - Action: go to hallway
+2024-08-31 12:09:59 | INFO | tasks.scienceworld | Step 10 - Observation: You move to the hallway.
+2024-08-31 12:09:59 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-31 12:09:59 | INFO | tasks.scienceworld | Step 11 - Action: look around
+2024-08-31 12:10:00 | INFO | tasks.scienceworld | Step 11 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+2024-08-31 12:10:00 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-08-31 12:10:00 | INFO | tasks.scienceworld | Step 12 - Action: go to kitchen
+2024-08-31 12:10:01 | INFO | tasks.scienceworld | Step 12 - Observation: You move to the kitchen.
+2024-08-31 12:10:01 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.1
+2024-08-31 12:10:01 | INFO | tasks.scienceworld | Step 13 - Action: look around
+2024-08-31 12:10:02 | INFO | tasks.scienceworld | Step 13 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-31 12:10:02 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.1
+2024-08-31 12:10:02 | INFO | tasks.scienceworld | Step 14 - Action: pick up the thermometer
+2024-08-31 12:10:03 | INFO | tasks.scienceworld | Step 14 - Observation: You move the thermometer to the inventory.
+2024-08-31 12:10:03 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.2
+2024-08-31 12:10:04 | FINISH | tasks.scienceworld | [1mExample 0 | Success: False , Progress Rate: 0.2 , Steps: 15
+2024-08-31 12:10:04 | GOAL | tasks.scienceworld | [1mExample 1 | Goal: task_name: chemistry-mix, var: 5, Your task is to use chemistry to create the substance ''blue paper'' in a ceramic cup. The objects you can use are the a ceramic cup, a paper in the kitchen and a wood cup in the art studio. A recipe and some of the ingredients might be found near the kitchen. When you are done, focus on the blue paper.
+2024-08-31 12:10:04 | INFO | scienceworld.scienceworld | Loading: chemistry-mix (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 12:10:05 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-31 12:10:09 | INFO | tasks.scienceworld | Step 01 - Action: go to the kitchen
+2024-08-31 12:10:09 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-31 12:10:09 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-31 12:10:10 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-31 12:10:10 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:10:10 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-31 12:10:11 | INFO | tasks.scienceworld | Step 03 - Action: go to the hallway
+2024-08-31 12:10:11 | INFO | tasks.scienceworld | Step 03 - Observation: You move to the hallway.
+2024-08-31 12:10:11 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-31 12:10:12 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-31 12:10:12 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:10:12 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-31 12:10:13 | INFO | tasks.scienceworld | Step 05 - Action: go to the kitchen
+2024-08-31 12:10:13 | INFO | tasks.scienceworld | Step 05 - Observation: You move to the kitchen.
+2024-08-31 12:10:13 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:14 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-31 12:10:14 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:10:14 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:15 | INFO | tasks.scienceworld | Step 07 - Action: look around
+2024-08-31 12:10:16 | INFO | tasks.scienceworld | Step 07 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	A blank paper
+	A recipe titled instructions to make blue paper
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-31 12:10:16 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:17 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-08-31 12:10:17 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 12:10:17 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:17 | INFO | tasks.scienceworld | Step 09 - Action: pick up the thermometer
+2024-08-31 12:10:18 | INFO | tasks.scienceworld | Step 09 - Observation: You move the thermometer to the inventory.
+2024-08-31 12:10:18 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:19 | INFO | tasks.scienceworld | Step 10 - Action: open cupboard
+2024-08-31 12:10:19 | INFO | tasks.scienceworld | Step 10 - Observation: The cupboard is now open.
+2024-08-31 12:10:19 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:20 | INFO | tasks.scienceworld | Step 11 - Action: pick up the metal pot
+2024-08-31 12:10:20 | INFO | tasks.scienceworld | Step 11 - Observation: You move the metal pot to the inventory.
+2024-08-31 12:10:20 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:21 | INFO | tasks.scienceworld | Step 12 - Action: move metal pot to sink
+2024-08-31 12:10:21 | INFO | tasks.scienceworld | Step 12 - Observation: You move the metal pot to the sink.
+2024-08-31 12:10:21 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:22 | INFO | tasks.scienceworld | Step 13 - Action: activate sink
+2024-08-31 12:10:22 | INFO | tasks.scienceworld | Step 13 - Observation: The sink is now activated.
+2024-08-31 12:10:22 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:23 | INFO | tasks.scienceworld | Step 14 - Action: deactivate sink
+2024-08-31 12:10:23 | INFO | tasks.scienceworld | Step 14 - Observation: The sink is now deactivated.
+2024-08-31 12:10:23 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:24 | INFO | tasks.scienceworld | Step 15 - Action: pick up the metal pot
+2024-08-31 12:10:24 | INFO | tasks.scienceworld | Step 15 - Observation: You move the metal pot to the inventory.
+2024-08-31 12:10:24 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:25 | INFO | tasks.scienceworld | Step 16 - Action: focus on substance in metal pot
+2024-08-31 12:10:26 | INFO | tasks.scienceworld | Step 16 - Observation: You focus on the water.
+2024-08-31 12:10:26 | INFO | tasks.scienceworld | Step 16 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:26 | INFO | tasks.scienceworld | Step 17 - Action: pour metal pot into metal pot
+2024-08-31 12:10:27 | INFO | tasks.scienceworld | Step 17 - Observation: You can't move something into itself.
+2024-08-31 12:10:27 | INFO | tasks.scienceworld | Step 17 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:28 | INFO | tasks.scienceworld | Step 18 - Action: pick up the metal pot
+2024-08-31 12:10:28 | INFO | tasks.scienceworld | Step 18 - Observation: You move the metal pot to the inventory.
+2024-08-31 12:10:28 | INFO | tasks.scienceworld | Step 18 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:29 | INFO | tasks.scienceworld | Step 19 - Action: move metal pot to stove
+2024-08-31 12:10:29 | INFO | tasks.scienceworld | Step 19 - Observation: You move the metal pot to the stove.
+2024-08-31 12:10:29 | INFO | tasks.scienceworld | Step 19 - Progress Rate: 0.16666666666666666
+2024-08-31 12:10:30 | INFO | tasks.scienceworld | Step 20 - Action: activate stove
+2024-08-31 12:10:30 | INFO | tasks.scienceworld | Step 20 - Observation: The stove is now activated.
+2024-08-31 12:10:30 | INFO | tasks.scienceworld | Step 20 - Progress Rate: 0.16666666666666666
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-31 12:10:31 | FINISH | tasks.scienceworld | [1mExample 1 | Success: False , Progress Rate: 0.16666666666666666 , Steps: 21
+2024-08-31 12:10:33 | FINISH | __main__ | [1mTask scienceworld | Success Rate: 0.0 , Progress Rate: 0.18333333333333335 , Easy SR: 0.Hard SR: 0.0, Easy PR: 0, Hard PR: 0.18333333333333335, Grounding Accuracy: 0.4809523809523809
+2024-08-31 12:10:33 | INFO | __main__ | Finish evaluating all tasks

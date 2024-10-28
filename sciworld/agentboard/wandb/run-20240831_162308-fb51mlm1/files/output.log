@@ -1,0 +1,16 @@
+2024-08-31 16:23:21 | INFO | __main__ | {"task_name": "scienceworld", "success_rate": 0.0, "progress_rate": 0.0391005291005291, "grounding_acc": 0.3360854450560332, "success_rate_hard": 0.0, "success_rate_easy": 0.0, "progress_rate_hard": 0.06284013605442176, "progress_rate_easy": 0.0}
+2024-08-31 16:23:21 | INFO | __main__ | Tested tasks: scienceworld
+2024-08-31 16:23:21 | INFO | __main__ | Task scienceworld has been evaluated, skip
+2024-08-31 16:23:21 | INFO | __main__ | Finish evaluating all tasks
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 253, in main
+    print('performance is'+ progress_rate)
+UnboundLocalError: local variable 'progress_rate' referenced before assignment
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 253, in main
+    print('performance is'+ progress_rate)
+UnboundLocalError: local variable 'progress_rate' referenced before assignment

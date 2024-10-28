@@ -1,0 +1,4 @@
+2024-09-01 10:46:03 | INFO | __main__ | {"task_name": "scienceworld", "success_rate": 0.0, "progress_rate": 0.03784391534391534, "grounding_acc": 0.3794849116121044, "success_rate_hard": 0.0, "success_rate_easy": 0.0, "progress_rate_hard": 0.060820578231292506, "progress_rate_easy": 0.0}
+2024-09-01 10:46:03 | INFO | __main__ | Tested tasks: scienceworld
+2024-09-01 10:46:03 | INFO | __main__ | Task scienceworld has been evaluated, skip
+2024-09-01 10:46:03 | INFO | __main__ | Finish evaluating all tasks

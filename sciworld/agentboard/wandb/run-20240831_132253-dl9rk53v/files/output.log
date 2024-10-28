@@ -1,0 +1,35 @@
+2024-08-31 13:23:05 | INFO | __main__ | Tested tasks:
+2024-08-31 13:23:05 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 13:23:05 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 13:23:05 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 13:23:05 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60785)
+2024-08-31 13:23:05 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60785)
+2024-08-31 13:23:06 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60749
+2024-08-31 13:23:06 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-31 13:23:06 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:23:07 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Task lifespan-longest-lived (index: 0) failed, skipping to the next task.
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 285, in evaluate
+    logger.finish("Example {} | Success: {} , Progress Rate: {} , Steps: {}\n".format(index, done, score, num_steps + 1))
+UnboundLocalError: local variable 'done' referenced before assignment
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 285, in evaluate
+    logger.finish("Example {} | Success: {} , Progress Rate: {} , Steps: {}\n".format(index, done, score, num_steps + 1))
+UnboundLocalError: local variable 'done' referenced before assignment

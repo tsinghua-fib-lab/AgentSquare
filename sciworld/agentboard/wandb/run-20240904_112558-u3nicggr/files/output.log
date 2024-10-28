@@ -1,0 +1,99 @@
+2024-09-04 11:26:09 | INFO | __main__ | Tested tasks:
+2024-09-04 11:26:09 | INFO | __main__ | Start evaluating task scienceworld
+2024-09-04 11:26:09 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 11:26:09 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 11:26:09 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60767)
+2024-09-04 11:26:09 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60767)
+2024-09-04 11:26:10 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60731
+2024-09-04 11:26:10 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-09-04 11:26:10 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-09-04 11:26:10 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-09-04 11:26:23 | INFO | tasks.scienceworld | Step 01 - Action: go to hallway
+2024-09-04 11:26:23 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the hallway.
+2024-09-04 11:26:23 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-09-04 11:26:27 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-09-04 11:26:27 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 11:26:27 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-09-04 11:26:31 | INFO | tasks.scienceworld | Step 03 - Action: go to kitchen
+2024-09-04 11:26:31 | INFO | tasks.scienceworld | Step 03 - Observation: You move to the kitchen.
+2024-09-04 11:26:31 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.1
+2024-09-04 11:26:35 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-09-04 11:26:35 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 11:26:35 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.1
+2024-09-04 11:26:40 | INFO | tasks.scienceworld | Step 05 - Action: pick up metal pot
+2024-09-04 11:26:40 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-09-04 11:26:40 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.1
+2024-09-04 11:26:44 | INFO | tasks.scienceworld | Step 06 - Action: pick up the metal pot
+2024-09-04 11:26:44 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-09-04 11:26:44 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.1
+2024-09-04 11:26:48 | INFO | tasks.scienceworld | Step 07 - Action: pick up metal pot
+2024-09-04 11:26:48 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-09-04 11:26:48 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.1
+2024-09-04 11:26:52 | INFO | tasks.scienceworld | Step 08 - Action: pick up pot
+2024-09-04 11:26:52 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-09-04 11:26:52 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.1
+2024-09-04 11:26:56 | INFO | tasks.scienceworld | Step 09 - Action: pick up the pot
+2024-09-04 11:26:56 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-09-04 11:26:56 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.1
+2024-09-04 11:27:01 | INFO | tasks.scienceworld | Step 10 - Action: pick up the metal pot
+2024-09-04 11:27:01 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-09-04 11:27:01 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.1
+2024-09-04 11:27:05 | INFO | tasks.scienceworld | Step 11 - Action: pick up the metal pot
+2024-09-04 11:27:06 | INFO | tasks.scienceworld | Step 11 - Observation: No known action matches that input.
+2024-09-04 11:27:06 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.1
+2024-09-04 11:27:10 | INFO | tasks.scienceworld | Step 12 - Action: pick up the metal pot
+2024-09-04 11:27:10 | INFO | tasks.scienceworld | Step 12 - Observation: No known action matches that input.
+2024-09-04 11:27:10 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.1
+2024-09-04 11:27:14 | INFO | tasks.scienceworld | Step 13 - Action: pick up the metal pot
+2024-09-04 11:27:14 | INFO | tasks.scienceworld | Step 13 - Observation: No known action matches that input.
+2024-09-04 11:27:14 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.1
+2024-09-04 11:27:18 | INFO | tasks.scienceworld | Step 14 - Action: pick up the metal pot
+2024-09-04 11:27:18 | INFO | tasks.scienceworld | Step 14 - Observation: No known action matches that input.
+2024-09-04 11:27:18 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.1
+2024-09-04 11:27:22 | INFO | tasks.scienceworld | Step 15 - Action: pick up the metal pot
+2024-09-04 11:27:22 | INFO | tasks.scienceworld | Step 15 - Observation: No known action matches that input.
+2024-09-04 11:27:22 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.1
+2024-09-04 11:27:27 | INFO | tasks.scienceworld | Step 16 - Action: pick up the metal pot
+2024-09-04 11:27:28 | INFO | tasks.scienceworld | Step 16 - Observation: No known action matches that input.
+2024-09-04 11:27:28 | INFO | tasks.scienceworld | Step 16 - Progress Rate: 0.1
+2024-09-04 11:27:31 | INFO | tasks.scienceworld | Step 17 - Action: pick up the metal pot
+2024-09-04 11:27:32 | INFO | tasks.scienceworld | Step 17 - Observation: No known action matches that input.
+2024-09-04 11:27:32 | INFO | tasks.scienceworld | Step 17 - Progress Rate: 0.1
+2024-09-04 11:27:36 | INFO | tasks.scienceworld | Step 18 - Action: pick up the metal pot
+2024-09-04 11:27:36 | INFO | tasks.scienceworld | Step 18 - Observation: No known action matches that input.
+2024-09-04 11:27:36 | INFO | tasks.scienceworld | Step 18 - Progress Rate: 0.1
+2024-09-04 11:27:40 | INFO | tasks.scienceworld | Step 19 - Action: pick up the metal pot
+2024-09-04 11:27:40 | INFO | tasks.scienceworld | Step 19 - Observation: No known action matches that input.
+2024-09-04 11:27:40 | INFO | tasks.scienceworld | Step 19 - Progress Rate: 0.1
+2024-09-04 11:27:44 | INFO | tasks.scienceworld | Step 20 - Action: pick up the metal pot
+2024-09-04 11:27:45 | INFO | tasks.scienceworld | Step 20 - Observation: No known action matches that input.
+2024-09-04 11:27:45 | INFO | tasks.scienceworld | Step 20 - Progress Rate: 0.1
+2024-09-04 11:27:49 | INFO | tasks.scienceworld | Step 21 - Action: pick up the metal pot
+2024-09-04 11:27:49 | INFO | tasks.scienceworld | Step 21 - Observation: No known action matches that input.
+2024-09-04 11:27:49 | INFO | tasks.scienceworld | Step 21 - Progress Rate: 0.1
+2024-09-04 11:27:53 | INFO | tasks.scienceworld | Step 22 - Action: pick up the metal pot
+2024-09-04 11:27:53 | INFO | tasks.scienceworld | Step 22 - Observation: No known action matches that input.
+2024-09-04 11:27:53 | INFO | tasks.scienceworld | Step 22 - Progress Rate: 0.1
+2024-09-04 11:27:57 | INFO | tasks.scienceworld | Step 23 - Action: pick up the metal pot
+2024-09-04 11:27:57 | INFO | tasks.scienceworld | Step 23 - Observation: No known action matches that input.
+2024-09-04 11:27:57 | INFO | tasks.scienceworld | Step 23 - Progress Rate: 0.1
+2024-09-04 11:28:01 | INFO | tasks.scienceworld | Step 24 - Action: pick up the metal pot
+2024-09-04 11:28:01 | INFO | tasks.scienceworld | Step 24 - Observation: No known action matches that input.
+2024-09-04 11:28:01 | INFO | tasks.scienceworld | Step 24 - Progress Rate: 0.1
+2024-09-04 11:28:05 | INFO | tasks.scienceworld | Step 25 - Action: pick up the metal pot
+2024-09-04 11:28:05 | INFO | tasks.scienceworld | Step 25 - Observation: No known action matches that input.
+2024-09-04 11:28:05 | INFO | tasks.scienceworld | Step 25 - Progress Rate: 0.1
+2024-09-04 11:28:08 | FINISH | tasks.scienceworld | [1mExample 0 | Success: False , Progress Rate: 0.1 , Steps: 26
+completion_tokens:860, prompt_tokens:1348076, price=0.675328
+2024-09-04 11:28:11 | FINISH | __main__ | [1mTask scienceworld | Success Rate: 0.0 , Progress Rate: 0.1 , Easy SR: 0.Hard SR: 0.0, Easy PR: 0, Hard PR: 0.1, Grounding Accuracy: 0.15384615384615385
+2024-09-04 11:28:11 | INFO | __main__ | Finish evaluating all tasks
+[34m[1mwandb[39m[22m: Network error resolved after 0:00:01.582946, resuming normal operation.
+The performance of the current module combination is : success_rate: 0.0, progress_rate: 0.1, grounding_acc: 0.15384615384615385

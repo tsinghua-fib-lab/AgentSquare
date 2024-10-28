@@ -1,0 +1,405 @@
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f9f358cec40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f9f357f3c40>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f9f35acf640>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: Connection error.
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7ff7ec3a6ee0>  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7ff7d2521460>   --Tooluse module: None   --Memory module: <MEMORY_GENERATIVE.MEMORY_GENERATIVE object at 0x7ff7d244ea90>
+Task measure-melting-point-known-substance (index: 8) failed with error: RetryError[<Future at 0x7ff7d00a86d0 state=finished raised APITimeoutError>]
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f9f358cec40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f9f357f3c40>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f9f35acf640>
+Task find-non-living-thing (index: 5) failed with error: RetryError[<Future at 0x7f9f34d8e370 state=finished raised APITimeoutError>]
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task lifespan-longest-lived (index: 0) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task find-non-living-thing (index: 2) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task lifespan-longest-lived (index: 3) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task find-non-living-thing (index: 5) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-unknown-substance (index: 7) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-known-substance (index: 8) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task find-living-thing (index: 9) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-known-substance (index: 10) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task use-thermometer (index: 11) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task use-thermometer (index: 12) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-known-substance (index: 13) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task measure-melting-point-known-substance (index: 14) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task chemistry-mix (index: 15) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task boil (index: 16) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task boil (index: 17) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RL.REASONING_RL object at 0x7f57a98d8f10>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f57a9b5d910>
+Task identify-life-stages-1 (index: 18) failed with error: name 'llm_response' is not defined
+
+--Planning module: None  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7fb789091880>   --Tooluse module: None   --Memory module: <MEMORY_DS.MEMORY_DS object at 0x7fb7890f7400>
+Task find-non-living-thing (index: 5) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7fb789091880>   --Tooluse module: None   --Memory module: <MEMORY_DS.MEMORY_DS object at 0x7fb7890f7400>
+Task measure-melting-point-known-substance (index: 10) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7fb789091880>   --Tooluse module: None   --Memory module: <MEMORY_DS.MEMORY_DS object at 0x7fb7890f7400>
+Task lifespan-longest-lived (index: 20) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7fb789091880>   --Tooluse module: None   --Memory module: <MEMORY_DS.MEMORY_DS object at 0x7fb7890f7400>
+Task lifespan-longest-lived-then-shortest-lived (index: 21) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fd399989220>  --Reasoning module: <REASONING_COT_SC.REASONING_COT_SC object at 0x7fd399989880>   --Tooluse module: None   --Memory module: <MEMORY_TP.MEMORY_TP object at 0x7fd399c3beb0>
+Task chemistry-mix-paint-tertiary-color (index: 23) failed with error: Connection error.
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f6589fadcd0>  --Reasoning module: <REASONING_COT_SC.REASONING_COT_SC object at 0x7f65903a5070>   --Tooluse module: None   --Memory module: <MEMORY_TP.MEMORY_TP object at 0x7f6572d9dfa0>
+Task use-thermometer (index: 25) failed with error: Connection error.
+
+--Planning module: <PLANNING_DR.PLANNING_DR object at 0x7f0ea3a0f910>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f0ea3876e80>   --Tooluse module: None   --Memory module: <MEMORY_CD.MEMORY_CD object at 0x7f0ea3a79490>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: Connection error.
+
+--Planning module: <PLANNING_DR.PLANNING_DR object at 0x7f0ea3a0f910>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f0ea3876e80>   --Tooluse module: None   --Memory module: <MEMORY_CD.MEMORY_CD object at 0x7f0ea3a79490>
+Task find-living-thing (index: 9) failed with error: Connection error.
+
+--Planning module: <PLANNING_VOYAGE.PLANNING_VOYAGE object at 0x7f8dfd371f40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f8dfd3a0d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8dfd661400>
+Task measure-melting-point-known-substance (index: 13) failed with error: Connection error.
+
+--Planning module: <PLANNING_VOYAGE.PLANNING_VOYAGE object at 0x7f8dfd371f40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f8dfd3a0d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8dfd661400>
+Task lifespan-longest-lived (index: 20) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_VOYAGE.PLANNING_VOYAGE object at 0x7f8dfd371f40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f8dfd3a0d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8dfd661400>
+Task lifespan-longest-lived-then-shortest-lived (index: 21) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_VOYAGE.PLANNING_VOYAGE object at 0x7f8dfd371f40>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f8dfd3a0d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8dfd661400>
+Task lifespan-shortest-lived (index: 22) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_ADAPTIVE.PLANNING_ADAPTIVE object at 0x7f74542abdf0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f74542d5fd0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f74545992e0>
+Task chemistry-mix-paint-tertiary-color (index: 23) failed with error: 'reasoning instruction'
+
+--Planning module: <PLANNING_ADAPTIVE.PLANNING_ADAPTIVE object at 0x7f0e1dda16d0>  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f0e1dda1580>   --Tooluse module: None   --Memory module: None
+Task chemistry-mix (index: 15) failed with error: 'reasoning instruction'
+
+--Planning module: <PLANNING_ADAPTIVE.PLANNING_ADAPTIVE object at 0x7f0e1dda16d0>  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f0e1dda1580>   --Tooluse module: None   --Memory module: None
+Task measure-melting-point-unknown-substance (index: 24) failed with error: 'reasoning instruction'
+
+--Planning module: <PLANNING_ADAPTIVE.PLANNING_ADAPTIVE object at 0x7ff801063fd0>  --Reasoning module: <REASONING_COT.REASONING_COT object at 0x7ff801063ee0>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7ff8013bc910>
+Task chemistry-mix-paint-tertiary-color (index: 23) failed with error: 'reasoning instruction'
+
+--Planning module: None  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f727891a2b0>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f7278be1e50>
+Task find-non-living-thing (index: 2) failed with error: Connection error.
+
+--Planning module: None  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f727891a2b0>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f7278be1e50>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: Connection error.
+
+--Planning module: None  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f727891a2b0>   --Tooluse module: None   --Memory module: <MEMORY_DILU.MEMORY_DILU object at 0x7f7278be1e50>
+Task use-thermometer (index: 11) failed with error: Connection error.
+
+--Planning module: <PLANNING_ADAPTIVE.PLANNING_ADAPTIVE object at 0x7f6709600130>  --Reasoning module: <REASONING_RP.REASONING_RP object at 0x7f670945ee20>   --Tooluse module: None   --Memory module: <MEMORY_HIER.MEMORY_HIER object at 0x7f670965cc70>
+Task use-thermometer (index: 25) failed with error: 'reasoning instruction'
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task lifespan-longest-lived (index: 0) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task lifespan-longest-lived (index: 0) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task find-non-living-thing (index: 2) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task lifespan-longest-lived (index: 3) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task find-non-living-thing (index: 2) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task find-non-living-thing (index: 5) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task lifespan-longest-lived (index: 3) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7fa70af78eb0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7fa70aea1bb0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7fa70b1606a0>
+Task measure-melting-point-unknown-substance (index: 7) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f188c0c1f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f188bf9be50>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f188c255820>
+Task find-non-living-thing (index: 5) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived (index: 0) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived (index: 0) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task find-non-living-thing (index: 2) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task find-non-living-thing (index: 2) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived (index: 3) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived (index: 3) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task find-non-living-thing (index: 5) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-unknown-substance (index: 4) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task find-non-living-thing (index: 5) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-unknown-substance (index: 7) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-known-substance (index: 8) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-unknown-substance (index: 7) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task find-living-thing (index: 9) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-known-substance (index: 10) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-known-substance (index: 8) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task use-thermometer (index: 11) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task find-living-thing (index: 9) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task use-thermometer (index: 12) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-known-substance (index: 10) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-known-substance (index: 13) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task use-thermometer (index: 11) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-known-substance (index: 14) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task use-thermometer (index: 12) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task chemistry-mix (index: 15) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task boil (index: 16) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-known-substance (index: 13) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task boil (index: 17) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-known-substance (index: 14) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task identify-life-stages-1 (index: 18) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task chemistry-mix (index: 15) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task chemistry-mix-paint-secondary-color (index: 19) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived (index: 20) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task boil (index: 16) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-longest-lived-then-shortest-lived (index: 21) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task lifespan-shortest-lived (index: 22) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task chemistry-mix-paint-tertiary-color (index: 23) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task boil (index: 17) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task measure-melting-point-unknown-substance (index: 24) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task identify-life-stages-1 (index: 18) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task chemistry-mix-paint-secondary-color (index: 19) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f53c7db5f40>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f53c7cd9d30>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f53c7f9e760>
+Task use-thermometer (index: 25) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived (index: 20) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-longest-lived-then-shortest-lived (index: 21) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task lifespan-shortest-lived (index: 22) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task chemistry-mix-paint-tertiary-color (index: 23) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task measure-melting-point-unknown-substance (index: 24) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f3f16248fd0>  --Reasoning module: <REASONING_STEPBACK.REASONING_STEPBACK object at 0x7f3f16177e80>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f3f164a9a30>
+Task use-thermometer (index: 25) failed with error: You must call wandb.init() before wandb.log()
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f8774043a00>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f8774043a90>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f87755af9a0>
+Task lifespan-longest-lived (index: 0) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f8774043a00>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f8774043a90>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f87755af9a0>
+Task find-non-living-thing (index: 5) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f8774043a00>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f8774043a90>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f87755af9a0>
+Task lifespan-longest-lived (index: 20) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-longest-lived (index: 0) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task find-non-living-thing (index: 5) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task find-living-thing (index: 9) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task chemistry-mix (index: 15) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task chemistry-mix-paint-secondary-color (index: 19) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-longest-lived (index: 20) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-longest-lived-then-shortest-lived (index: 21) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_DILU.REASONING_DILU object at 0x7f8203bd7f70>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f8220cc3be0>
+Task lifespan-shortest-lived (index: 22) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task lifespan-longest-lived (index: 0) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task find-non-living-thing (index: 5) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task lifespan-longest-lived-then-shortest-lived (index: 6) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task find-living-thing (index: 9) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task measure-melting-point-known-substance (index: 10) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task use-thermometer (index: 12) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task chemistry-mix (index: 15) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task lifespan-longest-lived (index: 20) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task lifespan-shortest-lived (index: 22) failed with error: attempt to write a readonly database
+
+--Planning module: <PLANNING_DEPS.PLANNING_DEPS object at 0x7f82108aa7c0>  --Reasoning module: <REASONING_IO.REASONING_IO object at 0x7f82108aaac0>   --Tooluse module: None   --Memory module: <MEMORY_VOYAGE.MEMORY_VOYAGE object at 0x7f82107eefa0>
+Task use-thermometer (index: 25) failed with error: attempt to write a readonly database
+
+--Planning module: None  --Reasoning module: <REASONING_TOT.REASONING_TOT object at 0x7f8210c2cbb0>   --Tooluse module: None   --Memory module: <MEMORY_TP.MEMORY_TP object at 0x7f8210d77190>
+Task measure-melting-point-unknown-substance (index: 24) failed with error: Connection error.
+
+--Planning module: None  --Reasoning module: <REASONING_COT.REASONING_COT object at 0x7f45446fee80>   --Tooluse module: None   --Memory module: None
+Task lifespan-longest-lived (index: 0) failed with error: RetryError[<Future at 0x7f45445dce80 state=finished raised AuthenticationError>]
+
+--Planning module: None  --Reasoning module: <REASONING_COT.REASONING_COT object at 0x7f45446fee80>   --Tooluse module: None   --Memory module: None
+Task lifespan-longest-lived-then-shortest-lived (index: 1) failed with error: RetryError[<Future at 0x7f4544563e80 state=finished raised AuthenticationError>]
+

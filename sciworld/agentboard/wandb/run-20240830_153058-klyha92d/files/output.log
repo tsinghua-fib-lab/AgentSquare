@@ -1,0 +1,1676 @@
+2024-08-30 15:31:10 | INFO | __main__ | Tested tasks:
+2024-08-30 15:31:10 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-30 15:31:10 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-30 15:31:10 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-30 15:31:10 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60815)
+2024-08-30 15:31:10 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60815)
+2024-08-30 15:31:11 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60825
+2024-08-30 15:31:11 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-30 15:31:11 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:12 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:31:16 | INFO | tasks.scienceworld | Step 01 - Action: focus on the orange
+2024-08-30 15:31:16 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the orange.
+2024-08-30 15:31:16 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:31:17 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:31:17 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:17 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:31:18 | INFO | tasks.scienceworld | Step 03 - Action: activate orange
+2024-08-30 15:31:18 | INFO | tasks.scienceworld | Step 03 - Observation: The orange is not something that can be activated.
+2024-08-30 15:31:18 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:31:19 | INFO | tasks.scienceworld | Step 04 - Action: OK.
+2024-08-30 15:31:19 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-08-30 15:31:19 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:31:20 | FINISH | tasks.scienceworld | [1mExample 0 | Success: False , Progress Rate: 0.0 , Steps: 5
+2024-08-30 15:31:20 | GOAL | tasks.scienceworld | [1mExample 1 | Goal: task_name: lifespan-longest-lived, var: 6, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-30 15:31:20 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:20 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:31:23 | INFO | tasks.scienceworld | Step 01 - Action: focus on the bee hive
+2024-08-30 15:31:23 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the bee hive.
+2024-08-30 15:31:23 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 03 - Action: activate bee hive
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 03 - Observation: The bee hive is not something that can be activated.
+2024-08-30 15:31:24 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:31:25 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:31:25 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:25 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:31:26 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:31:26 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:31:26 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:31:28 | FINISH | tasks.scienceworld | [1mExample 1 | Success: False , Progress Rate: 0.0 , Steps: 6
+2024-08-30 15:31:28 | GOAL | tasks.scienceworld | [1mExample 2 | Goal: task_name: lifespan-longest-lived, var: 7, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-30 15:31:28 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:28 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:31:33 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance called air
+2024-08-30 15:31:33 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:31:33 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:31:36 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:31:36 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:36 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:31:37 | INFO | tasks.scienceworld | Step 03 - Action: activate air
+2024-08-30 15:31:37 | INFO | tasks.scienceworld | Step 03 - Observation: The air is not something that can be activated.
+2024-08-30 15:31:37 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:38 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:31:39 | FINISH | tasks.scienceworld | [1mExample 2 | Success: False , Progress Rate: 0.0 , Steps: 6
+2024-08-30 15:31:39 | GOAL | tasks.scienceworld | [1mExample 3 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 5, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-30 15:31:39 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:40 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:31:43 | INFO | tasks.scienceworld | Step 01 - Action: focus on the orange
+2024-08-30 15:31:43 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the orange.
+2024-08-30 15:31:43 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:31:44 | INFO | tasks.scienceworld | Step 02 - Action: pick up the orange
+2024-08-30 15:31:44 | INFO | tasks.scienceworld | Step 02 - Observation: You move the orange to the inventory.
+2024-08-30 15:31:44 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 04 - Action: use orange on the battery
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 04 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:31:45 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:31:46 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:31:46 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:46 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:31:47 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:31:47 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:31:47 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:31:48 | FINISH | tasks.scienceworld | [1mExample 3 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-30 15:31:48 | GOAL | tasks.scienceworld | [1mExample 4 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 6, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-30 15:31:48 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:48 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:31:51 | INFO | tasks.scienceworld | Step 01 - Action: focus on the bee hive
+2024-08-30 15:31:51 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the bee hive.
+2024-08-30 15:31:51 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:31:52 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:31:52 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:52 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:31:53 | INFO | tasks.scienceworld | Step 03 - Action: activate bee hive
+2024-08-30 15:31:53 | INFO | tasks.scienceworld | Step 03 - Observation: The bee hive is not something that can be activated.
+2024-08-30 15:31:53 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:31:54 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:31:55 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:31:56 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:31:56 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:31:56 | FINISH | tasks.scienceworld | [1mExample 4 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-30 15:31:56 | GOAL | tasks.scienceworld | [1mExample 5 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 7, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-30 15:31:56 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:31:56 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:31:59 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance called air
+2024-08-30 15:31:59 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:31:59 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:00 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:32:00 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:00 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:00 | INFO | tasks.scienceworld | Step 03 - Action: activate air
+2024-08-30 15:32:01 | INFO | tasks.scienceworld | Step 03 - Observation: The air is not something that can be activated.
+2024-08-30 15:32:01 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:01 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:32:01 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:01 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:32:02 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:32:02 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:02 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 06 - Action: focus on the substance called air
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 07 - Action: check valid actions
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 07 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:03 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:32:04 | INFO | tasks.scienceworld | Step 08 - Action: focus on the substance called air
+2024-08-30 15:32:04 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:32:04 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:32:05 | INFO | tasks.scienceworld | Step 09 - Action: check valid actions
+2024-08-30 15:32:05 | INFO | tasks.scienceworld | Step 09 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:05 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:32:06 | INFO | tasks.scienceworld | Step 10 - Action: focus on air
+2024-08-30 15:32:06 | INFO | tasks.scienceworld | Step 10 - Observation: You focus on the air.
+2024-08-30 15:32:06 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:32:08 | FINISH | tasks.scienceworld | [1mExample 5 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:32:08 | GOAL | tasks.scienceworld | [1mExample 6 | Goal: task_name: lifespan-shortest-lived, var: 5, Your task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.
+2024-08-30 15:32:08 | INFO | scienceworld.scienceworld | Loading: lifespan-shortest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:32:09 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 01 - Action: focus on the orange
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the orange.
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:11 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:12 | INFO | tasks.scienceworld | Step 03 - Action: activate orange
+2024-08-30 15:32:12 | INFO | tasks.scienceworld | Step 03 - Observation: The orange is not something that can be activated.
+2024-08-30 15:32:12 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:13 | INFO | tasks.scienceworld | Step 04 - Action: OK.
+2024-08-30 15:32:13 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-08-30 15:32:13 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:32:15 | FINISH | tasks.scienceworld | [1mExample 6 | Success: False , Progress Rate: 0.0 , Steps: 5
+2024-08-30 15:32:15 | GOAL | tasks.scienceworld | [1mExample 7 | Goal: task_name: lifespan-shortest-lived, var: 6, Your task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.
+2024-08-30 15:32:15 | INFO | scienceworld.scienceworld | Loading: lifespan-shortest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:32:15 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 01 - Action: focus on the bee hive
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the bee hive.
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:18 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:19 | INFO | tasks.scienceworld | Step 03 - Action: activate bee hive
+2024-08-30 15:32:19 | INFO | tasks.scienceworld | Step 03 - Observation: The bee hive is not something that can be activated.
+2024-08-30 15:32:19 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:20 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:32:20 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:20 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:32:21 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:32:21 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:32:21 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:32:22 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:32:22 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:32:22 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:32:22 | FINISH | tasks.scienceworld | [1mExample 7 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-30 15:32:22 | GOAL | tasks.scienceworld | [1mExample 8 | Goal: task_name: lifespan-shortest-lived, var: 7, Your task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.
+2024-08-30 15:32:22 | INFO | scienceworld.scienceworld | Loading: lifespan-shortest-lived (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:32:23 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:32:25 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance called air
+2024-08-30 15:32:25 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:32:25 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:26 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:32:26 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:26 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:27 | INFO | tasks.scienceworld | Step 03 - Action: focus on the substance called air
+2024-08-30 15:32:27 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-08-30 15:32:27 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 05 - Action: focus on the substance called air
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:32:28 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:32:29 | FINISH | tasks.scienceworld | [1mExample 8 | Success: False , Progress Rate: 0.0 , Steps: 6
+2024-08-30 15:32:29 | GOAL | tasks.scienceworld | [1mExample 9 | Goal: task_name: measure-melting-point-known-substance, var: 5, Your task is to measure the melting point of gallium, which is located around the kitchen. The objects you can use are thermometer, fridge, metal pot, stove. You should pick up a thermometer in the kitchen. After you melt the gallium, you should use thermometer to measure the temperature of it. If the melting point of gallium is above 150.0 degrees celsius, focus on the blue box. If the melting point of gallium is below 150.0 degrees celsius, focus on the orange box. The boxes are located around the kitchen.
+2024-08-30 15:32:29 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-known-substance (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:32:29 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:32:33 | INFO | tasks.scienceworld | Step 01 - Action: go to the workshop
+2024-08-30 15:32:34 | INFO | tasks.scienceworld | Step 01 - Observation: It's not clear how to get there from here.
+2024-08-30 15:32:34 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:34 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:32:34 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:34 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:35 | INFO | tasks.scienceworld | Step 03 - Action: go to the hallway
+2024-08-30 15:32:35 | INFO | tasks.scienceworld | Step 03 - Observation: You move to the hallway.
+2024-08-30 15:32:35 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:36 | INFO | tasks.scienceworld | Step 04 - Action: look around
+2024-08-30 15:32:36 | INFO | tasks.scienceworld | Step 04 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+2024-08-30 15:32:36 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:32:36 | INFO | tasks.scienceworld | Step 05 - Action: go to the kitchen
+2024-08-30 15:32:37 | INFO | tasks.scienceworld | Step 05 - Observation: You move to the kitchen.
+2024-08-30 15:32:37 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.14285714285714285
+2024-08-30 15:32:38 | INFO | tasks.scienceworld | Step 06 - Action: look around
+2024-08-30 15:32:38 | INFO | tasks.scienceworld | Step 06 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a jug (containing a substance called gallium)
+	a lighter
+	a orange box (containing nothing)
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:32:38 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.14285714285714285
+2024-08-30 15:32:39 | INFO | tasks.scienceworld | Step 07 - Action: pick up the jug containing gallium
+2024-08-30 15:32:39 | INFO | tasks.scienceworld | Step 07 - Observation: You move the jug to the inventory.
+2024-08-30 15:32:39 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.14285714285714285
+2024-08-30 15:32:40 | INFO | tasks.scienceworld | Step 08 - Action: open the cupboard
+2024-08-30 15:32:40 | INFO | tasks.scienceworld | Step 08 - Observation: The cupboard is now open.
+2024-08-30 15:32:40 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.14285714285714285
+2024-08-30 15:32:41 | INFO | tasks.scienceworld | Step 09 - Action: pick up the metal pot
+2024-08-30 15:32:41 | INFO | tasks.scienceworld | Step 09 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:32:41 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.14285714285714285
+2024-08-30 15:32:42 | INFO | tasks.scienceworld | Step 10 - Action: move the metal pot to the stove
+2024-08-30 15:32:43 | INFO | tasks.scienceworld | Step 10 - Observation: You move the metal pot to the stove.
+2024-08-30 15:32:43 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.2857142857142857
+2024-08-30 15:32:43 | INFO | tasks.scienceworld | Step 11 - Action: activate the stove
+2024-08-30 15:32:44 | INFO | tasks.scienceworld | Step 11 - Observation: The stove is now activated.
+2024-08-30 15:32:44 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.42857142857142855
+2024-08-30 15:32:44 | INFO | tasks.scienceworld | Step 12 - Action: focus on the substance in the metal pot
+2024-08-30 15:32:45 | INFO | tasks.scienceworld | Step 12 - Observation: No known action matches that input.
+2024-08-30 15:32:45 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.42857142857142855
+2024-08-30 15:32:46 | INFO | tasks.scienceworld | Step 13 - Action: check valid actions
+2024-08-30 15:32:46 | INFO | tasks.scienceworld | Step 13 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:46 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.42857142857142855
+2024-08-30 15:32:46 | INFO | tasks.scienceworld | Step 14 - Action: examine the substance in the metal pot
+2024-08-30 15:32:47 | INFO | tasks.scienceworld | Step 14 - Observation: No known action matches that input.
+2024-08-30 15:32:47 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.42857142857142855
+2024-08-30 15:32:47 | INFO | tasks.scienceworld | Step 15 - Action: check valid actions
+2024-08-30 15:32:47 | INFO | tasks.scienceworld | Step 15 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:47 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.42857142857142855
+2024-08-30 15:32:49 | FINISH | tasks.scienceworld | [1mExample 9 | Success: False , Progress Rate: 0.42857142857142855 , Steps: 16
+2024-08-30 15:32:49 | GOAL | tasks.scienceworld | [1mExample 10 | Goal: task_name: measure-melting-point-known-substance, var: 6, Your task is to measure the melting point of gallium, which is located around the kitchen. The objects you can use are thermometer, fridge, metal pot, stove. You should pick up a temperature in the kitchen for temperature measurement. Finally, after you melt the gallium, you should use thermometer to measure the temperature of it. If the melting point of gallium is above 50.0 degrees celsius, focus on the orange box. If the melting point of gallium is below 50.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.
+2024-08-30 15:32:49 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-known-substance (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:32:50 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 02 - Action: look at the agent
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 02 - Observation: the agent
+2024-08-30 15:32:54 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:32:55 | INFO | tasks.scienceworld | Step 03 - Action: focus on the agent
+2024-08-30 15:32:55 | INFO | tasks.scienceworld | Step 03 - Observation: You focus on the agent.
+2024-08-30 15:32:55 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:32:56 | INFO | tasks.scienceworld | Step 04 - Action: wait1
+2024-08-30 15:32:56 | INFO | tasks.scienceworld | Step 04 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:32:56 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:32:57 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:32:57 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:32:57 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:32:57 | INFO | tasks.scienceworld | Step 06 - Action: wait1
+2024-08-30 15:32:58 | INFO | tasks.scienceworld | Step 06 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:32:58 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:32:58 | INFO | tasks.scienceworld | Step 07 - Action: OK.
+2024-08-30 15:32:58 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:32:58 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:32:59 | INFO | tasks.scienceworld | Step 08 - Action: wait 1
+2024-08-30 15:32:59 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:32:59 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:33:00 | INFO | tasks.scienceworld | Step 09 - Action: wait 1
+2024-08-30 15:33:00 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:33:00 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:33:01 | INFO | tasks.scienceworld | Step 10 - Action: wait 1
+2024-08-30 15:33:01 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:33:01 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:33:02 | INFO | tasks.scienceworld | Step 11 - Action: wait1
+2024-08-30 15:33:02 | INFO | tasks.scienceworld | Step 11 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:33:02 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-08-30 15:33:03 | INFO | tasks.scienceworld | Step 12 - Action: OK.
+2024-08-30 15:33:03 | INFO | tasks.scienceworld | Step 12 - Observation: No known action matches that input.
+2024-08-30 15:33:03 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:33:05 | FINISH | tasks.scienceworld | [1mExample 10 | Success: False , Progress Rate: 0.0 , Steps: 13
+2024-08-30 15:33:05 | GOAL | tasks.scienceworld | [1mExample 11 | Goal: task_name: measure-melting-point-known-substance, var: 7, Your task is to measure the melting point of gallium, which is located around the kitchen. The objects you can use are thermometer, fridge, metal pot, stove. You should pick up a temperature in the kitchen for temperature measurement. Finally, after you melt the gallium, you should use thermometer to measure the temperature of it. If the melting point of gallium is above 10.0 degrees celsius, focus on the orange box. If the melting point of gallium is below 50.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.
+2024-08-30 15:33:05 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-known-substance (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:33:05 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:33:09 | INFO | tasks.scienceworld | Step 01 - Action: go to the kitchen
+2024-08-30 15:33:09 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the kitchen.
+2024-08-30 15:33:09 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.14285714285714285
+2024-08-30 15:33:10 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:33:10 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a orange box (containing nothing)
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a plastic cup (containing a substance called gallium)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+	a yellow box (containing nothing)
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:33:10 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.14285714285714285
+2024-08-30 15:33:11 | INFO | tasks.scienceworld | Step 03 - Action: pick up the thermometer
+2024-08-30 15:33:11 | INFO | tasks.scienceworld | Step 03 - Observation: You move the thermometer to the inventory.
+2024-08-30 15:33:11 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:12 | INFO | tasks.scienceworld | Step 04 - Action: open cupboard
+2024-08-30 15:33:13 | INFO | tasks.scienceworld | Step 04 - Observation: The cupboard is now open.
+2024-08-30 15:33:13 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:15 | INFO | tasks.scienceworld | Step 05 - Action: pick up metal pot
+2024-08-30 15:33:15 | INFO | tasks.scienceworld | Step 05 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:33:15 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:16 | INFO | tasks.scienceworld | Step 06 - Action: move metal pot to sink
+2024-08-30 15:33:16 | INFO | tasks.scienceworld | Step 06 - Observation: You move the metal pot to the sink.
+2024-08-30 15:33:16 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:17 | INFO | tasks.scienceworld | Step 07 - Action: activate sink
+2024-08-30 15:33:18 | INFO | tasks.scienceworld | Step 07 - Observation: The sink is now activated.
+2024-08-30 15:33:18 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:19 | INFO | tasks.scienceworld | Step 08 - Action: deactivate sink
+2024-08-30 15:33:19 | INFO | tasks.scienceworld | Step 08 - Observation: The sink is now deactivated.
+2024-08-30 15:33:19 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:21 | INFO | tasks.scienceworld | Step 09 - Action: pick up metal pot
+2024-08-30 15:33:21 | INFO | tasks.scienceworld | Step 09 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:33:21 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:22 | INFO | tasks.scienceworld | Step 10 - Action: focus on substance in metal pot
+2024-08-30 15:33:22 | INFO | tasks.scienceworld | Step 10 - Observation: You focus on the water.
+2024-08-30 15:33:22 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:23 | INFO | tasks.scienceworld | Step 11 - Action: pour metal pot into metal pot
+2024-08-30 15:33:23 | INFO | tasks.scienceworld | Step 11 - Observation: You can't move something into itself.
+2024-08-30 15:33:23 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:24 | INFO | tasks.scienceworld | Step 12 - Action: pick up metal pot
+2024-08-30 15:33:24 | INFO | tasks.scienceworld | Step 12 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:33:24 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.2857142857142857
+2024-08-30 15:33:25 | INFO | tasks.scienceworld | Step 13 - Action: move metal pot to stove
+2024-08-30 15:33:25 | INFO | tasks.scienceworld | Step 13 - Observation: You move the metal pot to the stove.
+2024-08-30 15:33:25 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.42857142857142855
+2024-08-30 15:33:26 | INFO | tasks.scienceworld | Step 14 - Action: activate stove
+2024-08-30 15:33:26 | INFO | tasks.scienceworld | Step 14 - Observation: The stove is now activated.
+2024-08-30 15:33:26 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.5714285714285714
+2024-08-30 15:33:27 | INFO | tasks.scienceworld | Step 15 - Action: examine substance in metal pot
+2024-08-30 15:33:28 | INFO | tasks.scienceworld | Step 15 - Observation: a substance called water
+2024-08-30 15:33:28 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.5714285714285714
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:33:35 | FINISH | tasks.scienceworld | [1mExample 11 | Success: False , Progress Rate: 0.5714285714285714 , Steps: 16
+2024-08-30 15:33:35 | GOAL | tasks.scienceworld | [1mExample 12 | Goal: task_name: measure-melting-point-unknown-substance, var: 5, Your task is to measure the melting point of liquid unknown substance D in the kitchen. The objects you can use are thermometer, freezer, metal pot in the kitchen. You should pick up a temperature in the kitchen for temperature measurement. You should monitor the temperature and examine the substance during the cooling process. You should use thermometer to measure its melting point. If the melting point of liquid unknown substance D is above 150.0 degrees celsius, focus on the yellow box. If the melting point of liquid unknown substance D is below 150.0 degrees celsius, focus on the purple box. The boxes are located around the kitchen
+2024-08-30 15:33:35 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-unknown-substance (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:33:35 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:33:41 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:33:41 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:33:41 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:33:42 | INFO | tasks.scienceworld | Step 02 - Action: wait1
+2024-08-30 15:33:42 | INFO | tasks.scienceworld | Step 02 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:33:42 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:33:42 | INFO | tasks.scienceworld | Step 03 - Action: OK.
+2024-08-30 15:33:43 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-08-30 15:33:43 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:33:43 | INFO | tasks.scienceworld | Step 04 - Action: wait1
+2024-08-30 15:33:43 | INFO | tasks.scienceworld | Step 04 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:33:43 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:33:44 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:33:44 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:33:44 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:33:45 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:33:45 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:33:45 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:33:47 | FINISH | tasks.scienceworld | [1mExample 12 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-30 15:33:47 | GOAL | tasks.scienceworld | [1mExample 13 | Goal: task_name: measure-melting-point-unknown-substance, var: 6, Your task is to measure the melting point of solid unknown substance H in the kitchen. The objects you can use are thermometer, metal pot, stove in the kitchen. You should pick up a temperature in the kitchen for temperature measurement. You should monitor the temperature and examine the substance during the heating process. Once you melt the solid unknown substance H (transforming into liquid substance h), you should use thermometer to measure its the temperature. If the melting point of solid unknown substance H is above 150.0 degrees celsius, focus on the green box. If the melting point of unknown substance H is below 150.0 degrees celsius, focus on the blue box. The boxes are located around the kitchen.
+2024-08-30 15:33:47 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-unknown-substance (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:33:47 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 02 - Action: use thermometer on substance in metal pot
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 02 - Observation: No known action matches that input.
+2024-08-30 15:33:52 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:33:54 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:33:54 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:33:54 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 04 - Action: wait1
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 04 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 05 - Action: OK.
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:33:55 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:33:56 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:33:56 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:33:56 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:33:57 | INFO | tasks.scienceworld | Step 07 - Action: OK.
+2024-08-30 15:33:57 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:33:57 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:33:59 | FINISH | tasks.scienceworld | [1mExample 13 | Success: False , Progress Rate: 0.0 , Steps: 8
+2024-08-30 15:33:59 | GOAL | tasks.scienceworld | [1mExample 14 | Goal: task_name: measure-melting-point-unknown-substance, var: 7, Your task is to measure the melting point of solid unknown substance H in the kitchen. The objects you can use are thermometer, metal pot, stove in the kitchen. You should monitor the temperature and examine the substance during the heating process. Once you melt the solid unknown substance H (transforming into liquid substance h), you should use thermometer to measure its the temperature. If the melting point of solid unknown substance H is above 10.0 degrees celsius, focus on the blue box. If the melting point of unknown substance H is below 10.0 degrees celsius, focus on the orange box. The boxes are located around the kitchen.
+2024-08-30 15:33:59 | INFO | scienceworld.scienceworld | Loading: measure-melting-point-unknown-substance (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:33:59 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:34:03 | INFO | tasks.scienceworld | Step 01 - Action: go to the kitchen
+2024-08-30 15:34:03 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the kitchen.
+2024-08-30 15:34:03 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.14285714285714285
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:34:04 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:34:04 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a orange box (containing nothing)
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	solid unknown substance H
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:34:04 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:05 | INFO | tasks.scienceworld | Step 03 - Action: pick up the solid unknown substance H
+2024-08-30 15:34:05 | INFO | tasks.scienceworld | Step 03 - Observation: You move the solid unknown substance H to the inventory.
+2024-08-30 15:34:05 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:06 | INFO | tasks.scienceworld | Step 04 - Action: focus on the solid unknown substance H
+2024-08-30 15:34:06 | INFO | tasks.scienceworld | Step 04 - Observation: You focus on the solid unknown substance H.
+2024-08-30 15:34:06 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:07 | INFO | tasks.scienceworld | Step 05 - Action: transform solid unknown substance H into liquid substance h
+2024-08-30 15:34:07 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:34:07 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:08 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-30 15:34:08 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:08 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:09 | INFO | tasks.scienceworld | Step 07 - Action: wait1
+2024-08-30 15:34:09 | INFO | tasks.scienceworld | Step 07 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:34:09 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:10 | INFO | tasks.scienceworld | Step 08 - Action: wait1
+2024-08-30 15:34:10 | INFO | tasks.scienceworld | Step 08 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:34:10 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:11 | INFO | tasks.scienceworld | Step 09 - Action: OK.
+2024-08-30 15:34:11 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:34:11 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.14285714285714285
+2024-08-30 15:34:12 | INFO | tasks.scienceworld | Step 10 - Action: OK.
+2024-08-30 15:34:12 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:34:12 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.14285714285714285
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:34:13 | FINISH | tasks.scienceworld | [1mExample 14 | Success: False , Progress Rate: 0.14285714285714285 , Steps: 11
+2024-08-30 15:34:13 | GOAL | tasks.scienceworld | [1mExample 15 | Goal: task_name: use-thermometer, var: 5, Your task is to measure the temperature of sodium chloride, which is located around the bathroom. You should pick up a temperature and sodium chloride for temperature measurement. If the sodium chloride temperature is above 100.0 degrees celsius, place it in the green box. If the sodium chloride temperature is below 100.0 degrees celsius, place it in the blue box. The boxes are located around the bedroom.
+2024-08-30 15:34:13 | INFO | scienceworld.scienceworld | Loading: use-thermometer (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:34:13 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:34:17 | INFO | tasks.scienceworld | Step 01 - Action: use the battery on the red light bulb
+2024-08-30 15:34:17 | INFO | tasks.scienceworld | Step 01 - Observation: I'm not sure how to use the battery.
+2024-08-30 15:34:17 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:34:18 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:34:18 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:18 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:34:19 | INFO | tasks.scienceworld | Step 03 - Action: activate red light bulb with battery
+2024-08-30 15:34:19 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-08-30 15:34:19 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:34:20 | INFO | tasks.scienceworld | Step 04 - Action: activate red light bulb
+2024-08-30 15:34:20 | INFO | tasks.scienceworld | Step 04 - Observation: The red light bulb is not something that can be activated.
+2024-08-30 15:34:20 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:34:21 | INFO | tasks.scienceworld | Step 05 - Action: activate switch
+2024-08-30 15:34:21 | INFO | tasks.scienceworld | Step 05 - Observation: The switch is now activated.
+2024-08-30 15:34:21 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 06 - Action: activate red light bulb
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 06 - Observation: The red light bulb is not something that can be activated.
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 07 - Action: OK.
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:34:22 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:34:23 | INFO | tasks.scienceworld | Step 08 - Action: OK.
+2024-08-30 15:34:23 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:34:23 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:34:25 | FINISH | tasks.scienceworld | [1mExample 15 | Success: False , Progress Rate: 0.0 , Steps: 9
+2024-08-30 15:34:25 | GOAL | tasks.scienceworld | [1mExample 16 | Goal: task_name: use-thermometer, var: 6, Your task is to measure the temperature of unknown substance B, which is located around the living room. You should pick up a temperature and the unknown substance B for temperature measurement. If the unknown substance B temperature is above -50.0 degrees celsius, place it in the orange box. If the unknown substance B temperature is below -50.0 degrees celsius, place it in the yellow box. The boxes are located around the living room.
+2024-08-30 15:34:25 | INFO | scienceworld.scienceworld | Loading: use-thermometer (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:34:25 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:34:30 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:34:30 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:30 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 02 - Action: pick up the jug
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 02 - Observation: You move the jug to the inventory.
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:31 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:34:32 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:34:32 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:32 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:34:33 | INFO | tasks.scienceworld | Step 05 - Action: wait1
+2024-08-30 15:34:33 | INFO | tasks.scienceworld | Step 05 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:34:33 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 07 - Action: OK.
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:34:34 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:34:36 | FINISH | tasks.scienceworld | [1mExample 16 | Success: False , Progress Rate: 0.0 , Steps: 8
+2024-08-30 15:34:36 | GOAL | tasks.scienceworld | [1mExample 17 | Goal: task_name: use-thermometer, var: 7, Your task is to measure the temperature of unknown substance B, which is located around the bedroom. You should pick up a temperature and the unknown substance B for temperature measurement. If the unknown substance B temperature is above 200.0 degrees celsius, place it in the orange box. If the unknown substance B temperature is below 200.0 degrees celsius, place it in the yellow box. The boxes are located around the living room.
+2024-08-30 15:34:36 | INFO | scienceworld.scienceworld | Loading: use-thermometer (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:34:36 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:34:40 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance called air
+2024-08-30 15:34:40 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:34:40 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 03 - Action: activate air
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 03 - Observation: The air is not something that can be activated.
+2024-08-30 15:34:41 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:34:42 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:34:42 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:42 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:34:43 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:34:43 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:43 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:34:43 | INFO | tasks.scienceworld | Step 06 - Action: move to the kitchen
+2024-08-30 15:34:44 | INFO | tasks.scienceworld | Step 06 - Observation: You move to the kitchen.
+2024-08-30 15:34:44 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:34:44 | INFO | tasks.scienceworld | Step 07 - Action: look around
+2024-08-30 15:34:45 | INFO | tasks.scienceworld | Step 07 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:34:45 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:34:45 | INFO | tasks.scienceworld | Step 08 - Action: pick up the thermometer
+2024-08-30 15:34:45 | INFO | tasks.scienceworld | Step 08 - Observation: You move the thermometer to the inventory.
+2024-08-30 15:34:45 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:34:46 | INFO | tasks.scienceworld | Step 09 - Action: open cupboard
+2024-08-30 15:34:46 | INFO | tasks.scienceworld | Step 09 - Observation: The cupboard is now open.
+2024-08-30 15:34:46 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:34:47 | INFO | tasks.scienceworld | Step 10 - Action: pick up metal pot
+2024-08-30 15:34:48 | INFO | tasks.scienceworld | Step 10 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:34:48 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:34:48 | INFO | tasks.scienceworld | Step 11 - Action: move metal pot to sink
+2024-08-30 15:34:49 | INFO | tasks.scienceworld | Step 11 - Observation: You move the metal pot to the sink.
+2024-08-30 15:34:49 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-08-30 15:34:49 | INFO | tasks.scienceworld | Step 12 - Action: activate sink
+2024-08-30 15:34:50 | INFO | tasks.scienceworld | Step 12 - Observation: The sink is now activated.
+2024-08-30 15:34:50 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.0
+2024-08-30 15:34:50 | INFO | tasks.scienceworld | Step 13 - Action: deactivate sink
+2024-08-30 15:34:51 | INFO | tasks.scienceworld | Step 13 - Observation: The sink is now deactivated.
+2024-08-30 15:34:51 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.0
+2024-08-30 15:34:51 | INFO | tasks.scienceworld | Step 14 - Action: pick up metal pot
+2024-08-30 15:34:52 | INFO | tasks.scienceworld | Step 14 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:34:52 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.0
+2024-08-30 15:34:52 | INFO | tasks.scienceworld | Step 15 - Action: focus on substance in metal pot
+2024-08-30 15:34:53 | INFO | tasks.scienceworld | Step 15 - Observation: You focus on the water.
+2024-08-30 15:34:53 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:34:54 | FINISH | tasks.scienceworld | [1mExample 17 | Success: False , Progress Rate: 0.0 , Steps: 16
+2024-08-30 15:34:54 | GOAL | tasks.scienceworld | [1mExample 18 | Goal: task_name: freeze, var: 6, Your task is to freeze orange juice in the kitchen. The objects you can use are a metal pot, a freezer, a thermometer, and a fridge. You should pick up thermometer for temperature measurement. Take actions that will cause it to change its state of matter to a solid state. Finally, examine its altered state. You should wait and monitor the temperature of the water until it changes its state.
+2024-08-30 15:34:54 | INFO | scienceworld.scienceworld | Loading: freeze (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:34:54 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:34:57 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:34:57 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:34:57 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:34:58 | INFO | tasks.scienceworld | Step 02 - Action: wait1
+2024-08-30 15:34:58 | INFO | tasks.scienceworld | Step 02 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:34:58 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:34:59 | INFO | tasks.scienceworld | Step 03 - Action: OK.
+2024-08-30 15:34:59 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-08-30 15:34:59 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:35:01 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:35:01 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:01 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:35:02 | INFO | tasks.scienceworld | Step 05 - Action: wait1
+2024-08-30 15:35:02 | INFO | tasks.scienceworld | Step 05 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:35:02 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:35:03 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-30 15:35:03 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:35:03 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:35:05 | FINISH | tasks.scienceworld | [1mExample 18 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-30 15:35:05 | GOAL | tasks.scienceworld | [1mExample 19 | Goal: task_name: identify-life-stages-1, var: 6, Your task is to focus on the four life stages of the moth in the outside, starting from the earliest to the latest. You should repeat the wait action for some iterations until it moving on to the next stage, then focus on it. Continue this process until you have covered all four stages.
+2024-08-30 15:35:05 | INFO | scienceworld.scienceworld | Loading: identify-life-stages-1 (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:35:05 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 02 - Action: wait1
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 02 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:35:10 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:35:11 | INFO | tasks.scienceworld | Step 03 - Action: OK.
+2024-08-30 15:35:11 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-08-30 15:35:11 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:12 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:35:14 | INFO | tasks.scienceworld | Step 06 - Action: wait1
+2024-08-30 15:35:14 | INFO | tasks.scienceworld | Step 06 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:35:14 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:35:15 | INFO | tasks.scienceworld | Step 07 - Action: OK.
+2024-08-30 15:35:15 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:35:15 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:35:16 | INFO | tasks.scienceworld | Step 08 - Action: Based on the observations provided, it seems like you are in a greenhouse with various objects and a closed bee hive. Your current inventory includes an orange.
+2024-08-30 15:35:16 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:35:16 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:35:17 | INFO | tasks.scienceworld | Step 09 - Action: Based on the observations provided, it seems like you are in a greenhouse with various objects and a closed bee hive. Your current inventory includes an orange.
+2024-08-30 15:35:18 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:35:18 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:35:18 | INFO | tasks.scienceworld | Step 10 - Action: look around
+2024-08-30 15:35:18 | INFO | tasks.scienceworld | Step 10 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:35:18 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:35:19 | INFO | tasks.scienceworld | Step 11 - Action: open bee hive
+2024-08-30 15:35:19 | INFO | tasks.scienceworld | Step 11 - Observation: The bee hive is now open.
+2024-08-30 15:35:19 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-08-30 15:35:20 | INFO | tasks.scienceworld | Step 12 - Action: pick up shovel
+2024-08-30 15:35:20 | INFO | tasks.scienceworld | Step 12 - Observation: You move the shovel to the inventory.
+2024-08-30 15:35:20 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:35:21 | FINISH | tasks.scienceworld | [1mExample 19 | Success: False , Progress Rate: 0.0 , Steps: 13
+2024-08-30 15:35:21 | GOAL | tasks.scienceworld | [1mExample 20 | Goal: task_name: identify-life-stages-1, var: 7, Your task is to focus on the three life stages of the frog in the outside, starting from the earliest to the latest. You should repeat the wait action for some iterations until it moving on to the next stage, then focus on it. Continue this process until you have covered all three stages.
+2024-08-30 15:35:21 | INFO | scienceworld.scienceworld | Loading: identify-life-stages-1 (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:35:21 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:35:25 | INFO | tasks.scienceworld | Step 01 - Action: go to the kitchen
+2024-08-30 15:35:25 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the kitchen.
+2024-08-30 15:35:25 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:35:26 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:35:26 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the kitchen. In it, you see:
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed.
+	a freezer. The freezer door is closed.
+	a fridge. The fridge door is closed.
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed.
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated.
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:35:26 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:35:27 | INFO | tasks.scienceworld | Step 03 - Action: pick up the thermometer
+2024-08-30 15:35:27 | INFO | tasks.scienceworld | Step 03 - Observation: You move the thermometer to the inventory.
+2024-08-30 15:35:27 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:35:29 | INFO | tasks.scienceworld | Step 04 - Action: open cupboard
+2024-08-30 15:35:29 | INFO | tasks.scienceworld | Step 04 - Observation: The cupboard is now open.
+2024-08-30 15:35:29 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:35:30 | INFO | tasks.scienceworld | Step 05 - Action: pick up metal pot
+2024-08-30 15:35:30 | INFO | tasks.scienceworld | Step 05 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:35:30 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:35:31 | INFO | tasks.scienceworld | Step 06 - Action: move metal pot to sink
+2024-08-30 15:35:31 | INFO | tasks.scienceworld | Step 06 - Observation: You move the metal pot to the sink.
+2024-08-30 15:35:31 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:35:32 | INFO | tasks.scienceworld | Step 07 - Action: activate sink
+2024-08-30 15:35:32 | INFO | tasks.scienceworld | Step 07 - Observation: The sink is now activated.
+2024-08-30 15:35:32 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:35:33 | INFO | tasks.scienceworld | Step 08 - Action: deactivate sink
+2024-08-30 15:35:33 | INFO | tasks.scienceworld | Step 08 - Observation: The sink is now deactivated.
+2024-08-30 15:35:33 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:35:34 | INFO | tasks.scienceworld | Step 09 - Action: pick up metal pot
+2024-08-30 15:35:34 | INFO | tasks.scienceworld | Step 09 - Observation: You move the metal pot to the inventory.
+2024-08-30 15:35:34 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:35:35 | INFO | tasks.scienceworld | Step 10 - Action: focus on substance in metal pot
+2024-08-30 15:35:35 | INFO | tasks.scienceworld | Step 10 - Observation: You focus on the water.
+2024-08-30 15:35:35 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:35:37 | FINISH | tasks.scienceworld | [1mExample 20 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:35:37 | GOAL | tasks.scienceworld | [1mExample 21 | Goal: task_name: chemistry-mix-paint-tertiary-color, var: 5, Your task is to use chemistry to create green-blue paint. You should create green paint in a bowl in the workshop firstly. Then you should create green-blue paint in a bowl in the art studio. The objects you can use are a bowl, tin cups in the workshop and the wood cups in the art studio.
+2024-08-30 15:35:37 | INFO | scienceworld.scienceworld | Loading: chemistry-mix-paint-tertiary-color (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:35:38 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a bowl (containing nothing)
+	a desk. On the desk is: a drawer, a tin cup (containing red paint), a tin cup (containing blue paint), a tin cup (containing yellow paint).
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substances in the tin cups
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:42 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:35:43 | INFO | tasks.scienceworld | Step 03 - Action: activate red light bulb
+2024-08-30 15:35:43 | INFO | tasks.scienceworld | Step 03 - Observation: The red light bulb is not something that can be activated.
+2024-08-30 15:35:43 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:35:44 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:35:44 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:44 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:35:45 | INFO | tasks.scienceworld | Step 05 - Action: activate yellow light bulb
+2024-08-30 15:35:45 | INFO | tasks.scienceworld | Step 05 - Observation: The yellow light bulb is not something that can be activated.
+2024-08-30 15:35:45 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:35:46 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-30 15:35:46 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:46 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:35:47 | INFO | tasks.scienceworld | Step 07 - Action: activate blue light bulb
+2024-08-30 15:35:47 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:35:47 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:35:48 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-08-30 15:35:48 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:48 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:35:49 | INFO | tasks.scienceworld | Step 09 - Action: activate violet light bulb
+2024-08-30 15:35:49 | INFO | tasks.scienceworld | Step 09 - Observation: The violet light bulb is not something that can be activated.
+2024-08-30 15:35:49 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:35:50 | INFO | tasks.scienceworld | Step 10 - Action: check valid actions
+2024-08-30 15:35:50 | INFO | tasks.scienceworld | Step 10 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:50 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:35:50 | FINISH | tasks.scienceworld | [1mExample 21 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:35:50 | GOAL | tasks.scienceworld | [1mExample 22 | Goal: task_name: chemistry-mix-paint-tertiary-color, var: 6, Your task is to use chemistry to create yellow-green paint. You should create green paint in a jug in the art studio firstly. Then you should create yellow-green paint in a jug in the art studio. The objects you can use are a jug, wood cups in the art studio.
+2024-08-30 15:35:50 | INFO | scienceworld.scienceworld | Loading: chemistry-mix-paint-tertiary-color (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:35:51 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 01 - Action: check valid actions
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 01 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 02 - Action: pick up green paint
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 02 - Observation: No known action matches that input.
+2024-08-30 15:35:54 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:35:55 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:35:55 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:55 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 04 - Action: look at green paint
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:35:56 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:35:57 | INFO | tasks.scienceworld | Step 06 - Action: pick up yellow paint
+2024-08-30 15:35:57 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:35:57 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:35:58 | INFO | tasks.scienceworld | Step 07 - Action: pick up yellow paint
+2024-08-30 15:35:58 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:35:58 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:35:59 | INFO | tasks.scienceworld | Step 08 - Action: pick up yellow paint
+2024-08-30 15:35:59 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:35:59 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:36:00 | INFO | tasks.scienceworld | Step 09 - Action: pick up yellow paint
+2024-08-30 15:36:00 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:36:00 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:36:01 | INFO | tasks.scienceworld | Step 10 - Action: pick up yellow paint
+2024-08-30 15:36:01 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:36:01 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:36:02 | FINISH | tasks.scienceworld | [1mExample 22 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:36:02 | GOAL | tasks.scienceworld | [1mExample 23 | Goal: task_name: chemistry-mix-paint-tertiary-color, var: 7, Your task is to use chemistry to create yellow-green paint. You should create green paint in a jug in the art studio firstly. Then you should create yellow-green paint in a jug in the art studio. The objects you can use are a jug, wood cups in the art studio.
+2024-08-30 15:36:02 | INFO | scienceworld.scienceworld | Loading: chemistry-mix-paint-tertiary-color (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:36:02 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:36:06 | INFO | tasks.scienceworld | Step 01 - Action: go to the art studio
+2024-08-30 15:36:06 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the art studio.
+2024-08-30 15:36:06 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.25
+2024-08-30 15:36:07 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:36:07 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the art studio. In it, you see:
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed.
+	a paint closet. The paint closet door is closed.
+	a table. On the table is: a jug (containing nothing).
+	a wood cup (containing blue paint)
+	a wood cup (containing red paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)
+2024-08-30 15:36:07 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.25
+2024-08-30 15:36:08 | INFO | tasks.scienceworld | Step 03 - Action: open large cupboard
+2024-08-30 15:36:08 | INFO | tasks.scienceworld | Step 03 - Observation: The large cupboard is now open.
+2024-08-30 15:36:08 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.25
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 04 - Action: pick up blue paint
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 04 - Observation: Ambiguous request: Please enter the number for the action you intended (or blank to cancel):
+0:	pick up blue paint (in wood cup, in large cupboard, in art studio)
+1:	pick up blue paint (in wood cup, in art studio)
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.25
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 05 - Action: 1
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 05 - Observation: You can't pick up a liquid directly. Try pouring it from one container to another, or dunking empty containers into containers filled with the liquid.
+2024-08-30 15:36:09 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.25
+2024-08-30 15:36:10 | INFO | tasks.scienceworld | Step 06 - Action: pour blue paint into jug
+2024-08-30 15:36:10 | INFO | tasks.scienceworld | Step 06 - Observation: Ambiguous request: Please enter the number for the action you intended (or blank to cancel):
+0:	pour blue paint (in wood cup, in large cupboard, in art studio) in jug (in table, in art studio)
+1:	pour blue paint (in wood cup, in art studio) in jug (in table, in art studio)
+2024-08-30 15:36:10 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.25
+2024-08-30 15:36:11 | INFO | tasks.scienceworld | Step 07 - Action: 0
+2024-08-30 15:36:11 | INFO | tasks.scienceworld | Step 07 - Observation: You pour the blue paint into the jug.
+2024-08-30 15:36:11 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.25
+2024-08-30 15:36:12 | INFO | tasks.scienceworld | Step 08 - Action: pick up yellow paint
+2024-08-30 15:36:12 | INFO | tasks.scienceworld | Step 08 - Observation: Ambiguous request: Please enter the number for the action you intended (or blank to cancel):
+0:	pick up yellow paint (in wood cup, in large cupboard, in art studio)
+1:	pick up yellow paint (in wood cup, in art studio)
+2024-08-30 15:36:12 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.25
+2024-08-30 15:36:13 | INFO | tasks.scienceworld | Step 09 - Action: 1
+2024-08-30 15:36:13 | INFO | tasks.scienceworld | Step 09 - Observation: You can't pick up a liquid directly. Try pouring it from one container to another, or dunking empty containers into containers filled with the liquid.
+2024-08-30 15:36:13 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.25
+2024-08-30 15:36:14 | INFO | tasks.scienceworld | Step 10 - Action: pour yellow paint into jug
+2024-08-30 15:36:14 | INFO | tasks.scienceworld | Step 10 - Observation: Ambiguous request: Please enter the number for the action you intended (or blank to cancel):
+0:	pour yellow paint (in wood cup, in large cupboard, in art studio) in jug (in table, in art studio)
+1:	pour yellow paint (in wood cup, in art studio) in jug (in table, in art studio)
+2024-08-30 15:36:14 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.25
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:36:15 | FINISH | tasks.scienceworld | [1mExample 23 | Success: False , Progress Rate: 0.25 , Steps: 11
+2024-08-30 15:36:15 | GOAL | tasks.scienceworld | [1mExample 24 | Goal: task_name: find-animal, var: 5, Your task is to find a blue jay egg in the outside. First, focus on it. Then, move it to the purple box in the kitchen.
+2024-08-30 15:36:15 | INFO | scienceworld.scienceworld | Loading: find-animal (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:36:15 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:36:18 | INFO | tasks.scienceworld | Step 01 - Action: use the orange on the table
+2024-08-30 15:36:18 | INFO | tasks.scienceworld | Step 01 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:18 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:36:19 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:36:19 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:19 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:36:19 | INFO | tasks.scienceworld | Step 03 - Action: pick up the orange
+2024-08-30 15:36:20 | INFO | tasks.scienceworld | Step 03 - Observation: You move the orange to the inventory.
+2024-08-30 15:36:20 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:36:20 | INFO | tasks.scienceworld | Step 04 - Action: use the orange on the battery
+2024-08-30 15:36:20 | INFO | tasks.scienceworld | Step 04 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:20 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:36:21 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-30 15:36:21 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:21 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:36:22 | INFO | tasks.scienceworld | Step 06 - Action: put down the orange
+2024-08-30 15:36:22 | INFO | tasks.scienceworld | Step 06 - Observation: You move the orange to the workshop.
+2024-08-30 15:36:22 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:36:22 | INFO | tasks.scienceworld | Step 07 - Action: use the orange on the switch
+2024-08-30 15:36:23 | INFO | tasks.scienceworld | Step 07 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:23 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:36:23 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-08-30 15:36:23 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:23 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:36:24 | INFO | tasks.scienceworld | Step 09 - Action: put down the orange
+2024-08-30 15:36:24 | INFO | tasks.scienceworld | Step 09 - Observation: You move the orange to the workshop.
+2024-08-30 15:36:24 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:36:25 | INFO | tasks.scienceworld | Step 10 - Action: use the orange on the red light bulb
+2024-08-30 15:36:25 | INFO | tasks.scienceworld | Step 10 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:25 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:36:26 | FINISH | tasks.scienceworld | [1mExample 24 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:36:26 | GOAL | tasks.scienceworld | [1mExample 25 | Goal: task_name: find-animal, var: 6, Your task is to find a dove egg in the outside. First, focus on the thing. Then, move it to the red box in the bathroom.
+2024-08-30 15:36:26 | INFO | scienceworld.scienceworld | Loading: find-animal (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:36:26 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 2 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 7 (containing a cherry tree in the adult stage, soil)
+	a flower pot 8 (containing a apple tree in the adult stage, soil)
+	a flower pot 9 (containing nothing)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:36:29 | INFO | tasks.scienceworld | Step 01 - Action: go to the outside
+2024-08-30 15:36:29 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the outside.
+2024-08-30 15:36:29 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.2
+2024-08-30 15:36:29 | INFO | tasks.scienceworld | Step 02 - Action: pick up the dove egg
+2024-08-30 15:36:30 | INFO | tasks.scienceworld | Step 02 - Observation: You move the dove to the inventory.
+2024-08-30 15:36:30 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.4
+2024-08-30 15:36:32 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:36:32 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:32 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.4
+2024-08-30 15:36:34 | INFO | tasks.scienceworld | Step 04 - Action: use the dove egg on the flower pot 5
+2024-08-30 15:36:34 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-08-30 15:36:34 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.4
+2024-08-30 15:36:34 | INFO | tasks.scienceworld | Step 05 - Action: use the dove egg on the flower pot 9
+2024-08-30 15:36:35 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:36:35 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.4
+2024-08-30 15:36:35 | INFO | tasks.scienceworld | Step 06 - Action: use the dove egg on the flower pot 9
+2024-08-30 15:36:35 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:36:35 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.4
+2024-08-30 15:36:36 | INFO | tasks.scienceworld | Step 07 - Action: use the dove egg on the flower pot 5
+2024-08-30 15:36:36 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:36:36 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.4
+2024-08-30 15:36:37 | INFO | tasks.scienceworld | Step 08 - Action: use the dove egg on the flower pot 2
+2024-08-30 15:36:37 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:36:37 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.4
+2024-08-30 15:36:38 | INFO | tasks.scienceworld | Step 09 - Action: use the dove egg on the flower pot 7
+2024-08-30 15:36:38 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:36:38 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.4
+2024-08-30 15:36:39 | INFO | tasks.scienceworld | Step 10 - Action: use the dove egg on the cherry tree in flower pot 7
+2024-08-30 15:36:39 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:36:39 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.4
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:36:41 | FINISH | tasks.scienceworld | [1mExample 25 | Success: False , Progress Rate: 0.4 , Steps: 11
+2024-08-30 15:36:41 | GOAL | tasks.scienceworld | [1mExample 26 | Goal: task_name: find-animal, var: 7, Your task is to find a butterfly egg in the outside. First, focus on the thing. Then, move it to the green box in the bathroom.
+2024-08-30 15:36:41 | INFO | scienceworld.scienceworld | Loading: find-animal (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:36:41 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:36:44 | INFO | tasks.scienceworld | Step 01 - Action: go to the greenhouse
+2024-08-30 15:36:44 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the greenhouse.
+2024-08-30 15:36:44 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:36:45 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:36:46 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 1 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 5 (containing a substance called water)
+	a flower pot 6 (containing a apple tree in the adult stage, soil)
+	a flower pot 7 (containing a cherry tree in the adult stage, soil)
+	a flower pot 8 (containing a substance called water)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:36:46 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:36:46 | INFO | tasks.scienceworld | Step 03 - Action: focus on the substance in flower pot 5
+2024-08-30 15:36:47 | INFO | tasks.scienceworld | Step 03 - Observation: You focus on the water.
+2024-08-30 15:36:47 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 04 - Action: pour water into the bee hive
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 04 - Observation: Ambiguous request: Please enter the number for the action you intended (or blank to cancel):
+0:	pour water (in flower pot 5, in greenhouse) in bee hive (in greenhouse)
+1:	pour water (in flower pot 8, in greenhouse) in bee hive (in greenhouse)
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 05 - Action: 1
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 05 - Observation: That can't be moved there, because the bee hive isn't open.
+2024-08-30 15:36:48 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:36:49 | INFO | tasks.scienceworld | Step 06 - Action: open bee hive
+2024-08-30 15:36:50 | INFO | tasks.scienceworld | Step 06 - Observation: The bee hive is now open.
+2024-08-30 15:36:50 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:36:50 | INFO | tasks.scienceworld | Step 07 - Action: pour water in flower pot 8 into bee hive
+2024-08-30 15:36:51 | INFO | tasks.scienceworld | Step 07 - Observation: You pour the water into the bee hive.
+2024-08-30 15:36:51 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:36:51 | INFO | tasks.scienceworld | Step 08 - Action: OK.
+2024-08-30 15:36:52 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:36:52 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:36:53 | FINISH | tasks.scienceworld | [1mExample 26 | Success: False , Progress Rate: 0.0 , Steps: 9
+2024-08-30 15:36:53 | GOAL | tasks.scienceworld | [1mExample 27 | Goal: task_name: find-living-thing, var: 5, Your task is to find a blue jay egg in the outside. First, focus on the thing. Then, move it to the purple box in the kitchen.
+2024-08-30 15:36:53 | INFO | scienceworld.scienceworld | Loading: find-living-thing (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:36:53 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:36:57 | INFO | tasks.scienceworld | Step 01 - Action: use the orange on the table
+2024-08-30 15:36:57 | INFO | tasks.scienceworld | Step 01 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:57 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 03 - Action: use orange on switch
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 03 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:36:58 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:36:59 | INFO | tasks.scienceworld | Step 04 - Action: check valid actions
+2024-08-30 15:36:59 | INFO | tasks.scienceworld | Step 04 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:36:59 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:37:00 | INFO | tasks.scienceworld | Step 05 - Action: use orange on battery
+2024-08-30 15:37:00 | INFO | tasks.scienceworld | Step 05 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:37:00 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:37:01 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-30 15:37:01 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:01 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 07 - Action: use orange on red light bulb
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 07 - Observation: I'm not sure how to use the orange.
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:02 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:37:03 | INFO | tasks.scienceworld | Step 09 - Action: OK.
+2024-08-30 15:37:03 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:37:03 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:37:05 | FINISH | tasks.scienceworld | [1mExample 27 | Success: False , Progress Rate: 0.0 , Steps: 10
+2024-08-30 15:37:05 | GOAL | tasks.scienceworld | [1mExample 28 | Goal: task_name: find-living-thing, var: 6, Your task is to find a dove egg in the outside. First, focus on the thing. Then, move it to the red box in the bathroom.
+2024-08-30 15:37:05 | INFO | scienceworld.scienceworld | Loading: find-living-thing (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:37:05 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 1 (containing a apple tree in the adult stage, soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 5 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 8 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:37:09 | INFO | tasks.scienceworld | Step 01 - Action: go to the sink
+2024-08-30 15:37:09 | INFO | tasks.scienceworld | Step 01 - Observation: Its not clear how to go to/through a sink.
+2024-08-30 15:37:09 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:37:10 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:37:10 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:10 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:37:11 | INFO | tasks.scienceworld | Step 03 - Action: go to the sink
+2024-08-30 15:37:11 | INFO | tasks.scienceworld | Step 03 - Observation: Its not clear how to go to/through a sink.
+2024-08-30 15:37:11 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:37:12 | INFO | tasks.scienceworld | Step 04 - Action: activate sink
+2024-08-30 15:37:12 | INFO | tasks.scienceworld | Step 04 - Observation: The sink is now activated.
+2024-08-30 15:37:12 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:37:12 | INFO | tasks.scienceworld | Step 05 - Action: move metal pot to sink
+2024-08-30 15:37:13 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:37:13 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:37:13 | INFO | tasks.scienceworld | Step 06 - Action: move metal pot to the sink
+2024-08-30 15:37:14 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:37:14 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:37:14 | INFO | tasks.scienceworld | Step 07 - Action: move metal pot to the sink
+2024-08-30 15:37:15 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:37:15 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:37:15 | INFO | tasks.scienceworld | Step 08 - Action: move metal pot to the sink
+2024-08-30 15:37:16 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:37:16 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:37:16 | INFO | tasks.scienceworld | Step 09 - Action: move metal pot to the sink
+2024-08-30 15:37:17 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:37:17 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:37:18 | INFO | tasks.scienceworld | Step 10 - Action: move metal pot to the sink
+2024-08-30 15:37:18 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:37:18 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:37:19 | INFO | tasks.scienceworld | Step 11 - Action: move metal pot to the sink
+2024-08-30 15:37:19 | INFO | tasks.scienceworld | Step 11 - Observation: No known action matches that input.
+2024-08-30 15:37:19 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-08-30 15:37:20 | INFO | tasks.scienceworld | Step 12 - Action: move metal pot to the sink
+2024-08-30 15:37:20 | INFO | tasks.scienceworld | Step 12 - Observation: No known action matches that input.
+2024-08-30 15:37:20 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.0
+2024-08-30 15:37:20 | INFO | tasks.scienceworld | Step 13 - Action: move metal pot to the sink
+2024-08-30 15:37:21 | INFO | tasks.scienceworld | Step 13 - Observation: No known action matches that input.
+2024-08-30 15:37:21 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.0
+2024-08-30 15:37:21 | INFO | tasks.scienceworld | Step 14 - Action: move metal pot to the sink
+2024-08-30 15:37:22 | INFO | tasks.scienceworld | Step 14 - Observation: No known action matches that input.
+2024-08-30 15:37:22 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.0
+2024-08-30 15:37:22 | INFO | tasks.scienceworld | Step 15 - Action: move metal pot to the sink
+2024-08-30 15:37:23 | INFO | tasks.scienceworld | Step 15 - Observation: No known action matches that input.
+2024-08-30 15:37:23 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:37:23 | FINISH | tasks.scienceworld | [1mExample 28 | Success: False , Progress Rate: 0.0 , Steps: 16
+2024-08-30 15:37:23 | GOAL | tasks.scienceworld | [1mExample 29 | Goal: task_name: find-living-thing, var: 7, Your task is to find a butterfly egg in the outside. First, focus on the thing. Then, move it to the green box in the bathroom.
+2024-08-30 15:37:23 | INFO | scienceworld.scienceworld | Loading: find-living-thing (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:37:23 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:37:26 | INFO | tasks.scienceworld | Step 01 - Action: go to the greenhouse
+2024-08-30 15:37:26 | INFO | tasks.scienceworld | Step 01 - Observation: You move to the greenhouse.
+2024-08-30 15:37:26 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:37:27 | INFO | tasks.scienceworld | Step 02 - Action: look around
+2024-08-30 15:37:27 | INFO | tasks.scienceworld | Step 02 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 1 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 4 (containing a substance called water)
+	a flower pot 5 (containing a substance called water)
+	a flower pot 6 (containing a cherry tree in the adult stage, soil)
+	a flower pot 7 (containing a apple tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:37:27 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:37:28 | INFO | tasks.scienceworld | Step 03 - Action: focus on the bee hive
+2024-08-30 15:37:28 | INFO | tasks.scienceworld | Step 03 - Observation: You focus on the bee hive.
+2024-08-30 15:37:28 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:37:29 | INFO | tasks.scienceworld | Step 04 - Action: open bee hive
+2024-08-30 15:37:29 | INFO | tasks.scienceworld | Step 04 - Observation: The bee hive is now open.
+2024-08-30 15:37:29 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:37:30 | INFO | tasks.scienceworld | Step 05 - Action: pick up butterfly egg
+2024-08-30 15:37:30 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-08-30 15:37:30 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:37:30 | INFO | tasks.scienceworld | Step 06 - Action: check valid actions
+2024-08-30 15:37:31 | INFO | tasks.scienceworld | Step 06 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:31 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:37:31 | INFO | tasks.scienceworld | Step 07 - Action: wait1
+2024-08-30 15:37:31 | INFO | tasks.scienceworld | Step 07 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:37:31 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:37:32 | INFO | tasks.scienceworld | Step 08 - Action: wait1
+2024-08-30 15:37:32 | INFO | tasks.scienceworld | Step 08 - Observation: You decide to wait for 1 iterations.
+2024-08-30 15:37:32 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:37:33 | INFO | tasks.scienceworld | Step 09 - Action: OK.
+2024-08-30 15:37:33 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:37:33 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:37:36 | FINISH | tasks.scienceworld | [1mExample 29 | Success: False , Progress Rate: 0.0 , Steps: 10
+2024-08-30 15:37:36 | GOAL | tasks.scienceworld | [1mExample 30 | Goal: task_name: find-non-living-thing, var: 5, Your task is to find a counter in the kitchen.. First, focus on the thing. Then, move it to the purple box in the kitchen.
+2024-08-30 15:37:36 | INFO | scienceworld.scienceworld | Loading: find-non-living-thing (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:37:36 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:37:39 | INFO | tasks.scienceworld | Step 01 - Action: focus on the counter
+2024-08-30 15:37:39 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:37:39 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:37:40 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:37:40 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:40 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:37:41 | INFO | tasks.scienceworld | Step 03 - Action: focus on the table
+2024-08-30 15:37:41 | INFO | tasks.scienceworld | Step 03 - Observation: You focus on the table.
+2024-08-30 15:37:41 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:37:41 | INFO | tasks.scienceworld | Step 04 - Action: look at the battery
+2024-08-30 15:37:42 | INFO | tasks.scienceworld | Step 04 - Observation: a battery. its anode is connected to: nothing. its cathode is connected to: nothing.
+2024-08-30 15:37:42 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:37:42 | INFO | tasks.scienceworld | Step 05 - Action: pick up the battery
+2024-08-30 15:37:42 | INFO | tasks.scienceworld | Step 05 - Observation: You move the battery to the inventory.
+2024-08-30 15:37:42 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:37:43 | INFO | tasks.scienceworld | Step 06 - Action: look at the black wire
+2024-08-30 15:37:43 | INFO | tasks.scienceworld | Step 06 - Observation: a black wireits terminal 1 is connected to: nothing. its terminal 2 is connected to: nothing.
+2024-08-30 15:37:43 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:37:44 | INFO | tasks.scienceworld | Step 07 - Action: pick up the black wire
+2024-08-30 15:37:44 | INFO | tasks.scienceworld | Step 07 - Observation: You move the black wire to the inventory.
+2024-08-30 15:37:44 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 08 - Action: look at the blue wire
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 08 - Observation: a blue wireits terminal 1 is connected to: nothing. its terminal 2 is connected to: nothing.
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 09 - Action: pick up the blue wire
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 09 - Observation: You move the blue wire to the inventory.
+2024-08-30 15:37:45 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:37:46 | INFO | tasks.scienceworld | Step 10 - Action: look at the orange wire
+2024-08-30 15:37:46 | INFO | tasks.scienceworld | Step 10 - Observation: a orange wireits terminal 1 is connected to: nothing. its terminal 2 is connected to: nothing.
+2024-08-30 15:37:46 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:37:49 | FINISH | tasks.scienceworld | [1mExample 30 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:37:49 | GOAL | tasks.scienceworld | [1mExample 31 | Goal: task_name: find-non-living-thing, var: 6, Your task is to find a painting in the bathroom. First, focus on the thing. Then, move it to the red box in the bathroom.
+2024-08-30 15:37:49 | INFO | scienceworld.scienceworld | Loading: find-non-living-thing (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:37:49 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 7 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:37:51 | INFO | tasks.scienceworld | Step 01 - Action: go to the bathroom
+2024-08-30 15:37:52 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:37:52 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:37:52 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:37:52 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:52 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:37:53 | INFO | tasks.scienceworld | Step 03 - Action: go to the hallway
+2024-08-30 15:37:53 | INFO | tasks.scienceworld | Step 03 - Observation: You move to the hallway.
+2024-08-30 15:37:53 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-30 15:37:54 | INFO | tasks.scienceworld | Step 04 - Action: look around
+2024-08-30 15:37:54 | INFO | tasks.scienceworld | Step 04 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+2024-08-30 15:37:54 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:37:55 | INFO | tasks.scienceworld | Step 05 - Action: go to the greenhouse
+2024-08-30 15:37:55 | INFO | tasks.scienceworld | Step 05 - Observation: You move to the greenhouse.
+2024-08-30 15:37:55 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:37:55 | INFO | tasks.scienceworld | Step 06 - Action: look around
+2024-08-30 15:37:56 | INFO | tasks.scienceworld | Step 06 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a flower pot 1 (containing a substance called water)
+	a flower pot 2 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a substance called water)
+	a flower pot 7 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+2024-08-30 15:37:56 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:37:56 | INFO | tasks.scienceworld | Step 07 - Action: focus on the red box
+2024-08-30 15:37:57 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-08-30 15:37:57 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:37:57 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-08-30 15:37:57 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:57 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:37:58 | INFO | tasks.scienceworld | Step 09 - Action: focus on the red box
+2024-08-30 15:37:58 | INFO | tasks.scienceworld | Step 09 - Observation: No known action matches that input.
+2024-08-30 15:37:58 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:37:59 | INFO | tasks.scienceworld | Step 10 - Action: check valid actions
+2024-08-30 15:37:59 | INFO | tasks.scienceworld | Step 10 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:37:59 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-08-30 15:38:01 | FINISH | tasks.scienceworld | [1mExample 31 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:38:01 | GOAL | tasks.scienceworld | [1mExample 32 | Goal: task_name: find-non-living-thing, var: 7, Your task is to find a picture in the bathroom. First, focus on the thing. Then, move it to the green box in the bathroom.
+2024-08-30 15:38:01 | INFO | scienceworld.scienceworld | Loading: find-non-living-thing (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:38:01 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-30 15:38:04 | INFO | tasks.scienceworld | Step 01 - Action: focus on the picture
+2024-08-30 15:38:04 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-30 15:38:04 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-30 15:38:05 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-30 15:38:05 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:38:05 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-30 15:38:05 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-08-30 15:38:06 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:38:06 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:38:06 | INFO | tasks.scienceworld | Step 04 - Action: focus on the drawing
+2024-08-30 15:38:06 | INFO | tasks.scienceworld | Step 04 - Observation: You focus on the drawing.
+2024-08-30 15:38:06 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-30 15:38:07 | INFO | tasks.scienceworld | Step 05 - Action: look at drawing
+2024-08-30 15:38:07 | INFO | tasks.scienceworld | Step 05 - Observation: a drawing of a boat crossing a river. The artist is listed as Lily.
+2024-08-30 15:38:07 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-30 15:38:08 | INFO | tasks.scienceworld | Step 06 - Action: move picture to green box
+2024-08-30 15:38:08 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-30 15:38:08 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-30 15:38:09 | INFO | tasks.scienceworld | Step 07 - Action: check valid actions
+2024-08-30 15:38:09 | INFO | tasks.scienceworld | Step 07 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:38:09 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 08 - Action: move drawing to green box
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 08 - Observation: No known action matches that input.
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 09 - Action: check valid actions
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 09 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-30 15:38:10 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-08-30 15:38:12 | INFO | tasks.scienceworld | Step 10 - Action: move agent to the green box
+2024-08-30 15:38:12 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-08-30 15:38:12 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+completion_tokens:0, prompt_tokens:0, price=0.0
+2024-08-30 15:38:13 | FINISH | tasks.scienceworld | [1mExample 32 | Success: False , Progress Rate: 0.0 , Steps: 11
+2024-08-30 15:38:13 | GOAL | tasks.scienceworld | [1mExample 33 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-08-30 15:38:13 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-30 15:38:13 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 46, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 46, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to increase the ice's temperature using the blast furnace or stove', 'reasoning instruction': 'Need to change the state of matter of the ice', 'tool use instruction': 'stack ice blast furnace / stack ice stove'}
+                                                ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 46, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 46, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to increase the ice's temperature using the blast furnace or stove', 'reasoning instruction': 'Need to change the state of matter of the ice', 'tool use instruction': 'stack ice blast furnace / stack ice stove'}
+                                                ^
+SyntaxError: invalid syntax

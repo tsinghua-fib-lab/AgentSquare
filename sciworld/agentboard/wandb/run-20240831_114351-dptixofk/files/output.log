@@ -1,0 +1,53 @@
+2024-08-31 11:44:02 | INFO | __main__ | Tested tasks:
+2024-08-31 11:44:02 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 11:44:02 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 11:44:02 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 11:44:02 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60815)
+2024-08-31 11:44:02 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60815)
+2024-08-31 11:44:03 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60721
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 326, in read
+    value: JSONValue = self._loads(line)
+orjson.JSONDecodeError: input data is empty: line 1 column 1 (char 0)
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 258, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 256, in evaluate
+    self.env = load_environment("scienceworld", self.env_cfg)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/__init__.py", line 54, in load_environment
+    env = registry.get_environment_class(name).from_config(config)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 126, in from_config
+    env = cls(serverPath=serverPath,
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 25, in __init__
+    for item in jsonlines.Reader(f):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 434, in iter
+    yield self.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 331, in read
+    raise exc from orig_exc
+jsonlines.jsonlines.InvalidLineError: line contains invalid json: input data is empty: line 1 column 1 (char 0) (line 1)
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 326, in read
+    value: JSONValue = self._loads(line)
+orjson.JSONDecodeError: input data is empty: line 1 column 1 (char 0)
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 258, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 256, in evaluate
+    self.env = load_environment("scienceworld", self.env_cfg)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/__init__.py", line 54, in load_environment
+    env = registry.get_environment_class(name).from_config(config)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 126, in from_config
+    env = cls(serverPath=serverPath,
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 25, in __init__
+    for item in jsonlines.Reader(f):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 434, in iter
+    yield self.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/jsonlines/jsonlines.py", line 331, in read
+    raise exc from orig_exc
+jsonlines.jsonlines.InvalidLineError: line contains invalid json: input data is empty: line 1 column 1 (char 0) (line 1)

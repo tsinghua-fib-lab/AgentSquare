@@ -1,0 +1,218 @@
+wandb_version: 1
+
+llm_config:
+  desc: null
+  value:
+    name: gpt
+    engine: gpt-3.5-turbo-0125
+    context_length: 16384
+    use_azure: false
+    temperature: 0.0
+    top_p: 1
+    retry_delays: 20
+    max_retry_iters: 15
+    stop: '
+
+      '
+    use_parser: false
+agent_config:
+  desc: null
+  value:
+    name: VanillaAgent
+    memory_size: 100
+    need_goal: true
+env_config:
+  desc: null
+  value:
+    pddl:
+      name: pddl
+      game_name:
+      - gripper
+      - blockworld
+      - barman
+      - tyreworld
+      env_num_per_task: 20
+      check_actions: check valid actions
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/pddl_vanilla_prompt.json
+      label_path: /home/eric/AgentBoard/data/pddl/test.jsonl
+    jericho:
+      name: jericho
+      game_name:
+      - '905'
+      - acorncourt
+      - afflicted
+      - balances
+      - dragon
+      - jewel
+      - library
+      - omniquest
+      - reverb
+      - snacktime
+      - zenon
+      - zork1
+      - zork2
+      - zork3
+      - detective
+      - night
+      - pentari
+      - weapon
+      - huntdark
+      - loose
+      game_dir: /home/eric/AgentBoard/data/jericho/z-machine-games-master/jericho-game-suite
+      label_path: /home/eric/AgentBoard/data/jericho/test.jsonl
+      check_actions: check valid actions
+      check_inventory: inventory
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/jericho_vanilla_prompt.json
+    babyai:
+      name: babyai
+      seed: 1234
+      game_level:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 24
+      - 25
+      - 27
+      - 28
+      - 29
+      - 31
+      - 32
+      label_path: /home/eric/AgentBoard/data/babyai/test.jsonl
+      env_num_per_task: 4
+      check_actions: check valid actions
+      check_inventory: inventory
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/babyai_vanilla_prompt.json
+    tool-query:
+      name: tool-query
+      seed: 1234
+      dataset_dir: /home/eric/AgentBoard/data
+      result_dir: /home/eric/AgentBoard/results/query
+      check_actions: check_valid_actions
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts
+    tool-operation:
+      name: tool-operation
+      seed: 1234
+      dataset_dir: /home/eric/AgentBoard/data
+      result_dir: /home/eric/AgentBoard/results/operation
+      check_actions: check_valid_actions
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts
+    scienceworld:
+      name: scienceworld
+      envStepLimit: 30
+      seed: 0
+      check_inventory: true
+      check_actions: check valid actions
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/scienceworld_base.json
+      label_path: /home/eric/AgentBoard/data/scienceworld/test.jsonl
+    alfworld:
+      name: alfworld
+      base_config: /home/eric/AgentBoard/agentboard/environment/alfworld/base_config.yaml
+      split: eval_out_of_distribution
+      batch_size: 1
+      label_path: /home/eric/AgentBoard/data/alfworld/test.jsonl
+      check_inventory: true
+      check_actions: check valid actions
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/alfworld_base.json
+    webshop:
+      name: webshop
+      web_url: http://127.0.0.1:3000
+      subreward_floder: /home/eric/AgentBoard/agentboard/WebShop/subreward_log
+      max_step: 50
+      start_idx: 0
+      end_idx: 251
+      to_print: true
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/webshop_vanilla.json
+      label_path: /home/eric/AgentBoard/data/webshop/test.jsonl
+    webarena:
+      name: webarena
+      render: true
+      headless: true
+      slow_mo: 100
+      observation_type: accessibility_tree
+      current_viewport_only: true
+      viewport_size:
+        width: 1280
+        height: 720
+      save_trace_enabled: true
+      sleep_after_execution: 2.5
+      action_set_tag: id_accessibility_tree
+      render_screenshot: true
+      init_prompt_path: /home/eric/AgentBoard/agentboard/prompts/VanillaAgent/webbrowse_vanilla.json
+      label_path: /home/eric/AgentBoard/data/webarena/test.jsonl
+      start_test_id: 0
+      test_case_count: 245
+      parsing_failure_th: 5
+      repeating_action_failure_th: 5
+run_config:
+  desc: null
+  value:
+    max_num_steps: 30
+    wandb: true
+    project_name: evaluate-gpt-35-turbo-0125
+    baseline_dir: ../data/baseline_results
+    log_path: ../results/gpt-3.5-turbo-0125
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.13
+    cli_version: 0.17.6
+    framework: huggingface
+    huggingface_version: 4.44.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1724753036
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 30
+      - 41
+      - 49
+      - 53
+      - 55
+      - 71
+      - 95
+      - 97
+      - 105
+      2:
+      - 1
+      - 5
+      - 11
+      - 30
+      - 41
+      - 49
+      - 53
+      - 55
+      - 71
+      - 95
+      - 97
+      - 105
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.8.13
+      5: 0.17.6
+      6: 4.44.0
+      8:
+      - 5
+      13: linux-x86_64

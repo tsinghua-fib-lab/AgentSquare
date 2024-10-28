@@ -1,0 +1,60 @@
+2024-08-29 18:05:40 | INFO | __main__ | Tested tasks:
+2024-08-29 18:05:40 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-29 18:05:41 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-29 18:05:41 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-29 18:05:41 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60799)
+2024-08-29 18:05:41 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60799)
+2024-08-29 18:05:41 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60833
+2024-08-29 18:05:41 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-29 18:05:41 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-29 18:05:42 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to compare the life spans of all the animals in the 'outside' location', 'reasoning instruction': 'Find the animal with the longest life span', 'tool use instruction': None}
+                                                                                 ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to compare the life spans of all the animals in the 'outside' location', 'reasoning instruction': 'Find the animal with the longest life span', 'tool use instruction': None}
+                                                                                 ^
+SyntaxError: invalid syntax

@@ -1,0 +1,174 @@
+2024-08-31 15:08:14 | INFO | __main__ | Tested tasks:
+2024-08-31 15:08:14 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 15:08:14 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 15:08:14 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 15:08:14 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60843)
+2024-08-31 15:08:14 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60843)
+2024-08-31 15:08:15 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60795
+2024-08-31 15:08:15 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-31 15:08:15 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 15:08:15 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-31 15:08:36 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance called air
+2024-08-31 15:08:36 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-08-31 15:08:36 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+vote no match: ["Analyzing each choice:\n\n1. **Focus on the substance called air**: This choice doesn't directly align with the task of focusing on the animal with the longest lifespan. It is not relevant to the current objective.\n   \n2. **Focus on the substance called air**: This choice also does not contribute to the main goal of focusing on the animal with the longest lifespan. It is not the most promising action to take.\n   \n3. **Focus on the agent**: While this choice is also not directly related to the task of focusing on the animal with the longest lifespan, it is more promising than focusing on the substance called air as the agent might provide information or guidance related to animals.\n   \n4. **Focus on the animal with the longest life span**: This choice directly addresses the main goal given in the task. It is the most promising action to take in order to achieve the objective.\n   \n5. **Focus on the orange**: Focusing on the orange is unrelated to the task at hand, which is to focus on the animal with the longest life span.\n\nThe best answer is 4: focus on the animal with the longest life span."]
+vote no match: ['Analyzing each choice:\n- Answer 1: Focus on the substance called air. This choice does not align with the goal of focusing on the animal with the longest life span.\n- Answer 2: Focus on the substance called air. This choice also does not align with the goal.\n- Answer 3: Focus on the agent. This choice is unrelated to the goal of focusing on the animal with the longest life span.\n- Answer 4: Focus on the animal with the longest life span. This choice directly aligns with the goal provided.\n- Answer 5: Focus on the orange. This choice is unrelated to the goal and does not help achieve the objective.\n\nThe best answer is **4**.']
+vote no match: ['Analyzing each choice:\n- Answer 1: focusing on the substance called air may not directly help in finding the animal with the longest life span, as it is not related to the task at hand.\n- Answer 2: same as answer 1, focusing on the substance called air may not lead to the desired outcome.\n- Answer 3: focusing on the agent may provide some information, but it is not directly related to the task of finding the animal with the longest life span.\n- Answer 4: focusing on the animal with the longest life span is the most promising choice as it directly relates to the task at hand.\n- Answer 5: focusing on the orange is not relevant to the task of finding the animal with the longest life span.\n\nTherefore, the best answer is 4.']
+vote no match: ['Analyzing each choice:\n\n- Answer 1: Focusing on the substance called air does not help in achieving the goal of identifying the animal with the longest life span.\n- Answer 2: The same as Answer 1, focusing on the substance called air is not relevant to the task.\n- Answer 3: Focusing on the agent does not align with the task requirement of identifying the animal with the longest life span.\n- Answer 4: This choice is the most promising as it directly addresses the goal of focusing on the animal with the longest life span.\n- Answer 5: Focusing on the orange is not related to identifying the animal with the longest life span.\n\nTherefore, the best answer is 4.']
+vote no match: ['Analyzing each answer:\n- Answer 1 and Answer 2 both focus on the substance called air, which does not align with the goal of focusing on the animal with the longest lifespan.\n- Answer 3 focuses on the agent, which is not related to the goal of focusing on the animal with the longest lifespan.\n- Answer 4 directly addresses the goal by focusing on the animal with the longest lifespan.\n- Answer 5 focuses on the orange, which is not relevant to the goal.\n\nTherefore, the best answer is 4: focus on the animal with the longest life span.']
+2024-08-31 15:08:50 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-31 15:08:50 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-31 15:08:50 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+vote no match: ["Analyzing each choice:\n\nAnswer 1: check valid actions - This command is intended to help when the user's action cannot be understood. It is a general troubleshooting step and does not directly relate to the task of focusing on the substance called air.\n\nAnswer 2: Check valid actions - Similar to Answer 1, this command is a generic troubleshooting step and does not directly contribute to accomplishing the goal of focusing on the substance called air.\n\nAnswer 3: check valid actions - This choice is also a repetition of the previous two answers and does not provide a solution to the task at hand.\n\nAnswer 4: check valid actions - Once again, this choice is redundant and does not offer a direct way to achieve the objective of focusing on the substance called air.\n\nAnswer 5: check valid actions - Similarly to the previous responses, this choice does not address the task of focusing on the substance called air.\n\nThe best answer is 1."]
+vote no match: ['Analyzing each of the possible answers, we can see that they all suggest checking for valid actions. This is a generic command that can help in situations where your action is not understood, but in this case, it might not directly lead to the goal of focusing on the animal with the longest life span. \n\nTherefore, the best answer is 5.']
+vote no match: ['Analyzing each of the answers, we see that they all suggest the same action of "check valid actions" to get help when the action cannot be understood. In this case, this is a valid and helpful response as it can provide guidance on what actions can be taken next. \n\nThe best answer is 1.']
+vote no match: ['Analyzing each choice:\n\n- Answer 1: `check valid actions` is a command to check what actions are available in the current environment. This command seems relevant to helping the agent understand what actions it can take to accomplish its goal.\n\n- Answer 2: `Check valid actions` is the same as Answer 1, suggesting that it is relevant to helping the agent understand what actions are available.\n\n- Answer 3: `check valid actions` is a repetition of the same command, indicating its importance in providing the necessary information to the agent.\n\n- Answer 4: `check valid actions` again repeats the same command, reinforcing its importance in this context.\n\n- Answer 5: `check valid actions` is once more the same command, further emphasizing its significance in this situation.\n\nThe best answer is 1.']
+vote no match: ['Analyzing each choice, it is clear that they all have the same proposed action, which is to check valid actions. This is not a valid command in the given environment, as there is no specific action associated with checking valid actions. Therefore, none of the choices are promising.\n\nThe best answer is 0.']
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 276, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 208, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 37, in __call__
+    reasoning_result = self.get_votes(task_description, reasoning_results)
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 51, in get_votes
+    vote_outputs.append(get_chat(prompt=prompt, model=self.llm_type, temperature=1))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 276, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 208, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 37, in __call__
+    reasoning_result = self.get_votes(task_description, reasoning_results)
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 51, in get_votes
+    vote_outputs.append(get_chat(prompt=prompt, model=self.llm_type, temperature=1))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

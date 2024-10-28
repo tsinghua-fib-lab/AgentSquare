@@ -1,0 +1,228 @@
+2024-08-31 13:52:16 | INFO | __main__ | Tested tasks:
+2024-08-31 13:52:16 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 13:52:16 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 13:52:16 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 13:52:16 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60771)
+2024-08-31 13:52:16 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60771)
+2024-08-31 13:52:17 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60833
+2024-08-31 13:52:17 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-31 13:52:17 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:52:17 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-31 13:52:24 | GOAL | tasks.scienceworld | [1mExample 1 | Goal: task_name: lifespan-longest-lived, var: 6, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-31 13:52:24 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+Task lifespan-longest-lived (index: 0) failed, skipping to the next task.
+2024-08-31 13:52:24 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+Task lifespan-longest-lived (index: 1) failed, skipping to the next task.
+2024-08-31 13:52:29 | GOAL | tasks.scienceworld | [1mExample 2 | Goal: task_name: lifespan-longest-lived, var: 7, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-31 13:52:29 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:52:29 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+2024-08-31 13:52:34 | GOAL | tasks.scienceworld | [1mExample 3 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 5, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-31 13:52:34 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:52:34 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Task lifespan-longest-lived (index: 2) failed, skipping to the next task.
+2024-08-31 13:52:40 | GOAL | tasks.scienceworld | [1mExample 4 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 6, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-31 13:52:40 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:52:40 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+Task lifespan-longest-lived-then-shortest-lived (index: 3) failed, skipping to the next task.
+2024-08-31 13:52:46 | GOAL | tasks.scienceworld | [1mExample 5 | Goal: task_name: lifespan-longest-lived-then-shortest-lived, var: 7, Your task is to find the animal with the longest life span, then the shortest life span. Focus on the animal with the longest life span.  You also need to focus on the animal with the shortest life span. The animals are in the 'outside' location.
+2024-08-31 13:52:46 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived-then-shortest-lived (variation: 7) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-31 13:52:46 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the hallway. In it, you see:
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+In your inventory, you see:
+	an orange
+Task lifespan-longest-lived-then-shortest-lived (index: 4) failed, skipping to the next task.
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 279, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 208, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in __call__
+    reasoning_results.append(get_chat(prompt=prompt, model=self.llm_type, temperature=1, stop_strs=['\n']))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 279, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 208, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in __call__
+    reasoning_results.append(get_chat(prompt=prompt, model=self.llm_type, temperature=1, stop_strs=['\n']))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

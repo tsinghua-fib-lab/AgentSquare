@@ -1,0 +1,34 @@
+2024-08-27 18:04:08 | INFO | __main__ | Tested tasks:
+2024-08-27 18:04:08 | INFO | __main__ | Start evaluating task pddl
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 213, in main
+    task = load_task(task_name, run_config, llm_config, agent_task_config, env_config[task_name], llm=llm, PddlSolver=PddlSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/__init__.py", line 26, in load_task
+    task = registry.get_task_class(name).from_config(run_config, llm_config, agent_config, env_config, llm=llm, PddlSolver=PddlSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 359, in from_config
+    return cls(llm_name = llm_name,
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 49, in __init__
+    self.env_configs = self.get_all_environment_configs()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 87, in get_all_environment_configs
+    _, difficulties = self.load_annotation(self.label_path)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 73, in load_annotation
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/eric/AgentBoard/data/pddl/test.jsonl'
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 213, in main
+    task = load_task(task_name, run_config, llm_config, agent_task_config, env_config[task_name], llm=llm, PddlSolver=PddlSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/__init__.py", line 26, in load_task
+    task = registry.get_task_class(name).from_config(run_config, llm_config, agent_config, env_config, llm=llm, PddlSolver=PddlSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 359, in from_config
+    return cls(llm_name = llm_name,
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 49, in __init__
+    self.env_configs = self.get_all_environment_configs()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 87, in get_all_environment_configs
+    _, difficulties = self.load_annotation(self.label_path)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 73, in load_annotation
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/eric/AgentBoard/data/pddl/test.jsonl'

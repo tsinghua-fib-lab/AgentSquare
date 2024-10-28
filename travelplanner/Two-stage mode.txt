@@ -1,0 +1,20 @@
+conda activate travelplanner
+cd C:\Users\kyzhao\Desktop\Study\agentsquare\TravelPlanner_github\agents
+
+set OUTPUT_DIR=C:\Users\kyzhao\Desktop\Study\agentsquare\TravelPlanner_github\output_plan
+set MODEL_NAME=gpt-3.5-turbo-0125
+set OPENAI_API_KEY=
+set GOOGLE_API_KEY=1
+set SET_TYPE=validation
+
+
+set STRATEGY=direct
+set MODE=two-stage
+set TMP_DIR=C:\Users\kyzhao\Desktop\Study\agentsquare\TravelPlanner_github\temp
+set SUBMISSION_DIR=C:\Users\kyzhao\Desktop\Study\agentsquare\TravelPlanner_github\submission
+
+set EVALUATION_FILE_PATH=C:\Users\kyzhao\Desktop\Study\agentsquare\TravelPlanner_github\submission\validation_gpt-3.5-turbo-0125_two-stage_submission.json
+
+python tool_agents_plan.py --set_type %SET_TYPE% --output_dir %OUTPUT_DIR% --model_name %MODEL_NAME% --planning none --reasoning cot --tooluse io --memory none
+
+

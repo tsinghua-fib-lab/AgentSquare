@@ -1,0 +1,94 @@
+2024-08-28 18:52:41 | INFO | __main__ | Tested tasks:
+2024-08-28 18:52:41 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-28 18:52:41 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-28 18:52:41 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-28 18:52:41 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60757)
+2024-08-28 18:52:41 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60757)
+2024-08-28 18:52:42 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60701
+2024-08-28 18:52:42 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: lifespan-longest-lived, var: 5, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-28 18:52:42 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-28 18:52:42 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-08-28 18:52:46 | INFO | tasks.scienceworld | Step 01 - Action: focus on the orange
+2024-08-28 18:52:46 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the orange.
+2024-08-28 18:52:46 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-08-28 18:52:47 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-08-28 18:52:47 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-28 18:52:47 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-08-28 18:52:48 | INFO | tasks.scienceworld | Step 03 - Action: pick up the orange
+2024-08-28 18:52:48 | INFO | tasks.scienceworld | Step 03 - Observation: You move the orange to the inventory.
+2024-08-28 18:52:48 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-08-28 18:52:49 | INFO | tasks.scienceworld | Step 04 - Action: focus on the orange in the inventory
+2024-08-28 18:52:49 | INFO | tasks.scienceworld | Step 04 - Observation: You focus on the orange.
+2024-08-28 18:52:49 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-08-28 18:52:50 | INFO | tasks.scienceworld | Step 05 - Action: check valid actions
+2024-08-28 18:52:50 | INFO | tasks.scienceworld | Step 05 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-08-28 18:52:50 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-08-28 18:52:50 | INFO | tasks.scienceworld | Step 06 - Action: OK.
+2024-08-28 18:52:51 | INFO | tasks.scienceworld | Step 06 - Observation: No known action matches that input.
+2024-08-28 18:52:51 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-08-28 18:52:52 | FINISH | tasks.scienceworld | [1mExample 0 | Success: False , Progress Rate: 0.0 , Steps: 7
+2024-08-28 18:52:52 | GOAL | tasks.scienceworld | [1mExample 1 | Goal: task_name: lifespan-longest-lived, var: 6, Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.
+2024-08-28 18:52:52 | INFO | scienceworld.scienceworld | Loading: lifespan-longest-lived (variation: 6) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-08-28 18:52:52 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the greenhouse. In it, you see:
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed.
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+In your inventory, you see:
+	an orange
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to compare the life spans of all the animals in the 'outside' location', 'reasoning instruction': 'Focus on the animal with the longest life span', 'tool use instruction': None}
+                                                                                 ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 238, in <module>
+    main()
+  File "eval_main_sci.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 275, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 168, in evaluate_env
+    sub_tasks = self.scienceworldSolver.planning(task_type=task_type, task_description=task_description, feedback='')
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in __call__
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/AgentBoard_metasearch/agentboard/PLANNING_IO.py", line 44, in <listcomp>
+    dicts = [ast.literal_eval(ds) for ds in dict_strings]
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 59, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {'description': 'I need to compare the life spans of all the animals in the 'outside' location', 'reasoning instruction': 'Focus on the animal with the longest life span', 'tool use instruction': None}
+                                                                                 ^
+SyntaxError: invalid syntax
+completion_tokens:0, prompt_tokens:0, price=0.0

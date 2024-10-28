@@ -1,0 +1,150 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-08-31T05:41:15.095505",
+    "startedAt": "2024-08-31T05:41:13.266263",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--cfg-path",
+        "../eval_configs/main_results_all_tasks.yaml",
+        "--tasks",
+        "scienceworld",
+        "--wandb",
+        "--log_path",
+        "../results/gpt-3.5-turbo-0125",
+        "--project_name",
+        "evaluate-gpt-35-turbo-0125",
+        "--baseline_dir",
+        "../data/baseline_results",
+        "--planning",
+        "IO",
+        "--reasoning",
+        "ToT",
+        "--memory",
+        "None",
+        "--tooluse",
+        "None",
+        "--model",
+        "gpt-3.5-turbo-0125"
+    ],
+    "state": "running",
+    "program": "eval_main_sci.py",
+    "codePathLocal": "eval_main_sci.py",
+    "codePath": "agentboard/eval_main_sci.py",
+    "git": {
+        "remote": "https://github.com/hkust-nlp/AgentBoard.git",
+        "commit": "bb7255e2daf1989069a186dad9e53f70680961db"
+    },
+    "email": null,
+    "root": "/home/zky/AgentBoard_metasearch",
+    "host": "LAPTOP-5PO7LLCG",
+    "username": "zky",
+    "executable": "/home/zky/anaconda3/envs/AgentBoard/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3792.635999999999,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3792.636,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 38.991905212402344
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 7.359710693359375
+    }
+}

@@ -1,0 +1,197 @@
+2024-09-04 17:39:45 | INFO | __main__ | Tested tasks:
+2024-09-04 17:39:45 | INFO | __main__ | Start evaluating task scienceworld
+2024-09-04 17:39:45 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 17:39:45 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 17:39:45 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60777)
+2024-09-04 17:39:45 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60777)
+2024-09-04 17:39:46 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60829
+2024-09-04 17:39:46 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-09-04 17:39:46 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-09-04 17:39:46 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-09-04 17:40:15 | INFO | tasks.scienceworld | Step 01 - Action: go to the kitchen
+2024-09-04 17:40:15 | INFO | tasks.scienceworld | Step 01 - Observation: No known action matches that input.
+2024-09-04 17:40:15 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+Step 01 - Action: go to the kitchen
+Step 01 - Observation: No known action matches that input.
+Step 01 - Progress Rate: 0.0
+2024-09-04 17:40:34 | INFO | tasks.scienceworld | Step 02 - Action: check valid actions
+2024-09-04 17:40:34 | INFO | tasks.scienceworld | Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 17:40:34 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+Step 02 - Action: check valid actions
+Step 02 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+Step 02 - Progress Rate: 0.0
+2024-09-04 17:40:53 | INFO | tasks.scienceworld | Step 03 - Action: pick up metal pot
+2024-09-04 17:40:53 | INFO | tasks.scienceworld | Step 03 - Observation: No known action matches that input.
+2024-09-04 17:40:53 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+Step 03 - Action: pick up metal pot
+Step 03 - Observation: No known action matches that input.
+Step 03 - Progress Rate: 0.0
+2024-09-04 17:41:13 | INFO | tasks.scienceworld | Step 04 - Action: pick up the metal pot
+2024-09-04 17:41:13 | INFO | tasks.scienceworld | Step 04 - Observation: No known action matches that input.
+2024-09-04 17:41:13 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+Step 04 - Action: pick up the metal pot
+Step 04 - Observation: No known action matches that input.
+Step 04 - Progress Rate: 0.0
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 362, in <module>
+  File "eval_main_sci.py", line 324, in main
+    task = load_task(task_name, run_config, llm_config, agent_task_config, env_config[task_name], llm=llm, scienceworldSolver=scienceworldSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 287, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 213, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 26, in __call__
+    reasoning_result = self.get_votes(task_description, reasoning_results)
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in get_votes
+    vote_outputs = [llm_response(prompt=prompt, model=self.llm_type, temperature=1) for i in range(5)]
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in <listcomp>
+    vote_outputs = [llm_response(prompt=prompt, model=self.llm_type, temperature=1) for i in range(5)]
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 67, in llm_response
+    comtent = get_chat(prompt=prompt, model=model, temperature=temperature, max_tokens=max_tokens, stop_strs=stop_strs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 51, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 362, in <module>
+  File "eval_main_sci.py", line 324, in main
+    task = load_task(task_name, run_config, llm_config, agent_task_config, env_config[task_name], llm=llm, scienceworldSolver=scienceworldSolver)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 287, in evaluate
+    score, done, grounding_acc, score_change_record, num_steps = self.evaluate_env(index, task_name, var, modified_goal)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 213, in evaluate_env
+    action_raw = self.scienceworldSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 26, in __call__
+    reasoning_result = self.get_votes(task_description, reasoning_results)
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in get_votes
+    vote_outputs = [llm_response(prompt=prompt, model=self.llm_type, temperature=1) for i in range(5)]
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_TOT.py", line 35, in <listcomp>
+    vote_outputs = [llm_response(prompt=prompt, model=self.llm_type, temperature=1) for i in range(5)]
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 67, in llm_response
+    comtent = get_chat(prompt=prompt, model=model, temperature=temperature, max_tokens=max_tokens, stop_strs=stop_strs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 51, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

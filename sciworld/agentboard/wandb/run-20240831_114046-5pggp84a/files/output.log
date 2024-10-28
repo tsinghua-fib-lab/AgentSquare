@@ -1,0 +1,35 @@
+2024-08-31 11:40:58 | INFO | __main__ | Tested tasks:
+2024-08-31 11:40:58 | INFO | __main__ | Start evaluating task scienceworld
+2024-08-31 11:40:58 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 11:40:58 | INFO | py4j.java_gateway | Callback Server Starting
+2024-08-31 11:40:58 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60741)
+2024-08-31 11:40:58 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60741)
+2024-08-31 11:40:59 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60771
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 258, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 256, in evaluate
+    self.env = load_environment("scienceworld", self.env_cfg)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/__init__.py", line 54, in load_environment
+    env = registry.get_environment_class(name).from_config(config)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 126, in from_config
+    env = cls(serverPath=serverPath,
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 24, in __init__
+    with open(self.label_path, 'r+', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zky/AgentBoard/data/scienceworld/test1.jsonl'
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 258, in <module>
+    main()
+  File "eval_main_sci.py", line 236, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/scienceworld.py", line 256, in evaluate
+    self.env = load_environment("scienceworld", self.env_cfg)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/__init__.py", line 54, in load_environment
+    env = registry.get_environment_class(name).from_config(config)
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 126, in from_config
+    env = cls(serverPath=serverPath,
+  File "/home/zky/AgentBoard_metasearch/agentboard/environment/scienceworld_env.py", line 24, in __init__
+    with open(self.label_path, 'r+', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zky/AgentBoard/data/scienceworld/test1.jsonl'

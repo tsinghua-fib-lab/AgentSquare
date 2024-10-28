@@ -1,0 +1,82 @@
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Current SDK version is 0.17.6
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Configure stats pid to 130112
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Loading settings from /home/zky/.config/wandb/settings
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Loading settings from /home/zky/AgentBoard_metasearch/agentboard/wandb/settings
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'agentboard/eval_main_sci.py', 'program_abspath': '/home/zky/AgentBoard_metasearch/agentboard/eval_main_sci.py', 'program': 'eval_main_sci.py'}
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:_log_setup():521] Logging user logs to /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240829_181059-x6mgrrnn/logs/debug.log
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:_log_setup():522] Logging internal logs to /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240829_181059-x6mgrrnn/logs/debug-internal.log
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:init():559] calling init triggers
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:init():566] wandb.init called with sweep_config: {}
+config: {'llm_config': {'name': 'gpt', 'engine': 'gpt-3.5-turbo-0125', 'context_length': 16384, 'use_azure': False, 'temperature': 0.0, 'top_p': 1, 'retry_delays': 20, 'max_retry_iters': 15, 'stop': '\n', 'use_parser': False}, 'agent_config': {'name': 'VanillaAgent', 'memory_size': 100, 'need_goal': True}, 'env_config': {'pddl': {'name': 'pddl', 'game_name': ['gripper', 'blockworld', 'barman', 'tyreworld'], 'env_num_per_task': 20, 'check_actions': 'check valid actions', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/pddl_vanilla_prompt.json', 'label_path': '/home/zky/AgentBoard/data/pddl/test.jsonl'}, 'jericho': {'name': 'jericho', 'game_name': ['905', 'acorncourt', 'afflicted', 'balances', 'dragon', 'jewel', 'library', 'omniquest', 'reverb', 'snacktime', 'zenon', 'zork1', 'zork2', 'zork3', 'detective', 'night', 'pentari', 'weapon', 'huntdark', 'loose'], 'game_dir': '/home/zky/AgentBoard/data/jericho/z-machine-games-master/jericho-game-suite', 'label_path': '/home/zky/AgentBoard/data/jericho/test.jsonl', 'check_actions': 'check valid actions', 'check_inventory': 'inventory', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/jericho_vanilla_prompt.json'}, 'babyai': {'name': 'babyai', 'seed': 1234, 'game_level': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, 27, 28, 29, 31, 32], 'label_path': '/home/zky/AgentBoard/data/babyai/test.jsonl', 'env_num_per_task': 4, 'check_actions': 'check valid actions', 'check_inventory': 'inventory', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/babyai_vanilla_prompt.json'}, 'tool-query': {'name': 'tool-query', 'seed': 1234, 'dataset_dir': '/home/zky/AgentBoard/data', 'result_dir': '/home/zky/AgentBoard/results/query', 'check_actions': 'check_valid_actions', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts'}, 'tool-operation': {'name': 'tool-operation', 'seed': 1234, 'dataset_dir': '/home/zky/AgentBoard/data', 'result_dir': '/home/zky/AgentBoard/results/operation', 'check_actions': 'check_valid_actions', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts'}, 'scienceworld': {'name': 'scienceworld', 'envStepLimit': 30, 'seed': 0, 'check_inventory': True, 'check_actions': 'check valid actions', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/scienceworld_base.json', 'label_path': '/home/zky/AgentBoard/data/scienceworld/test.jsonl'}, 'alfworld': {'name': 'alfworld', 'base_config': '/home/zky/AgentBoard/agentboard/environment/alfworld/base_config.yaml', 'split': 'eval_out_of_distribution', 'batch_size': 1, 'label_path': '/home/zky/AgentBoard/data/alfworld/test.jsonl', 'check_inventory': True, 'check_actions': 'check valid actions', 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/alfworld_base.json'}, 'webshop': {'name': 'webshop', 'web_url': 'http://127.0.0.1:3000', 'subreward_floder': '/home/zky/AgentBoard/agentboard/WebShop/subreward_log', 'max_step': 50, 'start_idx': 0, 'end_idx': 251, 'to_print': True, 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/webshop_vanilla.json', 'label_path': '/home/zky/AgentBoard/data/webshop/test.jsonl'}, 'webarena': {'name': 'webarena', 'render': True, 'headless': True, 'slow_mo': 100, 'observation_type': 'accessibility_tree', 'current_viewport_only': True, 'viewport_size': {'width': 1280, 'height': 720}, 'save_trace_enabled': True, 'sleep_after_execution': 2.5, 'action_set_tag': 'id_accessibility_tree', 'render_screenshot': True, 'init_prompt_path': '/home/zky/AgentBoard/agentboard/prompts/VanillaAgent/webbrowse_vanilla.json', 'label_path': '/home/zky/AgentBoard/data/webarena/test.jsonl', 'start_test_id': 0, 'test_case_count': 245, 'parsing_failure_th': 5, 'repeating_action_failure_th': 5}}, 'run_config': {'max_num_steps': 30, 'wandb': True, 'project_name': 'evaluate-gpt-35-turbo-0125', 'baseline_dir': '../data/baseline_results', 'log_path': '../results/gpt-3.5-turbo-0125'}}
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:init():609] starting backend
+2024-08-29 18:10:59,114 INFO    MainThread:130112 [wandb_init.py:init():613] setting up manager
+2024-08-29 18:10:59,115 INFO    MainThread:130112 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-08-29 18:10:59,116 INFO    MainThread:130112 [wandb_init.py:init():621] backend started and connected
+2024-08-29 18:10:59,121 INFO    MainThread:130112 [wandb_init.py:init():716] updated telemetry
+2024-08-29 18:10:59,139 INFO    MainThread:130112 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-08-29 18:10:59,943 INFO    MainThread:130112 [wandb_run.py:_on_init():2438] communicating current version
+2024-08-29 18:11:00,514 INFO    MainThread:130112 [wandb_run.py:_on_init():2447] got version response upgrade_message: "wandb version 0.17.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-08-29 18:11:00,515 INFO    MainThread:130112 [wandb_init.py:init():800] starting run threads in backend
+2024-08-29 18:11:09,924 INFO    MainThread:130112 [wandb_run.py:_console_start():2416] atexit reg
+2024-08-29 18:11:09,924 INFO    MainThread:130112 [wandb_run.py:_redirect():2258] redirect: wrap_raw
+2024-08-29 18:11:09,925 INFO    MainThread:130112 [wandb_run.py:_redirect():2323] Wrapping output streams.
+2024-08-29 18:11:09,925 INFO    MainThread:130112 [wandb_run.py:_redirect():2348] Redirects installed.
+2024-08-29 18:11:09,926 INFO    MainThread:130112 [wandb_init.py:init():843] run started, returning control to user process
+2024-08-29 18:16:15,396 INFO    MainThread:130112 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1014, in _prepare_proxy
+    conn.connect()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+2024-08-29 18:21:28,456 WARNING MsgRouterThr:130112 [router.py:message_loop():77] message_loop has been closed

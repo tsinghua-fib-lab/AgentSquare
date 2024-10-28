@@ -1,0 +1,249 @@
+2024-08-31 13:52:04,847 INFO    StreamThr :587298 [internal.py:wandb_internal():85] W&B internal server running at pid: 587298, started at: 2024-08-31 13:52:04.846143
+2024-08-31 13:52:04,850 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status
+2024-08-31 13:52:04,852 INFO    WriterThread:587298 [datastore.py:open_for_write():87] open: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/run-po4jm81r.wandb
+2024-08-31 13:52:04,853 DEBUG   SenderThread:587298 [sender.py:send():391] send: header
+2024-08-31 13:52:04,876 DEBUG   SenderThread:587298 [sender.py:send():391] send: run
+2024-08-31 13:52:05,734 INFO    SenderThread:587298 [dir_watcher.py:__init__():211] watching files in: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files
+2024-08-31 13:52:05,734 INFO    SenderThread:587298 [sender.py:_start_run_threads():1200] run started: po4jm81r with start time 1725083524.846124
+2024-08-31 13:52:05,740 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: check_version
+2024-08-31 13:52:05,740 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: check_version
+2024-08-31 13:52:06,300 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: run_start
+2024-08-31 13:52:06,312 DEBUG   HandlerThread:587298 [system_info.py:__init__():26] System info init
+2024-08-31 13:52:06,312 DEBUG   HandlerThread:587298 [system_info.py:__init__():41] System info init done
+2024-08-31 13:52:06,312 INFO    HandlerThread:587298 [system_monitor.py:start():194] Starting system monitor
+2024-08-31 13:52:06,312 INFO    SystemMonitor:587298 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-31 13:52:06,313 INFO    HandlerThread:587298 [system_monitor.py:probe():214] Collecting system info
+2024-08-31 13:52:06,314 INFO    SystemMonitor:587298 [interfaces.py:start():188] Started cpu monitoring
+2024-08-31 13:52:06,315 INFO    SystemMonitor:587298 [interfaces.py:start():188] Started disk monitoring
+2024-08-31 13:52:06,316 INFO    SystemMonitor:587298 [interfaces.py:start():188] Started gpu monitoring
+2024-08-31 13:52:06,316 INFO    SystemMonitor:587298 [interfaces.py:start():188] Started memory monitoring
+2024-08-31 13:52:06,318 INFO    SystemMonitor:587298 [interfaces.py:start():188] Started network monitoring
+2024-08-31 13:52:06,328 DEBUG   HandlerThread:587298 [system_info.py:probe():152] Probing system
+2024-08-31 13:52:06,382 DEBUG   HandlerThread:587298 [system_info.py:_probe_git():137] Probing git
+2024-08-31 13:52:06,390 DEBUG   HandlerThread:587298 [system_info.py:_probe_git():145] Probing git done
+2024-08-31 13:52:06,391 DEBUG   HandlerThread:587298 [system_info.py:probe():200] Probing system done
+2024-08-31 13:52:06,391 DEBUG   HandlerThread:587298 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2024-08-31T05:52:06.328312', 'startedAt': '2024-08-31T05:52:04.838245', 'docker': None, 'cuda': None, 'args': ('--cfg-path', '../eval_configs/main_results_all_tasks.yaml', '--tasks', 'scienceworld', '--wandb', '--log_path', '../results/gpt-3.5-turbo-0125', '--project_name', 'evaluate-gpt-35-turbo-0125', '--baseline_dir', '../data/baseline_results', '--planning', 'IO', '--reasoning', 'ToT', '--memory', 'None', '--tooluse', 'None', '--model', 'gpt-3.5-turbo-0125'), 'state': 'running', 'program': 'eval_main_sci.py', 'codePathLocal': 'eval_main_sci.py', 'codePath': 'agentboard/eval_main_sci.py', 'git': {'remote': 'https://github.com/hkust-nlp/AgentBoard.git', 'commit': 'bb7255e2daf1989069a186dad9e53f70680961db'}, 'email': None, 'root': '/home/zky/AgentBoard_metasearch', 'host': 'LAPTOP-5PO7LLCG', 'username': 'zky', 'executable': '/home/zky/anaconda3/envs/AgentBoard/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3792.635999999999, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}, {'current': 3792.636, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 38.99205780029297}}, 'gpu': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 7.359710693359375}}
+2024-08-31 13:52:06,391 INFO    HandlerThread:587298 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-31 13:52:06,391 INFO    HandlerThread:587298 [system_monitor.py:probe():227] Publishing system info
+2024-08-31 13:52:06,391 DEBUG   HandlerThread:587298 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-31 13:52:06,735 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/conda-environment.yaml
+2024-08-31 13:52:16,396 DEBUG   HandlerThread:587298 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-31 13:52:16,397 INFO    HandlerThread:587298 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-31 13:52:16,404 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:16,404 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: keepalive
+2024-08-31 13:52:16,405 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:16,405 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: keepalive
+2024-08-31 13:52:16,405 DEBUG   SenderThread:587298 [sender.py:send():391] send: files
+2024-08-31 13:52:16,405 INFO    SenderThread:587298 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-31 13:52:16,586 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-31 13:52:16,586 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: python_packages
+2024-08-31 13:52:16,588 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:16,588 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-31 13:52:16,589 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: stop_status
+2024-08-31 13:52:16,738 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/conda-environment.yaml
+2024-08-31 13:52:16,738 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/wandb-metadata.json
+2024-08-31 13:52:16,738 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/requirements.txt
+2024-08-31 13:52:17,122 DEBUG   SenderThread:587298 [sender.py:send():391] send: telemetry
+2024-08-31 13:52:17,587 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:17,647 INFO    wandb-upload_0:587298 [upload_job.py:push():130] Uploaded file /tmp/tmpi2nywr1ywandb/g4nh6xrv-wandb-metadata.json
+2024-08-31 13:52:17,738 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:18,587 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:19,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:19,739 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:20,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:20,993 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:21,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:22,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:23,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:24,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:25,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:25,742 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:26,587 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:26,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:26,742 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:27,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:27,742 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:28,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:29,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:30,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:30,744 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:31,590 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-31 13:52:31,590 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: stop_status
+2024-08-31 13:52:31,635 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:31,744 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:32,141 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:32,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:33,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:34,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:35,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:35,746 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:36,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:36,746 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:37,595 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:37,596 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:38,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:38,747 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/config.yaml
+2024-08-31 13:52:39,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:40,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:41,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:41,748 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:42,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:42,749 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:43,591 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:43,592 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:44,593 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:45,593 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:46,589 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-31 13:52:46,590 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: stop_status
+2024-08-31 13:52:46,593 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:47,593 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:47,750 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:48,593 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:48,751 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:48,900 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:48,905 DEBUG   SenderThread:587298 [sender.py:send():391] send: exit
+2024-08-31 13:52:48,905 INFO    SenderThread:587298 [sender.py:send_exit():598] handling exit code: 255
+2024-08-31 13:52:48,905 INFO    SenderThread:587298 [sender.py:send_exit():600] handling runtime: 42
+2024-08-31 13:52:48,906 INFO    SenderThread:587298 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-31 13:52:48,906 INFO    SenderThread:587298 [sender.py:send_exit():606] send defer
+2024-08-31 13:52:48,906 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,906 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-31 13:52:48,906 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,906 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-31 13:52:48,907 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 1
+2024-08-31 13:52:48,907 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,907 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-31 13:52:48,907 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,907 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-31 13:52:48,907 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 2
+2024-08-31 13:52:48,907 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,907 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-31 13:52:48,907 INFO    HandlerThread:587298 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-31 13:52:48,907 DEBUG   SystemMonitor:587298 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-31 13:52:48,908 INFO    HandlerThread:587298 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-31 13:52:48,908 DEBUG   SystemMonitor:587298 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-31 13:52:48,908 INFO    HandlerThread:587298 [interfaces.py:finish():200] Joined disk monitor
+2024-08-31 13:52:48,908 DEBUG   SystemMonitor:587298 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-31 13:52:48,918 INFO    HandlerThread:587298 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-31 13:52:48,919 INFO    HandlerThread:587298 [interfaces.py:finish():200] Joined memory monitor
+2024-08-31 13:52:48,919 INFO    HandlerThread:587298 [interfaces.py:finish():200] Joined network monitor
+2024-08-31 13:52:48,919 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,919 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-31 13:52:48,920 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 3
+2024-08-31 13:52:48,920 DEBUG   SenderThread:587298 [sender.py:send():391] send: stats
+2024-08-31 13:52:48,920 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,920 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-31 13:52:48,920 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,920 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-31 13:52:48,920 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 4
+2024-08-31 13:52:48,920 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,921 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-31 13:52:48,921 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,921 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-31 13:52:48,921 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 5
+2024-08-31 13:52:48,921 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,921 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-31 13:52:48,921 DEBUG   SenderThread:587298 [sender.py:send():391] send: summary
+2024-08-31 13:52:48,922 INFO    SenderThread:587298 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-31 13:52:48,922 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,922 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-31 13:52:48,922 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 6
+2024-08-31 13:52:48,922 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,922 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-31 13:52:48,923 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,923 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-31 13:52:48,923 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 7
+2024-08-31 13:52:48,923 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:48,923 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:48,923 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-31 13:52:48,923 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:48,923 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-31 13:52:49,751 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/wandb-summary.json
+2024-08-31 13:52:49,905 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:51,752 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:52,568 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 8
+2024-08-31 13:52:52,568 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:52,568 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:52,569 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-31 13:52:52,569 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:52,569 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-31 13:52:52,569 INFO    SenderThread:587298 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-31 13:52:52,570 INFO    SenderThread:587298 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-31 13:52:52,590 INFO    SenderThread:587298 [job_builder.py:build():545] adding wandb-job metadata file
+2024-08-31 13:52:52,599 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 9
+2024-08-31 13:52:52,600 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:52,600 DEBUG   SenderThread:587298 [sender.py:send():391] send: artifact
+2024-08-31 13:52:52,600 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-31 13:52:52,753 INFO    Thread-12 :587298 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:52,907 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:54,063 INFO    SenderThread:587298 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hkust-nlp_AgentBoard.git_agentboard_eval_main_sci.py - {'id': 'QXJ0aWZhY3Q6MTE2OTM0Nzk1OA==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxODAyNjQ5NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3Mzc4NTYxNg==', 'versionIndex': 3}}}
+2024-08-31 13:52:54,063 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:54,063 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-31 13:52:54,064 INFO    SenderThread:587298 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-31 13:52:54,064 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: status_report
+2024-08-31 13:52:54,754 INFO    SenderThread:587298 [dir_watcher.py:finish():388] scan: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files
+2024-08-31 13:52:54,754 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/wandb-summary.json wandb-summary.json
+2024-08-31 13:52:54,755 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/wandb-metadata.json wandb-metadata.json
+2024-08-31 13:52:54,755 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log output.log
+2024-08-31 13:52:54,757 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/requirements.txt requirements.txt
+2024-08-31 13:52:54,760 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/config.yaml config.yaml
+2024-08-31 13:52:54,761 INFO    SenderThread:587298 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/conda-environment.yaml conda-environment.yaml
+2024-08-31 13:52:54,765 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 10
+2024-08-31 13:52:54,765 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:54,765 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:54,766 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-31 13:52:54,769 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:54,770 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-31 13:52:54,770 INFO    SenderThread:587298 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-31 13:52:54,908 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:54,909 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:55,433 INFO    wandb-upload_0:587298 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/wandb-summary.json
+2024-08-31 13:52:55,852 INFO    wandb-upload_1:587298 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/output.log
+2024-08-31 13:52:55,909 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:55,910 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:55,916 INFO    wandb-upload_2:587298 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/requirements.txt
+2024-08-31 13:52:55,922 INFO    wandb-upload_3:587298 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/config.yaml
+2024-08-31 13:52:55,928 INFO    wandb-upload_4:587298 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/files/conda-environment.yaml
+2024-08-31 13:52:56,129 INFO    Thread-11 :587298 [sender.py:transition_state():626] send defer: 11
+2024-08-31 13:52:56,130 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:56,130 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-31 13:52:56,130 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:56,130 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-31 13:52:56,130 INFO    SenderThread:587298 [file_pusher.py:join():175] waiting for file pusher
+2024-08-31 13:52:56,130 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 12
+2024-08-31 13:52:56,130 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:56,130 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-31 13:52:56,131 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:56,131 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-31 13:52:56,131 INFO    SenderThread:587298 [file_stream.py:finish():601] file stream finish called
+2024-08-31 13:52:56,419 INFO    SenderThread:587298 [file_stream.py:finish():605] file stream finish is done
+2024-08-31 13:52:56,419 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 13
+2024-08-31 13:52:56,420 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:56,420 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-31 13:52:56,420 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:56,420 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-31 13:52:56,420 INFO    SenderThread:587298 [sender.py:transition_state():626] send defer: 14
+2024-08-31 13:52:56,421 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: defer
+2024-08-31 13:52:56,421 DEBUG   SenderThread:587298 [sender.py:send():391] send: final
+2024-08-31 13:52:56,421 INFO    HandlerThread:587298 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-31 13:52:56,421 DEBUG   SenderThread:587298 [sender.py:send():391] send: footer
+2024-08-31 13:52:56,421 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: defer
+2024-08-31 13:52:56,421 INFO    SenderThread:587298 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-31 13:52:56,422 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:56,422 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:56,424 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: server_info
+2024-08-31 13:52:56,425 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-31 13:52:56,425 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: server_info
+2024-08-31 13:52:56,426 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-31 13:52:56,428 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-31 13:52:56,429 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-31 13:52:56,705 DEBUG   SenderThread:587298 [sender.py:send_request():418] send_request: poll_exit
+2024-08-31 13:52:56,705 INFO    MainThread:587298 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-08-31 13:52:56,705 INFO    MainThread:587298 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-08-31 13:52:56,706 INFO    MainThread:587298 [wandb_run.py:_footer_sync_info():3994] logging synced files
+2024-08-31 13:52:56,706 DEBUG   HandlerThread:587298 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-31 13:52:56,706 INFO    HandlerThread:587298 [handler.py:finish():882] shutting down handler
+2024-08-31 13:52:57,426 INFO    WriterThread:587298 [datastore.py:close():296] close: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240831_135204-po4jm81r/run-po4jm81r.wandb
+2024-08-31 13:52:57,705 INFO    SenderThread:587298 [sender.py:finish():1631] shutting down sender
+2024-08-31 13:52:57,706 INFO    SenderThread:587298 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-31 13:52:57,710 INFO    SenderThread:587298 [file_pusher.py:join():175] waiting for file pusher

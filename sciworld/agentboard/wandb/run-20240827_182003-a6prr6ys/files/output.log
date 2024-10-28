@@ -1,0 +1,151 @@
+2024-08-27 18:20:15 | INFO | __main__ | Tested tasks:
+2024-08-27 18:20:15 | INFO | __main__ | Start evaluating task pddl
+Warning: Gym version v0.24.0 has a number of critical issues with `gym.make` such that the `reset` and `step` functions are called before returning the environment. It is recommend to downgrading to v0.23.1 or upgrading to v0.25.1
+/home/zky/AgentBoard_metasearch/agentboard/environment/pddl_env/pddlgym/parser.py:169: DeprecationWarning: invalid escape sequence \d
+  for match in re.finditer("(\d*\.\d+)", expr):
+[nltk_data] Downloading package punkt to /home/zky/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+2024-08-27 18:20:19 | GOAL | tasks.pddl | [1mExample 0 | Goal: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. 
+2024-08-27 18:20:19 | INFO | tasks.pddl | Step 00 - Message: Ball1 is a ball.  Ball1 is at rooma.  Ball2 is a ball.  Ball2 is at rooma.  Ball3 is a ball.  Ball3 is at rooma.  Ball4 is a ball.  Ball4 is at rooma.  Left is a gripper.  Left is free.  Right is a gripper.  Right is free.  Robby is at rooma.  Room rooma Room roomb
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 01 - Action: OK.
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 01 - Observation: The action is not valid and therefore takes no effect. Please check valid actions.
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 01 - Progress Rate: 0
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 02 - Action: check valid actions
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 02 - Observation: Valid actions are: Pick up ball1 at rooma with arm right. , Pick up ball4 at rooma with arm right. , Pick up ball3 at rooma with arm left. , Move from rooma to roomb. , Pick up ball2 at rooma with arm right. , Pick up ball3 at rooma with arm right. , Pick up ball1 at rooma with arm left. , Pick up ball4 at rooma with arm left. , Pick up ball2 at rooma with arm left. , check valid actions
+2024-08-27 18:20:26 | INFO | tasks.pddl | Step 02 - Progress Rate: 0
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 245, in evaluate_env
+    action_raw = self.PddlSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_COT.py", line 33, in __call__
+    reasoning_result = get_chat(prompt=prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "eval_main.py", line 238, in <module>
+    main()
+  File "eval_main.py", line 217, in main
+    easy_sr, hard_sr, easy_pr, hard_pr = task.evaluate()
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 306, in evaluate
+    success, progress_rate, steps, grounding_acc, score_change_record = self.evaluate_env(id)
+  File "/home/zky/AgentBoard_metasearch/agentboard/tasks/pddl.py", line 245, in evaluate_env
+    action_raw = self.PddlSolver.reasoning(task_description, '', '')
+  File "/home/zky/AgentBoard_metasearch/agentboard/REASONING_COT.py", line 33, in __call__
+    reasoning_result = get_chat(prompt=prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/zky/AgentBoard_metasearch/agentboard/utils_llm.py", line 52, in get_chat
+    response = client.chat.completions.create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_utils/_utils.py", line 274, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/resources/chat/completions.py", line 668, in create
+    return self._post(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 1260, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 937, in request
+    return self._request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/openai/_base_client.py", line 973, in _request
+    response = self._client.send(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http_proxy.py", line 344, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

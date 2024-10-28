@@ -1,0 +1,25 @@
+2024-08-31 12:36:02 | INFO | __main__ |
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 199, in main
+    log_history[json.loads(line.strip())["task_name"]] = json.loads(line.strip())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "eval_main_sci.py", line 259, in <module>
+    main()
+  File "eval_main_sci.py", line 199, in main
+    log_history[json.loads(line.strip())["task_name"]] = json.loads(line.strip())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

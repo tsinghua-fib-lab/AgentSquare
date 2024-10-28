@@ -1,0 +1,357 @@
+2024-08-25 18:38:15,989 INFO    StreamThr :8531 [internal.py:wandb_internal():85] W&B internal server running at pid: 8531, started at: 2024-08-25 18:38:15.988132
+2024-08-25 18:38:15,990 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status
+2024-08-25 18:38:15,997 INFO    WriterThread:8531 [datastore.py:open_for_write():87] open: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/run-lfjictx5.wandb
+2024-08-25 18:38:15,998 DEBUG   SenderThread:8531 [sender.py:send():391] send: header
+2024-08-25 18:38:16,021 DEBUG   SenderThread:8531 [sender.py:send():391] send: run
+2024-08-25 18:38:17,091 INFO    SenderThread:8531 [dir_watcher.py:__init__():211] watching files in: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files
+2024-08-25 18:38:17,091 INFO    SenderThread:8531 [sender.py:_start_run_threads():1200] run started: lfjictx5 with start time 1724582295.989122
+2024-08-25 18:38:17,106 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: check_version
+2024-08-25 18:38:17,106 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: check_version
+2024-08-25 18:38:18,336 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: run_start
+2024-08-25 18:38:18,346 ERROR   HandlerThread:8531 [gpu.py:is_available():381] Error initializing NVML: Driver Not Loaded
+2024-08-25 18:38:18,347 DEBUG   HandlerThread:8531 [system_info.py:__init__():26] System info init
+2024-08-25 18:38:18,347 DEBUG   HandlerThread:8531 [system_info.py:__init__():41] System info init done
+2024-08-25 18:38:18,347 INFO    HandlerThread:8531 [system_monitor.py:start():194] Starting system monitor
+2024-08-25 18:38:18,348 INFO    SystemMonitor:8531 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-25 18:38:18,348 INFO    HandlerThread:8531 [system_monitor.py:probe():214] Collecting system info
+2024-08-25 18:38:18,349 INFO    SystemMonitor:8531 [interfaces.py:start():188] Started cpu monitoring
+2024-08-25 18:38:18,350 INFO    SystemMonitor:8531 [interfaces.py:start():188] Started disk monitoring
+2024-08-25 18:38:18,351 INFO    SystemMonitor:8531 [interfaces.py:start():188] Started memory monitoring
+2024-08-25 18:38:18,351 INFO    SystemMonitor:8531 [interfaces.py:start():188] Started network monitoring
+2024-08-25 18:38:18,375 DEBUG   HandlerThread:8531 [system_info.py:probe():152] Probing system
+2024-08-25 18:38:18,385 DEBUG   HandlerThread:8531 [system_info.py:_probe_git():137] Probing git
+2024-08-25 18:38:18,422 DEBUG   HandlerThread:8531 [system_info.py:_probe_git():145] Probing git done
+2024-08-25 18:38:18,422 DEBUG   HandlerThread:8531 [system_info.py:probe():200] Probing system done
+2024-08-25 18:38:18,422 DEBUG   HandlerThread:8531 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-150-generic-x86_64-with-glibc2.10', 'python': '3.8.13', 'heartbeatAt': '2024-08-25T10:38:18.375835', 'startedAt': '2024-08-25T10:38:15.979317', 'docker': None, 'cuda': '9.0.176', 'args': ('--cfg-path', '../eval_configs/main_results_all_tasks.yaml', '--tasks', 'pddl', '--wandb', '--log_path', '../results/gpt-3.5-turbo-0125', '--project_name', 'evaluate-gpt-35-turbo-0125', '--baseline_dir', '../data/baseline_results', '--planning', 'IO', '--reasoning', 'CoT', '--memory', 'None', '--tooluse', 'None', '--model', 'gpt-3.5-turbo-0125'), 'state': 'running', 'program': 'eval_main.py', 'codePathLocal': 'eval_main.py', 'codePath': 'agentboard/eval_main.py', 'git': {'remote': 'https://github.com/hkust-nlp/AgentBoard.git', 'commit': 'bb7255e2daf1989069a186dad9e53f70680961db'}, 'email': None, 'root': '/home/eric/AgentBoard', 'host': 'eric-VivoBook-15-ASUS-Laptop-X542UF', 'username': 'eric', 'executable': '/home/eric/anaconda3/envs/agentboard/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2892.3075, 'min': 400.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 2911.295, 'min': 400.0, 'max': 4000.0}, {'current': 2860.158, 'min': 400.0, 'max': 4000.0}, {'current': 2860.115, 'min': 400.0, 'max': 4000.0}, {'current': 2907.082, 'min': 400.0, 'max': 4000.0}, {'current': 2912.256, 'min': 400.0, 'max': 4000.0}, {'current': 2913.407, 'min': 400.0, 'max': 4000.0}, {'current': 2860.982, 'min': 400.0, 'max': 4000.0}, {'current': 2913.165, 'min': 400.0, 'max': 4000.0}], 'disk': {'/': {'total': 109.44446182250977, 'used': 32.366458892822266}}, 'memory': {'total': 15.51889419555664}}
+2024-08-25 18:38:18,423 INFO    HandlerThread:8531 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-25 18:38:18,423 INFO    HandlerThread:8531 [system_monitor.py:probe():227] Publishing system info
+2024-08-25 18:38:18,423 DEBUG   HandlerThread:8531 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-25 18:38:19,095 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/conda-environment.yaml
+2024-08-25 18:38:33,526 ERROR   HandlerThread:8531 [system_info.py:_save_conda():223] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/site-packages/wandb/sdk/internal/system/system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/subprocess.py", line 1083, in wait
+    return self._wait(timeout=timeout)
+  File "/home/eric/anaconda3/envs/agentboard/lib/python3.8/subprocess.py", line 1798, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2024-08-25 18:38:33,642 DEBUG   HandlerThread:8531 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-25 18:38:33,644 INFO    HandlerThread:8531 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-25 18:38:33,917 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:33,917 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: keepalive
+2024-08-25 18:38:33,917 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:33,918 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: keepalive
+2024-08-25 18:38:33,918 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:33,920 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: keepalive
+2024-08-25 18:38:33,922 DEBUG   SenderThread:8531 [sender.py:send():391] send: files
+2024-08-25 18:38:33,922 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-25 18:38:34,100 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-metadata.json
+2024-08-25 18:38:34,330 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-25 18:38:34,330 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: python_packages
+2024-08-25 18:38:34,332 DEBUG   SenderThread:8531 [sender.py:send():391] send: telemetry
+2024-08-25 18:38:34,332 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-25 18:38:34,333 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:34,333 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: stop_status
+2024-08-25 18:38:35,097 INFO    wandb-upload_0:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/bfsnedp0-wandb-metadata.json
+2024-08-25 18:38:35,101 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/conda-environment.yaml
+2024-08-25 18:38:35,101 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/requirements.txt
+2024-08-25 18:38:35,331 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:36,332 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:37,333 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:37,687 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:38,103 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:38,349 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:39,349 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:40,104 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:40,350 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:41,350 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:42,106 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:42,351 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:43,351 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:43,666 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:44,351 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:45,351 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:46,108 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:46,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:47,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:48,110 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:48,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:49,181 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:49,331 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-25 18:38:49,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:49,502 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: stop_status
+2024-08-25 18:38:50,111 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:50,112 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/config.yaml
+2024-08-25 18:38:50,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:51,352 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:52,113 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:52,353 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:53,362 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:53,849 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: log_artifact
+2024-08-25 18:38:53,850 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: log_artifact
+2024-08-25 18:38:54,116 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:38:54,117 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json
+2024-08-25 18:38:54,119 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table
+2024-08-25 18:38:54,120 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl
+2024-08-25 18:38:54,121 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media
+2024-08-25 18:38:54,354 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:54,489 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-25 18:38:54,768 INFO    wandb-upload_0:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/xd8b4jl0-media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json
+2024-08-25 18:38:55,354 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:56,354 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:57,015 INFO    wandb-upload_1:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmpq_x1iamk
+2024-08-25 18:38:57,016 INFO    wandb-upload_2:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp_ry4yajp
+2024-08-25 18:38:57,039 INFO    wandb-upload_0:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp6ff95jcg
+2024-08-25 18:38:57,354 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:58,252 INFO    SenderThread:8531 [sender.py:send_request_log_artifact():1537] logged artifact run-lfjictx5-pddlpredictions - {'id': 'QXJ0aWZhY3Q6MTE2NDU4OTAyNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNjk5OTc1OQ==', 'latestArtifact': None}}
+2024-08-25 18:38:58,252 DEBUG   SenderThread:8531 [sender.py:send():391] send: files
+2024-08-25 18:38:58,253 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json with policy now
+2024-08-25 18:38:58,253 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:38:58,256 DEBUG   SenderThread:8531 [sender.py:send():391] send: history
+2024-08-25 18:38:58,256 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: summary_record
+2024-08-25 18:38:58,264 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 18:38:58,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:59,120 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json
+2024-08-25 18:38:59,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:38:59,512 INFO    wandb-upload_1:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/uybwguwk-media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json
+2024-08-25 18:39:00,122 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:00,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:01,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:02,124 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:02,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:03,260 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:03,355 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:04,126 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:04,332 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-25 18:39:04,333 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: stop_status
+2024-08-25 18:39:04,375 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:05,356 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:06,128 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:06,356 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:07,356 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:08,132 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:08,356 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:08,602 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:09,356 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:10,134 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:10,357 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:11,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:12,136 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:12,195 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: log_artifact
+2024-08-25 18:39:12,196 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: log_artifact
+2024-08-25 18:39:12,223 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-25 18:39:12,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:13,137 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json
+2024-08-25 18:39:13,139 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl
+2024-08-25 18:39:13,281 INFO    wandb-upload_0:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmpif9d8czl
+2024-08-25 18:39:13,285 INFO    wandb-upload_3:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmpxjw_pmce
+2024-08-25 18:39:13,411 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:13,550 INFO    wandb-upload_4:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmpsr8ddzwm
+2024-08-25 18:39:13,581 INFO    wandb-upload_1:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp70faeg0q
+2024-08-25 18:39:13,599 INFO    wandb-upload_2:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp_q2xzxk_
+2024-08-25 18:39:14,263 INFO    wandb-upload_5:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/fdsfefl9-media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json
+2024-08-25 18:39:14,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:14,711 INFO    SenderThread:8531 [sender.py:send_request_log_artifact():1537] logged artifact run-lfjictx5-pddlpredictions - {'id': 'QXJ0aWZhY3Q6MTE2NDU4OTIzMw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNjk5OTc1OQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE2NDU4OTAyNA==', 'versionIndex': 0}}}
+2024-08-25 18:39:14,712 DEBUG   SenderThread:8531 [sender.py:send():391] send: files
+2024-08-25 18:39:14,712 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json with policy now
+2024-08-25 18:39:14,713 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:14,714 DEBUG   SenderThread:8531 [sender.py:send():391] send: history
+2024-08-25 18:39:14,715 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: summary_record
+2024-08-25 18:39:14,717 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 18:39:15,140 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json
+2024-08-25 18:39:15,369 INFO    wandb-upload_0:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/blhhdfi4-media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json
+2024-08-25 18:39:15,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:16,141 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:16,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:17,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:18,143 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:18,351 DEBUG   SystemMonitor:8531 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-25 18:39:18,355 DEBUG   SenderThread:8531 [sender.py:send():391] send: stats
+2024-08-25 18:39:18,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:19,332 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-25 18:39:19,333 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: stop_status
+2024-08-25 18:39:19,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:19,722 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:20,146 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:20,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:21,413 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:22,150 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:22,413 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:23,412 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:24,152 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:24,174 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: log_artifact
+2024-08-25 18:39:24,174 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: log_artifact
+2024-08-25 18:39:24,184 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-25 18:39:24,413 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:25,153 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_created():271] file/dir created: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_2_01867af301755f8cf708.table.json
+2024-08-25 18:39:25,154 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl
+2024-08-25 18:39:25,390 INFO    wandb-upload_1:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmpmtmq_3gl
+2024-08-25 18:39:25,391 INFO    wandb-upload_2:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmpovb24yri
+2024-08-25 18:39:25,391 INFO    wandb-upload_5:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmp2t5xwnjg
+2024-08-25 18:39:25,391 INFO    wandb-upload_6:8531 [upload_job.py:push():85] Skipped uploading /home/eric/.local/share/wandb/artifacts/staging/tmpt7_3z6_z
+2024-08-25 18:39:25,417 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:25,695 INFO    wandb-upload_4:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp3tezo26j
+2024-08-25 18:39:25,707 INFO    wandb-upload_3:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmp103383h6
+2024-08-25 18:39:25,951 INFO    wandb-upload_0:8531 [upload_job.py:push():88] Uploaded file /home/eric/.local/share/wandb/artifacts/staging/tmpmygpu9hi
+2024-08-25 18:39:26,011 INFO    wandb-upload_7:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/0beuq5bn-media/table/pddl/predictions_2_01867af301755f8cf708.table.json
+2024-08-25 18:39:26,414 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:27,006 INFO    SenderThread:8531 [sender.py:send_request_log_artifact():1537] logged artifact run-lfjictx5-pddlpredictions - {'id': 'QXJ0aWZhY3Q6MTE2NDU4OTM3OA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNjk5OTc1OQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE2NDU4OTIzMw==', 'versionIndex': 1}}}
+2024-08-25 18:39:27,006 DEBUG   SenderThread:8531 [sender.py:send():391] send: files
+2024-08-25 18:39:27,007 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file media/table/pddl/predictions_2_01867af301755f8cf708.table.json with policy now
+2024-08-25 18:39:27,007 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:27,009 DEBUG   SenderThread:8531 [sender.py:send():391] send: history
+2024-08-25 18:39:27,010 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: summary_record
+2024-08-25 18:39:27,013 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 18:39:27,155 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json
+2024-08-25 18:39:27,415 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:27,607 DEBUG   SenderThread:8531 [sender.py:send():391] send: exit
+2024-08-25 18:39:27,607 INFO    SenderThread:8531 [sender.py:send_exit():598] handling exit code: 255
+2024-08-25 18:39:27,608 INFO    SenderThread:8531 [sender.py:send_exit():600] handling runtime: 69
+2024-08-25 18:39:27,608 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 18:39:27,609 INFO    SenderThread:8531 [sender.py:send_exit():606] send defer
+2024-08-25 18:39:27,609 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,609 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-25 18:39:27,610 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,610 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-25 18:39:27,610 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 1
+2024-08-25 18:39:27,610 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,610 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-25 18:39:27,611 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,611 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-25 18:39:27,611 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 2
+2024-08-25 18:39:27,611 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,612 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-25 18:39:27,612 INFO    HandlerThread:8531 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-25 18:39:27,612 DEBUG   SystemMonitor:8531 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-25 18:39:27,613 INFO    HandlerThread:8531 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-25 18:39:27,613 DEBUG   SystemMonitor:8531 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-25 18:39:27,613 INFO    HandlerThread:8531 [interfaces.py:finish():200] Joined disk monitor
+2024-08-25 18:39:27,614 INFO    HandlerThread:8531 [interfaces.py:finish():200] Joined memory monitor
+2024-08-25 18:39:27,614 INFO    HandlerThread:8531 [interfaces.py:finish():200] Joined network monitor
+2024-08-25 18:39:27,615 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,615 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-25 18:39:27,615 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 3
+2024-08-25 18:39:27,615 DEBUG   SenderThread:8531 [sender.py:send():391] send: stats
+2024-08-25 18:39:27,615 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,616 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-25 18:39:27,616 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,616 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-25 18:39:27,616 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 4
+2024-08-25 18:39:27,617 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,617 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-25 18:39:27,617 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,617 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-25 18:39:27,617 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 5
+2024-08-25 18:39:27,617 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,617 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-25 18:39:27,618 DEBUG   SenderThread:8531 [sender.py:send():391] send: summary
+2024-08-25 18:39:27,618 INFO    SenderThread:8531 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 18:39:27,618 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,619 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-25 18:39:27,619 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 6
+2024-08-25 18:39:27,619 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,619 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-25 18:39:27,619 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,619 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-25 18:39:27,619 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 7
+2024-08-25 18:39:27,619 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 18:39:27,620 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:27,620 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-25 18:39:27,620 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:27,620 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-25 18:39:27,736 INFO    wandb-upload_1:8531 [upload_job.py:push():130] Uploaded file /tmp/tmpm3a6c5bswandb/yhm2kg4m-media/table/pddl/predictions_2_01867af301755f8cf708.table.json
+2024-08-25 18:39:28,157 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:28,157 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json
+2024-08-25 18:39:28,546 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:30,159 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:31,337 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 8
+2024-08-25 18:39:31,337 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:31,338 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:31,338 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-25 18:39:31,339 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:31,339 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-25 18:39:31,340 INFO    SenderThread:8531 [job_builder.py:build():443] Attempting to build job artifact
+2024-08-25 18:39:31,343 INFO    SenderThread:8531 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-08-25 18:39:31,353 INFO    SenderThread:8531 [job_builder.py:build():548] adding wandb-job metadata file
+2024-08-25 18:39:31,412 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 9
+2024-08-25 18:39:31,413 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:31,413 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-25 18:39:31,414 DEBUG   SenderThread:8531 [sender.py:send():391] send: artifact
+2024-08-25 18:39:31,549 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:32,164 INFO    SenderThread:8531 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hkust-nlp_AgentBoard.git_agentboard_eval_main.py - {'id': 'QXJ0aWZhY3Q6MTE2MjA1NjY1Mw==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNjQ3ODY3MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE2MjA2MTI4Mw==', 'versionIndex': 2}}}
+2024-08-25 18:39:32,165 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:32,165 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-25 18:39:32,165 INFO    SenderThread:8531 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-25 18:39:32,167 INFO    Thread-12 :8531 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:32,169 INFO    SenderThread:8531 [dir_watcher.py:finish():388] scan: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files
+2024-08-25 18:39:32,169 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/conda-environment.yaml conda-environment.yaml
+2024-08-25 18:39:32,170 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log output.log
+2024-08-25 18:39:32,176 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/requirements.txt requirements.txt
+2024-08-25 18:39:32,181 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/config.yaml config.yaml
+2024-08-25 18:39:32,199 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-metadata.json wandb-metadata.json
+2024-08-25 18:39:32,201 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json wandb-summary.json
+2024-08-25 18:39:32,214 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json media/table/pddl/predictions_0_c84695d5c420523ce62c.table.json
+2024-08-25 18:39:32,214 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_2_01867af301755f8cf708.table.json media/table/pddl/predictions_2_01867af301755f8cf708.table.json
+2024-08-25 18:39:32,216 INFO    SenderThread:8531 [dir_watcher.py:finish():402] scan save: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json media/table/pddl/predictions_1_4f18fcde78a00b5dd949.table.json
+2024-08-25 18:39:32,216 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 10
+2024-08-25 18:39:32,216 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:32,216 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:32,216 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-25 18:39:32,217 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:32,217 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-25 18:39:32,217 INFO    SenderThread:8531 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-25 18:39:32,552 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:32,554 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:32,822 INFO    wandb-upload_5:8531 [upload_job.py:push():130] Uploaded file /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/conda-environment.yaml
+2024-08-25 18:39:32,933 INFO    wandb-upload_0:8531 [upload_job.py:push():130] Uploaded file /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/requirements.txt
+2024-08-25 18:39:32,937 INFO    wandb-upload_4:8531 [upload_job.py:push():130] Uploaded file /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/output.log
+2024-08-25 18:39:32,944 INFO    wandb-upload_2:8531 [upload_job.py:push():130] Uploaded file /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/config.yaml
+2024-08-25 18:39:33,231 INFO    wandb-upload_6:8531 [upload_job.py:push():130] Uploaded file /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/files/wandb-summary.json
+2024-08-25 18:39:33,431 INFO    Thread-11 :8531 [sender.py:transition_state():626] send defer: 11
+2024-08-25 18:39:33,432 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:33,433 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-25 18:39:33,434 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:33,434 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-25 18:39:33,435 INFO    SenderThread:8531 [file_pusher.py:join():175] waiting for file pusher
+2024-08-25 18:39:33,440 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 12
+2024-08-25 18:39:33,441 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:33,441 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-25 18:39:33,442 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:33,443 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-25 18:39:33,443 INFO    SenderThread:8531 [file_stream.py:finish():601] file stream finish called
+2024-08-25 18:39:33,555 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:34,233 INFO    SenderThread:8531 [file_stream.py:finish():605] file stream finish is done
+2024-08-25 18:39:34,233 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 13
+2024-08-25 18:39:34,234 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:34,234 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:34,234 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-25 18:39:34,234 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:34,234 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-25 18:39:34,234 INFO    SenderThread:8531 [sender.py:transition_state():626] send defer: 14
+2024-08-25 18:39:34,235 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 18:39:34,235 INFO    HandlerThread:8531 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-25 18:39:34,235 DEBUG   SenderThread:8531 [sender.py:send():391] send: final
+2024-08-25 18:39:34,235 DEBUG   SenderThread:8531 [sender.py:send():391] send: footer
+2024-08-25 18:39:34,235 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: defer
+2024-08-25 18:39:34,235 INFO    SenderThread:8531 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-25 18:39:34,236 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:34,236 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:34,236 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: server_info
+2024-08-25 18:39:34,237 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: server_info
+2024-08-25 18:39:34,239 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 18:39:34,240 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-25 18:39:34,240 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-25 18:39:34,241 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 18:39:34,487 DEBUG   SenderThread:8531 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 18:39:34,488 INFO    MainThread:8531 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-08-25 18:39:34,488 INFO    MainThread:8531 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-08-25 18:39:34,489 INFO    MainThread:8531 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-08-25 18:39:34,490 DEBUG   HandlerThread:8531 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-25 18:39:34,490 INFO    HandlerThread:8531 [handler.py:finish():880] shutting down handler
+2024-08-25 18:39:35,240 INFO    WriterThread:8531 [datastore.py:close():296] close: /home/eric/AgentBoard/agentboard/wandb/run-20240825_183815-lfjictx5/run-lfjictx5.wandb
+2024-08-25 18:39:35,488 INFO    SenderThread:8531 [sender.py:finish():1631] shutting down sender
+2024-08-25 18:39:35,488 INFO    SenderThread:8531 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-25 18:39:35,488 INFO    SenderThread:8531 [file_pusher.py:join():175] waiting for file pusher

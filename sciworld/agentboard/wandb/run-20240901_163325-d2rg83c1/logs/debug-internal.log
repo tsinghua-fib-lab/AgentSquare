@@ -1,0 +1,20 @@
+2024-09-01 16:33:25,942 INFO    StreamThr :152506 [internal.py:wandb_internal():85] W&B internal server running at pid: 152506, started at: 2024-09-01 16:33:25.942022
+2024-09-01 16:33:25,945 DEBUG   HandlerThread:152506 [handler.py:handle_request():158] handle_request: status
+2024-09-01 16:33:25,946 INFO    WriterThread:152506 [datastore.py:open_for_write():87] open: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/run-d2rg83c1.wandb
+2024-09-01 16:33:25,947 DEBUG   SenderThread:152506 [sender.py:send():391] send: header
+2024-09-01 16:33:25,969 DEBUG   SenderThread:152506 [sender.py:send():391] send: run
+2024-09-01 16:33:29,927 INFO    SenderThread:152506 [dir_watcher.py:__init__():211] watching files in: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/files
+2024-09-01 16:33:29,928 INFO    SenderThread:152506 [sender.py:_start_run_threads():1200] run started: d2rg83c1 with start time 1725179605.941879
+2024-09-01 16:33:29,928 DEBUG   HandlerThread:152506 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-01 16:33:29,928 INFO    HandlerThread:152506 [handler.py:finish():882] shutting down handler
+2024-09-01 16:33:29,970 INFO    WriterThread:152506 [datastore.py:close():296] close: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/run-d2rg83c1.wandb
+2024-09-01 16:33:30,928 INFO    SenderThread:152506 [sender.py:finish():1631] shutting down sender
+2024-09-01 16:33:30,928 INFO    SenderThread:152506 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-01 16:33:31,928 INFO    SenderThread:152506 [dir_watcher.py:finish():388] scan: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/files
+2024-09-01 16:33:31,928 INFO    SenderThread:152506 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/files/config.yaml config.yaml
+2024-09-01 16:33:31,928 INFO    SenderThread:152506 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-01 16:33:31,929 INFO    SenderThread:152506 [file_pusher.py:join():175] waiting for file pusher
+2024-09-01 16:33:35,453 INFO    wandb-upload_0:152506 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240901_163325-d2rg83c1/files/config.yaml
+2024-09-01 16:33:35,936 INFO    SenderThread:152506 [file_stream.py:finish():601] file stream finish called
+2024-09-01 16:33:36,377 WARNING FileStreamThread:152506 [file_stream.py:request_with_retry():674] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/eric142857-alibaba/evaluate-gpt-35-turbo-0125/d2rg83c1/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x7fb6c82c6430>>, args: ('https://api.wandb.ai/files/eric142857-alibaba/evaluate-gpt-35-turbo-0125/d2rg83c1/file_stream',), kwargs: {'json': {'complete': True, 'exitcode': 0, 'dropped': 0, 'uploaded': ['config.yaml']}}
+2024-09-01 16:33:39,747 INFO    SenderThread:152506 [file_stream.py:finish():605] file stream finish is done

@@ -1,0 +1,68 @@
+2024-09-04 14:50:59 | INFO | __main__ | Tested tasks:
+2024-09-04 14:50:59 | INFO | __main__ | Start evaluating task scienceworld
+2024-09-04 14:51:00 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 14:51:00 | INFO | py4j.java_gateway | Callback Server Starting
+2024-09-04 14:51:00 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60843)
+2024-09-04 14:51:00 | INFO | py4j.java_gateway | Socket listening on ('127.0.0.1', 60843)
+2024-09-04 14:51:01 | INFO | scienceworld.scienceworld | ScienceWorld server running on port 60713
+2024-09-04 14:51:01 | GOAL | tasks.scienceworld | [1mExample 0 | Goal: task_name: boil, var: 5, Your task is to boil ice to liquid. You should get ice in the kitchen and boil it in the foundry. The objects you can use are metal pot, thermometer, freezer, blast furnace, stove and glass jar. You should pick up a thermometer for temperature measurement. Take actions that will cause it to change its state of matter.  You need to increase the ice's temperature and monitor the temperature closely. Once the ice's state of matter changed, examine the changed state of ice. For compounds without a boiling point, combusting the substance is also acceptable.
+2024-09-04 14:51:01 | INFO | scienceworld.scienceworld | Loading: boil (variation: 5) (simplifications: selfWateringFlowerPots,openContainers,openDoors,noElectricalAction)
+2024-09-04 14:51:01 | INFO | tasks.scienceworld | Step 00 - Observation: This room is called the workshop. In it, you see:
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue wire, a orange wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed.
+You also see:
+	A door to the hallway (that is open)
+In your inventory, you see:
+	an orange
+2024-09-04 14:51:06 | INFO | tasks.scienceworld | Step 01 - Action: focus on the substance
+2024-09-04 14:51:06 | INFO | tasks.scienceworld | Step 01 - Observation: You focus on the air.
+2024-09-04 14:51:06 | INFO | tasks.scienceworld | Step 01 - Progress Rate: 0.0
+2024-09-04 14:51:07 | INFO | tasks.scienceworld | Step 02 - Action: wait 2
+2024-09-04 14:51:07 | INFO | tasks.scienceworld | Step 02 - Observation: No known action matches that input.
+2024-09-04 14:51:07 | INFO | tasks.scienceworld | Step 02 - Progress Rate: 0.0
+2024-09-04 14:51:08 | INFO | tasks.scienceworld | Step 03 - Action: check valid actions
+2024-09-04 14:51:08 | INFO | tasks.scienceworld | Step 03 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:08 | INFO | tasks.scienceworld | Step 03 - Progress Rate: 0.0
+2024-09-04 14:51:09 | INFO | tasks.scienceworld | Step 04 - Action: wait1
+2024-09-04 14:51:09 | INFO | tasks.scienceworld | Step 04 - Observation: You decide to wait for 1 iterations.
+2024-09-04 14:51:09 | INFO | tasks.scienceworld | Step 04 - Progress Rate: 0.0
+2024-09-04 14:51:10 | INFO | tasks.scienceworld | Step 05 - Action: wait 1
+2024-09-04 14:51:10 | INFO | tasks.scienceworld | Step 05 - Observation: No known action matches that input.
+2024-09-04 14:51:10 | INFO | tasks.scienceworld | Step 05 - Progress Rate: 0.0
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 06 - Action: wait
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 06 - Observation: You decide to wait for 10 iterations.
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 06 - Progress Rate: 0.0
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 07 - Action: wait 10
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 07 - Observation: No known action matches that input.
+2024-09-04 14:51:11 | INFO | tasks.scienceworld | Step 07 - Progress Rate: 0.0
+2024-09-04 14:51:12 | INFO | tasks.scienceworld | Step 08 - Action: check valid actions
+2024-09-04 14:51:12 | INFO | tasks.scienceworld | Step 08 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:12 | INFO | tasks.scienceworld | Step 08 - Progress Rate: 0.0
+2024-09-04 14:51:13 | INFO | tasks.scienceworld | Step 09 - Action: wait
+2024-09-04 14:51:13 | INFO | tasks.scienceworld | Step 09 - Observation: You decide to wait for 10 iterations.
+2024-09-04 14:51:13 | INFO | tasks.scienceworld | Step 09 - Progress Rate: 0.0
+2024-09-04 14:51:14 | INFO | tasks.scienceworld | Step 10 - Action: wait 10
+2024-09-04 14:51:14 | INFO | tasks.scienceworld | Step 10 - Observation: No known action matches that input.
+2024-09-04 14:51:14 | INFO | tasks.scienceworld | Step 10 - Progress Rate: 0.0
+2024-09-04 14:51:15 | INFO | tasks.scienceworld | Step 11 - Action: check valid actions
+2024-09-04 14:51:15 | INFO | tasks.scienceworld | Step 11 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:15 | INFO | tasks.scienceworld | Step 11 - Progress Rate: 0.0
+2024-09-04 14:51:18 | INFO | tasks.scienceworld | Step 12 - Action: check valid actions
+2024-09-04 14:51:18 | INFO | tasks.scienceworld | Step 12 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:18 | INFO | tasks.scienceworld | Step 12 - Progress Rate: 0.0
+2024-09-04 14:51:19 | INFO | tasks.scienceworld | Step 13 - Action: check valid actions
+2024-09-04 14:51:19 | INFO | tasks.scienceworld | Step 13 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:19 | INFO | tasks.scienceworld | Step 13 - Progress Rate: 0.0
+2024-09-04 14:51:20 | INFO | tasks.scienceworld | Step 14 - Action: check valid actions
+2024-09-04 14:51:20 | INFO | tasks.scienceworld | Step 14 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:20 | INFO | tasks.scienceworld | Step 14 - Progress Rate: 0.0
+2024-09-04 14:51:20 | INFO | tasks.scienceworld | Step 15 - Action: check valid actions
+2024-09-04 14:51:21 | INFO | tasks.scienceworld | Step 15 - Observation: Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions
+2024-09-04 14:51:21 | INFO | tasks.scienceworld | Step 15 - Progress Rate: 0.0
+2024-09-04 14:51:26 | FINISH | tasks.scienceworld | [1mExample 0 | Success: False , Progress Rate: 0.0 , Steps: 16
+completion_tokens:230, prompt_tokens:160916, price=0.080803
+The performance of the current module combination is : success_rate: 0.0, progress_rate: 0.0, grounding_acc: 0.625
+2024-09-04 14:51:29 | FINISH | __main__ | [1mTask scienceworld | Success Rate: 0.0 , Progress Rate: 0.0 , Easy SR: 0.Hard SR: 0.0, Easy PR: 0, Hard PR: 0.0, Grounding Accuracy: 0.625
+2024-09-04 14:51:29 | INFO | __main__ | Finish evaluating all tasks

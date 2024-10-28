@@ -1,0 +1,452 @@
+2024-09-04 11:44:22,551 INFO    StreamThr :81926 [internal.py:wandb_internal():85] W&B internal server running at pid: 81926, started at: 2024-09-04 11:44:22.550818
+2024-09-04 11:44:22,552 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status
+2024-09-04 11:44:22,556 INFO    WriterThread:81926 [datastore.py:open_for_write():87] open: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/run-uzbw7pja.wandb
+2024-09-04 11:44:22,556 DEBUG   SenderThread:81926 [sender.py:send():391] send: header
+2024-09-04 11:44:22,581 DEBUG   SenderThread:81926 [sender.py:send():391] send: run
+2024-09-04 11:44:26,534 INFO    SenderThread:81926 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1014, in _prepare_proxy
+    conn.connect()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/zky/anaconda3/envs/AgentBoard/lib/python3.8/site-packages/requests/adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2024-09-04 11:44:27,582 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-04 11:44:32,355 INFO    SenderThread:81926 [dir_watcher.py:__init__():211] watching files in: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files
+2024-09-04 11:44:32,355 INFO    SenderThread:81926 [sender.py:_start_run_threads():1200] run started: uzbw7pja with start time 1725421462.550071
+2024-09-04 11:44:32,355 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:44:32,362 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: check_version
+2024-09-04 11:44:32,362 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: check_version
+2024-09-04 11:44:32,940 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: run_start
+2024-09-04 11:44:32,952 DEBUG   HandlerThread:81926 [system_info.py:__init__():26] System info init
+2024-09-04 11:44:32,952 DEBUG   HandlerThread:81926 [system_info.py:__init__():41] System info init done
+2024-09-04 11:44:32,952 INFO    HandlerThread:81926 [system_monitor.py:start():194] Starting system monitor
+2024-09-04 11:44:32,953 INFO    SystemMonitor:81926 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-04 11:44:32,953 INFO    HandlerThread:81926 [system_monitor.py:probe():214] Collecting system info
+2024-09-04 11:44:32,954 INFO    SystemMonitor:81926 [interfaces.py:start():188] Started cpu monitoring
+2024-09-04 11:44:32,956 INFO    SystemMonitor:81926 [interfaces.py:start():188] Started disk monitoring
+2024-09-04 11:44:32,957 INFO    SystemMonitor:81926 [interfaces.py:start():188] Started gpu monitoring
+2024-09-04 11:44:32,958 INFO    SystemMonitor:81926 [interfaces.py:start():188] Started memory monitoring
+2024-09-04 11:44:32,959 INFO    SystemMonitor:81926 [interfaces.py:start():188] Started network monitoring
+2024-09-04 11:44:32,966 DEBUG   HandlerThread:81926 [system_info.py:probe():152] Probing system
+2024-09-04 11:44:33,020 DEBUG   HandlerThread:81926 [system_info.py:_probe_git():137] Probing git
+2024-09-04 11:44:33,029 DEBUG   HandlerThread:81926 [system_info.py:_probe_git():145] Probing git done
+2024-09-04 11:44:33,030 DEBUG   HandlerThread:81926 [system_info.py:probe():200] Probing system done
+2024-09-04 11:44:33,030 DEBUG   HandlerThread:81926 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2024-09-04T03:44:32.966321', 'startedAt': '2024-09-04T03:44:22.543931', 'docker': None, 'cuda': None, 'args': ('--cfg-path', '../eval_configs/main_results_all_tasks.yaml', '--tasks', 'scienceworld', '--wandb', '--log_path', '../results/gpt-3.5-turbo-0125', '--project_name', 'evaluate-gpt-35-turbo-0125', '--baseline_dir', '../data/baseline_results', '--planning', 'deps', '--reasoning', 'cot', '--memory', 'None', '--tooluse', 'None', '--model', 'gpt-3.5-turbo-0125'), 'state': 'running', 'program': 'eval_main_sci.py', 'codePathLocal': 'eval_main_sci.py', 'codePath': 'agentboard/eval_main_sci.py', 'git': {'remote': 'https://github.com/hkust-nlp/AgentBoard.git', 'commit': 'bb7255e2daf1989069a186dad9e53f70680961db'}, 'email': None, 'root': '/home/zky/AgentBoard_metasearch', 'host': 'LAPTOP-5PO7LLCG', 'username': 'zky', 'executable': '/home/zky/anaconda3/envs/AgentBoard/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3792.631999999999, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}, {'current': 3792.632, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 39.42839050292969}}, 'gpu': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 7.359710693359375}}
+2024-09-04 11:44:33,030 INFO    HandlerThread:81926 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-04 11:44:33,030 INFO    HandlerThread:81926 [system_monitor.py:probe():227] Publishing system info
+2024-09-04 11:44:33,030 DEBUG   HandlerThread:81926 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-04 11:44:33,357 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/conda-environment.yaml
+2024-09-04 11:44:41,972 DEBUG   HandlerThread:81926 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-04 11:44:41,973 INFO    HandlerThread:81926 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-04 11:44:41,974 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:44:41,974 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-04 11:44:41,975 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:44:41,975 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-04 11:44:42,156 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-04 11:44:42,156 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: python_packages
+2024-09-04 11:44:42,158 DEBUG   SenderThread:81926 [sender.py:send():391] send: telemetry
+2024-09-04 11:44:42,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 11:44:42,159 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 11:44:42,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:42,359 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/conda-environment.yaml
+2024-09-04 11:44:42,359 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-metadata.json
+2024-09-04 11:44:42,359 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/requirements.txt
+2024-09-04 11:44:42,723 ERROR   wandb-upload_0:81926 [internal_api.py:upload_file():2887] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eric142857-alibaba/evaluate-gpt-35-turbo-0125/uzbw7pja/wandb-metadata.json?Expires=1725507895&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wuhvuJiZmeJTrjRgOE2DGJzd88DG3E3UFh8K4neWrGfsTCGks4wGdAfeII7%2BPH2nT5YeFOjFLyrzI0bVJQRBWe%2B3OsGikwdEL6KdiCo8c%2Ft07%2Brh3dzTH3%2BFpMKNnJaOIkQ2ufEYgUT4Jb3LyKeJdelZPkjMSjhlaO64TSpvaXWkdfkTa3OcbDTGN2x0MPm0acKeZUjHoH6oNt2kpNMxQdYvpuQJAqVD73SLX6LjQBko8uC4GuNAltiz1audDzfZbOgm9vxrghQMgGIIIIXpDcEiWbVltMwCoxM9Vi0L4lwVST9tumWl9BSeOyA8sZVrvR8eeO9qQhmzeQGCuC1IIg%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/eric142857-alibaba/evaluate-gpt-35-turbo-0125/uzbw7pja/wandb-metadata.json?Expires=1725507895&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=wuhvuJiZmeJTrjRgOE2DGJzd88DG3E3UFh8K4neWrGfsTCGks4wGdAfeII7%2BPH2nT5YeFOjFLyrzI0bVJQRBWe%2B3OsGikwdEL6KdiCo8c%2Ft07%2Brh3dzTH3%2BFpMKNnJaOIkQ2ufEYgUT4Jb3LyKeJdelZPkjMSjhlaO64TSpvaXWkdfkTa3OcbDTGN2x0MPm0acKeZUjHoH6oNt2kpNMxQdYvpuQJAqVD73SLX6LjQBko8uC4GuNAltiz1audDzfZbOgm9vxrghQMgGIIIIXpDcEiWbVltMwCoxM9Vi0L4lwVST9tumWl9BSeOyA8sZVrvR8eeO9qQhmzeQGCuC1IIg%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2024-09-04 11:44:42,723 ERROR   wandb-upload_0:81926 [internal_api.py:upload_file():2889] upload_file request headers: {'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '3461'}
+2024-09-04 11:44:42,723 ERROR   wandb-upload_0:81926 [internal_api.py:upload_file():2891] upload_file response body: ''
+2024-09-04 11:44:43,157 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:44,061 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:44:44,157 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:44,360 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:44,599 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/vvr10bb3-wandb-metadata.json
+2024-09-04 11:44:45,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:46,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:46,360 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:47,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:48,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:49,157 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:44:49,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:50,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:51,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:52,158 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:52,362 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:53,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:54,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:54,363 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:54,952 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:44:55,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:55,363 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/config.yaml
+2024-09-04 11:44:56,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:56,364 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:57,156 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 11:44:57,157 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 11:44:57,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:58,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:44:58,364 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:44:59,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:00,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:00,366 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:00,408 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:01,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:02,159 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:02,367 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:03,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:04,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:04,368 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:05,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:05,794 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:06,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:06,369 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:07,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:08,160 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:08,369 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:09,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:10,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:10,370 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:11,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:11,481 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:12,156 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 11:45:12,157 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 11:45:12,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:12,371 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:13,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:14,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:14,372 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:15,161 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:16,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:16,375 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:16,490 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:17,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:17,229 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-04 11:45:17,229 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: log_artifact
+2024-09-04 11:45:18,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:18,376 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:18,376 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json
+2024-09-04 11:45:18,376 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table
+2024-09-04 11:45:18,377 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media
+2024-09-04 11:45:18,377 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld
+2024-09-04 11:45:19,096 ERROR   wandb-upload_1:81926 [internal_api.py:upload_file():2887] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/420000612/1179293204/a563ac3275e29e99abcd2b6a183dfc80?Expires=1725507931&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=uKVwthjpj8oMnlqYvoQhwosWsZgpaw5bWBfU1dcjnsS7e2r4wuKsliX8ExBBya6%2FUod8t964WJbCU2r%2Bq8sCpFCznTm8DnE8bAu%2B3S%2Fog%2FtvPVCdMXRD859TtDroZj1YbgTpAkJAatIkmln%2BW912L%2Bu0FfNx2M6TaynjA8boT9YH0%2BP3OYv47ZK3sxZCmAj4T6C3xXi3N22YecDoweTG3GrCNsM%2BZ8AKy0LanYk8DXCOHiIqmtDt0cwZ5TM4iu6GnfrbaJB9eXB%2F31mt6%2BjuocB8im%2FVF1CLwKVM3%2FgfpUZRHBTG%2F5LlHDtiQ328rOZdTHUDGd%2FjisQywPvEfEB%2Btw%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/420000612/1179293204/a563ac3275e29e99abcd2b6a183dfc80?Expires=1725507931&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=uKVwthjpj8oMnlqYvoQhwosWsZgpaw5bWBfU1dcjnsS7e2r4wuKsliX8ExBBya6%2FUod8t964WJbCU2r%2Bq8sCpFCznTm8DnE8bAu%2B3S%2Fog%2FtvPVCdMXRD859TtDroZj1YbgTpAkJAatIkmln%2BW912L%2Bu0FfNx2M6TaynjA8boT9YH0%2BP3OYv47ZK3sxZCmAj4T6C3xXi3N22YecDoweTG3GrCNsM%2BZ8AKy0LanYk8DXCOHiIqmtDt0cwZ5TM4iu6GnfrbaJB9eXB%2F31mt6%2BjuocB8im%2FVF1CLwKVM3%2FgfpUZRHBTG%2F5LlHDtiQ328rOZdTHUDGd%2FjisQywPvEfEB%2Btw%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2024-09-04 11:45:19,096 ERROR   wandb-upload_1:81926 [internal_api.py:upload_file():2889] upload_file request headers: {'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'pWOsMnXinpmrzStqGD38gA==', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9959'}
+2024-09-04 11:45:19,096 ERROR   wandb-upload_1:81926 [internal_api.py:upload_file():2891] upload_file response body: ''
+2024-09-04 11:45:19,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:19,287 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/395exrg6-media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json
+2024-09-04 11:45:19,618 INFO    wandb-upload_2:81926 [upload_job.py:push():88] Uploaded file /home/zky/.local/share/wandb/artifacts/staging/tmpf14r95fn
+2024-09-04 11:45:19,619 INFO    wandb-upload_3:81926 [upload_job.py:push():88] Uploaded file /home/zky/.local/share/wandb/artifacts/staging/tmpvc5zrkb5
+2024-09-04 11:45:20,162 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:20,668 INFO    wandb-upload_1:81926 [upload_job.py:push():88] Uploaded file /home/zky/.local/share/wandb/artifacts/staging/tmptrydcqs9
+2024-09-04 11:45:21,163 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:21,893 INFO    SenderThread:81926 [sender.py:send_request_log_artifact():1537] logged artifact run-uzbw7pja-scienceworldpredictions - {'id': 'QXJ0aWZhY3Q6MTE3OTI5MzIwNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQyMDAwMDYxMg==', 'latestArtifact': None}}
+2024-09-04 11:45:21,894 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:21,894 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:21,894 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json with policy now
+2024-09-04 11:45:22,052 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:22,053 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:22,053 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:22,055 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:22,165 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:22,379 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-summary.json
+2024-09-04 11:45:22,584 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/rtxrq72v-media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json
+2024-09-04 11:45:22,586 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-04 11:45:22,587 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: log_artifact
+2024-09-04 11:45:22,629 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:22,764 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:23,164 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:23,379 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json
+2024-09-04 11:45:23,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json
+2024-09-04 11:45:23,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media
+2024-09-04 11:45:23,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld
+2024-09-04 11:45:23,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly
+2024-09-04 11:45:23,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld
+2024-09-04 11:45:23,434 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:23,435 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:23,435 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:24,163 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:24,329 INFO    wandb-upload_2:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/7ayiysfs-media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json
+2024-09-04 11:45:24,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:24,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json
+2024-09-04 11:45:24,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json
+2024-09-04 11:45:24,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json
+2024-09-04 11:45:24,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld
+2024-09-04 11:45:24,788 INFO    wandb-upload_3:81926 [upload_job.py:push():88] Uploaded file /home/zky/.local/share/wandb/artifacts/staging/tmp6_487n9_
+2024-09-04 11:45:24,866 INFO    wandb-upload_1:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/cbi5uhuv-media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json
+2024-09-04 11:45:25,123 INFO    wandb-upload_4:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/twl5ez2v-media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json
+2024-09-04 11:45:25,163 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:25,258 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-04 11:45:25,299 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:25,357 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:25,380 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/summary/metrics_6_d4741b5694b273a13228.table.json
+2024-09-04 11:45:25,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html
+2024-09-04 11:45:25,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table
+2024-09-04 11:45:25,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media
+2024-09-04 11:45:25,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary
+2024-09-04 11:45:25,382 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html
+2024-09-04 11:45:25,382 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/summary
+2024-09-04 11:45:25,412 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/xz3ffrtn-media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json
+2024-09-04 11:45:25,414 INFO    wandb-upload_2:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/15h8xamu-media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json
+2024-09-04 11:45:25,494 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-04 11:45:25,987 INFO    SenderThread:81926 [sender.py:send_request_log_artifact():1537] logged artifact run-uzbw7pja-scienceworldmetrics - {'id': 'QXJ0aWZhY3Q6MTE3OTI5MzI5Mg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQyMDAwMDY0Mw==', 'latestArtifact': None}}
+2024-09-04 11:45:25,989 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:25,990 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json with policy now
+2024-09-04 11:45:25,992 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:25,992 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:25,994 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:25,994 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:25,994 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json with policy now
+2024-09-04 11:45:25,994 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:25,995 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:25,995 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:25,995 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:25,995 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json with policy now
+2024-09-04 11:45:25,996 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:25,996 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:25,999 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:25,999 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:25,999 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json with policy now
+2024-09-04 11:45:25,999 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:26,000 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:26,000 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:26,002 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:26,002 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json with policy now
+2024-09-04 11:45:26,003 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:26,003 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:26,004 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:26,004 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: log_artifact
+2024-09-04 11:45:26,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-summary.json
+2024-09-04 11:45:26,381 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary/agent_abilities_8_6650f167465c63af3af0.html
+2024-09-04 11:45:26,382 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary
+2024-09-04 11:45:26,496 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:26,742 INFO    wandb-upload_3:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/0inerr8f-media/table/summary/metrics_6_d4741b5694b273a13228.table.json
+2024-09-04 11:45:26,784 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/2egxt6o1-media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json
+2024-09-04 11:45:28,111 INFO    wandb-upload_2:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/f0fibi2s-media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json
+2024-09-04 11:45:28,112 INFO    wandb-upload_6:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/1ism8r0h-media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json
+2024-09-04 11:45:28,382 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:28,593 INFO    wandb-upload_7:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/24hfhssu-media/html/summary/agent_abilities_8_6650f167465c63af3af0.html
+2024-09-04 11:45:28,641 INFO    wandb-upload_1:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/iohq3tty-media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html
+2024-09-04 11:45:28,946 INFO    wandb-upload_3:81926 [upload_job.py:push():88] Uploaded file /home/zky/.local/share/wandb/artifacts/staging/tmp6n468hfy
+2024-09-04 11:45:30,046 INFO    SenderThread:81926 [sender.py:send_request_log_artifact():1537] logged artifact run-uzbw7pja-summarymetrics - {'id': 'QXJ0aWZhY3Q6MTE3OTI5MzM3NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQyMDAwMDY3MQ==', 'latestArtifact': None}}
+2024-09-04 11:45:30,047 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:30,047 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/table/summary/metrics_6_d4741b5694b273a13228.table.json with policy now
+2024-09-04 11:45:30,047 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:30,047 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:30,048 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:30,048 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:30,049 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:30,049 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html with policy now
+2024-09-04 11:45:30,049 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:30,049 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:30,052 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:30,053 DEBUG   SenderThread:81926 [sender.py:send():391] send: files
+2024-09-04 11:45:30,053 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file media/html/summary/agent_abilities_8_6650f167465c63af3af0.html with policy now
+2024-09-04 11:45:30,053 DEBUG   SenderThread:81926 [sender.py:send():391] send: history
+2024-09-04 11:45:30,053 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 11:45:30,053 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:30,054 DEBUG   SenderThread:81926 [sender.py:send():391] send: exit
+2024-09-04 11:45:30,054 INFO    SenderThread:81926 [sender.py:send_exit():598] handling exit code: 0
+2024-09-04 11:45:30,054 INFO    SenderThread:81926 [sender.py:send_exit():600] handling runtime: 52
+2024-09-04 11:45:30,054 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:30,054 INFO    SenderThread:81926 [sender.py:send_exit():606] send defer
+2024-09-04 11:45:30,057 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:30,057 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,057 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-04 11:45:30,058 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,059 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-04 11:45:30,059 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 1
+2024-09-04 11:45:30,059 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,059 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-04 11:45:30,060 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,060 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-04 11:45:30,060 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 2
+2024-09-04 11:45:30,060 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,060 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-04 11:45:30,060 INFO    HandlerThread:81926 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-04 11:45:30,061 INFO    HandlerThread:81926 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-04 11:45:30,061 INFO    HandlerThread:81926 [interfaces.py:finish():200] Joined disk monitor
+2024-09-04 11:45:30,061 DEBUG   SystemMonitor:81926 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-04 11:45:30,062 DEBUG   SystemMonitor:81926 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-04 11:45:30,062 DEBUG   SystemMonitor:81926 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-04 11:45:30,074 INFO    HandlerThread:81926 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-04 11:45:30,074 INFO    HandlerThread:81926 [interfaces.py:finish():200] Joined memory monitor
+2024-09-04 11:45:30,074 INFO    HandlerThread:81926 [interfaces.py:finish():200] Joined network monitor
+2024-09-04 11:45:30,075 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,075 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-04 11:45:30,075 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 3
+2024-09-04 11:45:30,075 DEBUG   SenderThread:81926 [sender.py:send():391] send: stats
+2024-09-04 11:45:30,075 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,076 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-04 11:45:30,076 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,076 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-04 11:45:30,076 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 4
+2024-09-04 11:45:30,076 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,076 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-04 11:45:30,076 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,077 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-04 11:45:30,077 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 5
+2024-09-04 11:45:30,077 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,077 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-04 11:45:30,079 DEBUG   SenderThread:81926 [sender.py:send():391] send: summary
+2024-09-04 11:45:30,080 INFO    SenderThread:81926 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 11:45:30,080 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,080 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-04 11:45:30,080 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 6
+2024-09-04 11:45:30,080 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,080 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-04 11:45:30,080 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,080 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-04 11:45:30,080 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 7
+2024-09-04 11:45:30,081 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:30,081 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:30,081 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-04 11:45:30,081 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:30,081 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-04 11:45:30,387 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-summary.json
+2024-09-04 11:45:30,472 INFO    wandb-upload_4:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/68pwpskb-media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json
+2024-09-04 11:45:30,498 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:30,808 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/86xmwzw6-media/table/summary/metrics_6_d4741b5694b273a13228.table.json
+2024-09-04 11:45:31,845 INFO    wandb-upload_2:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/j0y7oel0-media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html
+2024-09-04 11:45:32,115 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 8
+2024-09-04 11:45:32,115 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:32,115 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:32,115 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-04 11:45:32,116 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:32,116 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-04 11:45:32,116 INFO    SenderThread:81926 [job_builder.py:build():440] Attempting to build job artifact
+2024-09-04 11:45:32,117 INFO    SenderThread:81926 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-09-04 11:45:32,118 INFO    SenderThread:81926 [job_builder.py:build():545] adding wandb-job metadata file
+2024-09-04 11:45:32,126 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 9
+2024-09-04 11:45:32,126 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:32,126 DEBUG   SenderThread:81926 [sender.py:send():391] send: artifact
+2024-09-04 11:45:32,126 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-04 11:45:32,389 INFO    Thread-12 :81926 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:32,499 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:33,064 INFO    SenderThread:81926 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hkust-nlp_AgentBoard.git_agentboard_eval_main_sci.py - {'id': 'QXJ0aWZhY3Q6MTE3MzkzNzQ2OQ==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxODAyNjQ5NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3OTE4NjQ2Ng==', 'versionIndex': 7}}}
+2024-09-04 11:45:33,064 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:33,064 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-04 11:45:33,064 INFO    SenderThread:81926 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-04 11:45:33,391 INFO    SenderThread:81926 [dir_watcher.py:finish():388] scan: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files
+2024-09-04 11:45:33,391 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-summary.json wandb-summary.json
+2024-09-04 11:45:33,391 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-metadata.json wandb-metadata.json
+2024-09-04 11:45:33,391 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log output.log
+2024-09-04 11:45:33,394 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/requirements.txt requirements.txt
+2024-09-04 11:45:33,394 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/config.yaml config.yaml
+2024-09-04 11:45:33,396 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/conda-environment.yaml conda-environment.yaml
+2024-09-04 11:45:33,403 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json media/plotly/scienceworld/task_reward_w.r.t_steps_3_556d09a86d18f230ff18.plotly.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json media/plotly/scienceworld/progress_score_w.r.t_difficulty_5_980b2faa12d7442d9234.plotly.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json media/plotly/scienceworld/metrics_comparison_2_9e3fa89859d81cab3117.plotly.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary/agent_abilities_8_6650f167465c63af3af0.html media/html/summary/agent_abilities_8_6650f167465c63af3af0.html
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html media/html/summary/all_results_7_b706d5c57ebf1692a7ee.html
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/summary/metrics_6_d4741b5694b273a13228.table.json media/table/summary/metrics_6_d4741b5694b273a13228.table.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json media/table/scienceworld/metrics_1_04f8b2c950228b69176c.table.json
+2024-09-04 11:45:33,404 INFO    SenderThread:81926 [dir_watcher.py:finish():402] scan save: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json media/table/scienceworld/predictions_0_d6e33111066191b9d3cd.table.json
+2024-09-04 11:45:33,405 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 10
+2024-09-04 11:45:33,405 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:33,405 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:33,405 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-04 11:45:33,405 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:33,405 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-04 11:45:33,405 INFO    SenderThread:81926 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-04 11:45:33,500 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:33,501 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:34,216 INFO    wandb-upload_2:81926 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/config.yaml
+2024-09-04 11:45:34,241 INFO    wandb-upload_3:81926 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/output.log
+2024-09-04 11:45:34,242 INFO    wandb-upload_0:81926 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/requirements.txt
+2024-09-04 11:45:34,249 INFO    wandb-upload_6:81926 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/wandb-summary.json
+2024-09-04 11:45:34,419 INFO    wandb-upload_1:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/9agnws6k-media/html/summary/agent_abilities_8_6650f167465c63af3af0.html
+2024-09-04 11:45:34,501 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:34,502 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:34,985 INFO    wandb-upload_7:81926 [upload_job.py:push():130] Uploaded file /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/files/conda-environment.yaml
+2024-09-04 11:45:35,503 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:35,503 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 11:45:35,503 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:36,101 INFO    wandb-upload_5:81926 [upload_job.py:push():130] Uploaded file /tmp/tmp_4z1d6vuwandb/vjdf43th-media/plotly/scienceworld/success_rate_w.r.t_difficulty_4_0c732c50695d91d056aa.plotly.json
+2024-09-04 11:45:36,302 INFO    Thread-11 :81926 [sender.py:transition_state():626] send defer: 11
+2024-09-04 11:45:36,302 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:36,302 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-04 11:45:36,303 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:36,303 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-04 11:45:36,303 INFO    SenderThread:81926 [file_pusher.py:join():175] waiting for file pusher
+2024-09-04 11:45:36,305 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 12
+2024-09-04 11:45:36,305 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:36,305 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-04 11:45:36,305 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:36,305 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-04 11:45:36,305 INFO    SenderThread:81926 [file_stream.py:finish():601] file stream finish called
+2024-09-04 11:45:36,505 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:36,626 INFO    SenderThread:81926 [file_stream.py:finish():605] file stream finish is done
+2024-09-04 11:45:36,626 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 13
+2024-09-04 11:45:36,626 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:36,626 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:36,626 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-04 11:45:36,627 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:36,627 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-04 11:45:36,627 INFO    SenderThread:81926 [sender.py:transition_state():626] send defer: 14
+2024-09-04 11:45:36,627 DEBUG   SenderThread:81926 [sender.py:send():391] send: final
+2024-09-04 11:45:36,627 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 11:45:36,627 DEBUG   SenderThread:81926 [sender.py:send():391] send: footer
+2024-09-04 11:45:36,628 INFO    HandlerThread:81926 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-04 11:45:36,628 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: defer
+2024-09-04 11:45:36,628 INFO    SenderThread:81926 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-04 11:45:36,629 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:36,629 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: server_info
+2024-09-04 11:45:36,629 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:36,629 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 11:45:36,630 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: server_info
+2024-09-04 11:45:36,630 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-04 11:45:36,633 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-04 11:45:36,634 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 11:45:36,910 DEBUG   SenderThread:81926 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 11:45:36,910 INFO    MainThread:81926 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-09-04 11:45:36,910 INFO    MainThread:81926 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-09-04 11:45:36,910 INFO    MainThread:81926 [wandb_run.py:_footer_sync_info():3994] logging synced files
+2024-09-04 11:45:36,911 DEBUG   HandlerThread:81926 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-04 11:45:36,911 INFO    HandlerThread:81926 [handler.py:finish():882] shutting down handler
+2024-09-04 11:45:37,631 INFO    WriterThread:81926 [datastore.py:close():296] close: /home/zky/AgentBoard_metasearch/agentboard/wandb/run-20240904_114422-uzbw7pja/run-uzbw7pja.wandb
+2024-09-04 11:45:37,910 INFO    SenderThread:81926 [sender.py:finish():1631] shutting down sender
+2024-09-04 11:45:37,911 INFO    SenderThread:81926 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-04 11:45:37,911 INFO    SenderThread:81926 [file_pusher.py:join():175] waiting for file pusher
