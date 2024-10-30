@@ -20,6 +20,7 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 
 2. Install dependencies
 ```bash
+git clone https://github.com/tsinghua-fib-lab/AgentSquare.git
 conda create -n agentsquare python=3.9
 pip install -r requirements.txt
 ```
