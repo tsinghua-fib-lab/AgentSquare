@@ -20,15 +20,17 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 
 2. Install dependencies
 ```bash
+conda create -n agentsquare python=3.9
 pip install -r requirements.txt
 ```
 
-3. Install `alfworld` environment following instructions [here](https://github.com/alfworld/alfworld), and `webshop` environment [here](https://github.com/princeton-nlp/WebShop)
+3. If you want to run other tasks(such as webshop, etc), set up the corresponding environment. Install `webshop` environment following instructions [here](https://github.com/princeton-nlp/WebShop)
 
 
 ## Quick Start
 An exemplar script combining different agent modules to solve the task of ALFworld:
 ```bash
+export ALFWORLD_DATA=(Your path)/AgentSquare/alfworld
 cd alfworld
 sh run.sh or 
 python3 alfworld_run.py \
