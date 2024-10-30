@@ -3,9 +3,11 @@ def workflow(solver, env):
         for i in range(1, env.max_step_number):
             task_description = env.task_description
             if solver.tooluse is not None:
-                solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
+                tool_response = solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
+            else:
+                tool_response = None
             action = solver.reasoning(task_description=task_description, feedback='')
-            observation, reward, done = env.step([action])
+            observation, reward, done = env.step([action, tool_response])
             print(f'Act {i}: {action}\nObs {i}: {observation}')
             if done:
                 if reward == 1:
@@ -27,10 +29,12 @@ def workflow(solver, env):
             init_prompt = env.init_prompt_update(sub_tasks, sub_task_id)
             for step in range(env.max_step_number_plan):
                 if solver.tooluse is not None:
-                    solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
+                    tool_response = solver.tooluse(task_type = env.task_type, tool_instruction=env.tool_instruction, feedback_previous_tools = env.feedback_previous_tools)
+                else:
+                    tool_response = None
                 task_description = prompt_exp + init_prompt + env.prompt
                 action = solver.reasoning(task_description=task_description, feedback='')
-                observation, reward, done = env.step([action])
+                observation, reward, done = env.step([action, tool_response])
                 print(f'Act {i}: {action}\nObs {i}: {observation}')
                 i += 1
                 if done:

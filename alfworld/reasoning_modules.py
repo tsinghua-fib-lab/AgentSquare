@@ -2,39 +2,14 @@ from utils import llm_response
 from collections import Counter
 import re
 
-"""
-class ReasoningTemplate():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        # Initialization of the class
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-    def __call__(self, task_description: str, feedback :str= ''):
-        # Whether to call the memory module
-        if self.memory is not None:
-            self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        # few-shot
-        examples
-        # Design prompt
-        prompt = '''Your output must follow the examples.
-{memory}{examples}
-{task_description}'''
-        prompt = prompt.format(task_description=task_description, examples=examples, memory=self.memory_cache)
-        # Call the llm 
-        reasoning_result = llm_response(prompt=prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
-        
-        return reasoning_result
-"""
-
-class ReasoningIO():
+class ReasoningBase:
     def __init__(self, profile_type_prompt, memory, llms_type):
         self.profile_type_prompt = profile_type_prompt
         self.memory = memory
         self.llm_type = llms_type[0]
         self.task_name_cache = None
-    def __call__(self, task_description: str, feedback :str= ''):
+    
+    def process_task_description(self, task_description):
         task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
         if self.memory is not None:
             if self.task_name_cache is not None and self.task_name_cache == task_name:
@@ -47,6 +22,12 @@ class ReasoningIO():
         split_text = task_description.rsplit('You are in the', 1)
         examples = split_text[0]
         task_description = 'You are in the' + split_text[1]
+        
+        return examples, task_description
+
+class ReasoningIO(ReasoningBase):
+    def __call__(self, task_description: str, feedback :str= ''):
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
@@ -57,25 +38,9 @@ Here is the task:
         
         return reasoning_result
     
-class ReasoningCOT():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningCOT(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Solve the task step by step. Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
@@ -85,25 +50,9 @@ Here is the task:
         reasoning_result = llm_response(prompt=prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
         return reasoning_result
 
-class ReasoningCOTSC():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningCOTSC(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Solve the task step by step. Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
@@ -115,25 +64,9 @@ Here is the task:
         reasoning_result = string_counts.most_common(1)[0][0]
         return reasoning_result
     
-class ReasoningTOT():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningTOT(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Solve the task step by step. Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
@@ -171,25 +104,9 @@ Here is the task:
         select_id = sorted(ids, key=lambda x: vote_results[x], reverse=True)[0]
         return reasoning_results[select_id]
 
-class ReasoningDILU():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningDILU(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = [
             {
                 "role": "system",
@@ -208,25 +125,9 @@ Here is the task:
         reasoning_result = llm_response(prompt=prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
         return reasoning_result
 
-class ReasoningSelfRefine():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningSelfRefine(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Solve the task step by step. Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
@@ -277,25 +178,9 @@ You can only output in two formats:
                 feedback_result = feedback_result.replace(' on ', ' in/on ')
             return feedback_result.split(':')[-1].replace('.', '').strip()
         
-class ReasoningStepBack():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningStepBack(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         if task_description.split('Your')[-1].count('>') == 1:
             self.principle = self.stepback(task_description)
             
@@ -314,25 +199,9 @@ Here is the task:
         principle = llm_response(prompt=stepback_prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
         return principle
     
-class ReasoningSelfReflectiveTOT():
-    def __init__(self, profile_type_prompt, memory, llms_type):
-        self.profile_type_prompt = profile_type_prompt
-        self.memory = memory
-        self.llm_type = llms_type[0]
-        self.task_name_cache = None
+class ReasoningSelfReflectiveTOT(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
-        task_name = re.findall(r'Your task is to:\s*(.*?)\s*>', task_description)        
-        if self.memory is not None:
-            if self.task_name_cache is not None and self.task_name_cache == task_name:
-                pass
-            else:
-                self.task_name_cache = task_name
-                self.memory_cache = self.memory(task_description)
-        else:
-            self.memory_cache = ''
-        split_text = task_description.rsplit('You are in the', 1)
-        examples = split_text[0]
-        task_description = 'You are in the' + split_text[1]
+        examples, task_description = self.process_task_description(task_description)
         prompt = '''Interact with a household to solve a task. Your instructions must follow the examples.
 Here are some examples.
 {examples}{memory}
