@@ -1,5 +1,5 @@
 
-class AGENT():
+class Agent():
     def __init__(self, name, profile, MEMORY, REASONING, TOOLUSE, PLANNING, llms_type):
         self.name = name 
         self.profile = profile 
@@ -7,7 +7,6 @@ class AGENT():
             self.memory = MEMORY(llms_type)
         else:
             self.memory = None
-        #self.env = ENVIRONMENT()
         if TOOLUSE is not None:
             self.tooluse = TOOLUSE(llms_type)
         else:
@@ -16,4 +15,4 @@ class AGENT():
             self.planning = PLANNING(llms_type)
         else:
             self.planning = None
-        self.reasoning = REASONING(self.profile, self.memory, self.tooluse, llms_type)
+        self.reasoning = REASONING(self.profile, self.memory, llms_type)

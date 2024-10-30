@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 from bs4.element import Comment
 from utils import get_price
 from plan_prompt import plan_prompt
+from workflow import workflow
 WEBSHOP_URL = "http://101.6.69.111:3000"
 ACTION_TO_TEMPLATE = {
     'Description': 'description_page.html',
@@ -233,81 +234,96 @@ Action: click[Buy Now]
 """
 
 def webshop_run(idx, prompt, agent, to_print=True):
-  action = 'reset'
-  init_prompt = prompt
-  prompt = ''
-  if agent.planning is None:
-    for i in range(15):
-      #time.sleep(0.5)
-      try:
-        res = env.step(idx, action)
-        observation = res[0]
-      except AssertionError:
-        observation = 'Invalid action!'
-  
-      if action.startswith('think'):
-        observation = 'OK.'
 
-      if to_print:
-        print(f'Action: {action}\nObservation: {observation}\n')
-      
-        sys.stdout.flush()
-      if i:
-        prompt += f' {action}\nObservation: {observation}\n\nAction:'
-      else:
-        prompt += f'{observation}\n\nAction:'
-    
-      if res[2]: 
-        if res[1] == 1:
-           if agent.memory is not None:
-              agent.memory(prompt + 'success')
-        return res[1]
-      task_description = init_prompt + prompt[-(18000-len(init_prompt)):]
-      action = agent.reasoning(task_description, '', '').strip()    
-      #action = llm(init_prompt + prompt[-(6400-len(init_prompt)):], stop=['\n']).lstrip(' ').strip()
-  else:
-    res = env.step(idx, action)
-    init_prompt = plan_prompt
-    #print(idx, action)
-    observation = res[0]
-    task_description = observation.split("Instruction:")[1].split("[Search]")[0].strip()
-    task_type = 'online shopping'
-    sub_tasks = agent.planning(task_type, task_description, '')
-    print(sub_tasks)
-    for sub_task_id in range(len(sub_tasks)):
-      init_prompt = ''.join(plan_prompt[0:(sub_task_id+1)])
-      #print(init_prompt)
-      for i in range(10):
-        if sub_task_id and i == 0:
-          prompt += f" {action}\nObservation: {observation}\nReasoning instruction: {sub_tasks[sub_task_id]['reasoning instruction']}\n\nAction:"
-        elif i > 0:
-           prompt += f" {action}\nObservation: {observation}\n\nAction:"
-        else:
-          prompt += f"{observation}\nReasoning instruction: {sub_tasks[sub_task_id]['reasoning instruction']}\n\nAction:"
-        task_description = init_prompt + prompt[-(18000-len(init_prompt)):]
-        action = agent.reasoning(task_description, '', '').strip()  
-        try:
-          res = env.step(idx, action)
-          observation = res[0]
-        except AssertionError:
-          observation = 'Invalid action!'
-    
-        if action.startswith('think'):
-          observation = 'OK.'
-
-        if to_print:
-          print(f'Action: {action}\nObservation: {observation}\n')
+    class WEBSHOP():
+        def __init__(self, env, idx, solver, prompt, plan_prompt, to_print=True): 
+            self.init_prompt = prompt
+            self.prompt = ''
+            self.idx = idx
+            
+            # if solver.planning is None:
+            #     self.task_description = self.init_prompt + prompt
+            # else:
+            #     self.task_description = ob
+            # self.prompt = prompt
+            # self.ob = ob
+            self.task_type = 'online_shopping'
+            # self.reason_exp = reason_exp
+            #self.init_prompt = init_prompt
+            self.max_step_number = 15
+            self.max_step_number_plan = 10
+            self.last_action = ''
+            self.memory_pool = []
+            self.env = env
+            self.reason_exp = plan_prompt
+            self.prompt_cache = ''
+            if solver.planning is None:
+                self.step(['reset'])
+            else:
+                self.observation, _, _ = self.step(['reset'])
+                self.task_description = self.observation.split("Instruction:")[1].split("[Search]")[0].strip()
+            self.tool_instruction = ''
+            self.feedback_previous_tools = ''
+            
         
-          sys.stdout.flush()
-        if res[2]: 
-          if res[1] == 1:
-            if agent.memory is not None:
-                prompt += f" {action}\n"
-                agent.memory(prompt + 'success')
-          return res[1]
-        if ('Page 1' in observation or '< Prev' in observation) and (sub_task_id != (len(sub_tasks) - 1)):
-           break
-  return 0
+        def step(self, action):
+            try:
+                self.res= self.env.step(self.idx, action[0].strip())
+                observation = self.res[0]
+            except AssertionError:
+                observation = 'Invalid action!'
+            if action[0].startswith('think'):
+                observation = 'OK.'
+            if action[0] == 'reset':
+                self.prompt += f'{observation}\n\nAction:'
+            # elif action == 'reset' and self.solver.planning is not None:
+            #     pass
+            else:
+                self.prompt += f' {action[0]}\nObservation: {observation}\n\nAction:'
+                self.prompt = self.prompt[-14000:]
+                
+            self.task_description = self.init_prompt + self.prompt[-(18000-len(self.init_prompt)):]
+            # if res[1] == 1:
+            #     pass
+            # else:
+            #     res[1] = 0
+            # 返回处理后的值
+            self.observation = observation
+            return observation, self.res[1], self.res[2]
+        
+        def prompt_reset(self):
+            self.prompt_cache += self.prompt
+            self.prompt = ''
+
+        def prompt_exp_update(self, sub_task_id):
+            self.prompt_exp = ''.join(self.reason_exp[0:(sub_task_id+1)])
+            return self.prompt_exp
+
+        def memory_update(self):
+            return self.prompt + 'success'
+        
+        def memory_cache(self, sub_tasks, sub_task_id):
+            self.memory_pool = [(self.init_prompt_cache + self.prompt[:self.prompt.rfind("Observation")] + 'success')]
+            # self.memory_pool.append((self.ob.split(':')[0] + ': ' + self.last_action + '. ' + sub_tasks[sub_task_id]['reasoning instruction'] + '.\n>' + self.prompt)[:-1] + 'success.')
+            # return self.memory_pool
+        
+        def init_prompt_update(self, sub_tasks, sub_task_id):
+            if sub_task_id :
+                self.init_prompt_cache = self.prompt_cache[:self.prompt_cache.rfind("Observation")] + f"Observation: {self.observation}\nReasoning instruction: {sub_tasks[sub_task_id]['reasoning instruction']}\n\nAction:"
+            else:
+                self.init_prompt_cache = f"{self.observation}\nReasoning instruction: {sub_tasks[sub_task_id]['reasoning instruction']}\n\nAction:"
+            return self.init_prompt_cache
+        
+        def flag(self, action, sub_tasks, sub_task_id):
+            if ('Page 1' in self.observation or '< Prev' in self.observation) and (sub_task_id != (len(sub_tasks) - 1)):
+                return True
+            else:
+                return False
+            
+    # 使用封装的 CustomEnv
+    webshop = WEBSHOP(env, idx, agent, prompt, plan_prompt, to_print=to_print)
+
+    return workflow(agent, webshop)
 
 def run_episodes(prompt, agent, n=50):
   rs = []
@@ -334,72 +350,12 @@ def run_episodes(prompt, agent, n=50):
 
 
 
-from AGENT import AGENT
-from PLANNING_IO import PLANNING_IO
-from PLANNING_HUGGINGGPT import PLANNING_HUGGINGGPT
-from PLANNING_OPENAGI import PLANNING_OPENAGI
-from PLANNING_VOYAGE import PLANNING_VOYAGE
-from PLANNING_DEPS import PLANNING_DEPS
-from REASONING_IO import REASONING_IO
-from REASONING_COT import REASONING_COT
-from REASONING_TOT import REASONING_TOT
-from REASONING_DILU import REASONING_DILU
-from REASONING_SELFREFINE import REASONING_SELFREFINE
-from REASONING_COT_SC import REASONING_COT_SC
-from REASONING_STEPBACK import REASONING_STEPBACK
-from REASONING_HYBRID_TOT_SC_SELFREFINE import REASONING_HYBRID_TOT_SC_SELFREFINE
-from MEMORY_DILU import MEMORY_DILU
-from MEMORY_VOYAGE import MEMORY_VOYAGE
-from MEMORY_TP import MEMORY_TP
-from MEMORY_GENERATIVE import MEMORY_GENERATIVE
+from agent import AGENT
+from module_map import ModuleMap
 def run_webshop(planning=None, reasoning=None, tooluse=None, memory=None, llms_type=['gpt=3.5-turbo-instruct']):
-    planning_map = {
-        'io': PLANNING_IO,
-        'hugginggpt': PLANNING_HUGGINGGPT,
-        'openagi': PLANNING_OPENAGI,
-        'voyage': PLANNING_VOYAGE,
-        'deps': PLANNING_DEPS,
-        'none': None
-    }
-    reasoning_map = {
-        'io': REASONING_IO,
-        'cot': REASONING_COT,
-        'cot-sc': REASONING_COT_SC,
-        'tot': REASONING_TOT,
-        'self-refine': REASONING_SELFREFINE,
-        'dilu': REASONING_DILU,
-        'htss': REASONING_HYBRID_TOT_SC_SELFREFINE,
-        'stepback': REASONING_STEPBACK,
-    }
-    tooluse_map = {
-        'none': None,
-    }
-    memory_map = {
-        'none': None,
-        'dilu': MEMORY_DILU,
-        'voyage': MEMORY_VOYAGE, 
-        'tp': MEMORY_TP,
-        'generative': MEMORY_GENERATIVE,
-    }	
-    if planning.lower() in planning_map:
-        planning_func = planning_map[planning.lower()]
-    else:
-        raise KeyError("No corresponding planning module was found")
-    if reasoning.lower() in reasoning_map:
-        reasoning_func = reasoning_map[reasoning.lower()]
-    else:
-        raise KeyError("No corresponding reasoning module was found")
-    if tooluse.lower() in tooluse_map:
-        tooluse_func = tooluse_map[tooluse.lower()]
-    else:
-        raise KeyError("No corresponding tooluse module was found")
-    if memory.lower() in memory_map:
-        memory_func = memory_map[memory.lower()]
-    else:
-        raise KeyError("No corresponding memory module was found")
-    feedback = ''
-    WebshopSolver = AGENT("WebshopSolver", '', memory_func, reasoning_func, tooluse_func, planning_func, llms_type)
-    res1 = run_episodes(prompt1, WebshopSolver, 10)
+    planning_module, reasoning_module, tooluse_module, memory_module = ModuleMap(planning, reasoning, tooluse, memory)
+    WebshopSolver = AGENT("WebshopSolver", '', memory_module, reasoning_module, tooluse_module, planning_module, llms_type)
+    res1 = run_episodes(prompt1, WebshopSolver, 500)
     return res1
 
 if __name__ == "__main__":
