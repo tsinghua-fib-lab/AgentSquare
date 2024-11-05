@@ -347,14 +347,11 @@ def run_episodes(prompt, agent, n=50):
   print(r, sr, fr)
   return r
 
-
-
-
-from agent import AGENT
+from agent import Agent
 from module_map import ModuleMap
 def run_webshop(planning=None, reasoning=None, tooluse=None, memory=None, llms_type=['gpt=3.5-turbo-instruct']):
     planning_module, reasoning_module, tooluse_module, memory_module = ModuleMap(planning, reasoning, tooluse, memory)
-    WebshopSolver = AGENT("WebshopSolver", '', memory_module, reasoning_module, tooluse_module, planning_module, llms_type)
+    WebshopSolver = Agent("WebshopSolver", '', memory_module, reasoning_module, tooluse_module, planning_module, llms_type)
     res1 = run_episodes(prompt1, WebshopSolver, 500)
     return res1
 

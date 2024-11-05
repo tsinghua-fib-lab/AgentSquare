@@ -161,7 +161,7 @@ class ReasoningStepBack(ReasoningBase):
         principle = llm_response(prompt=stepback_prompt, model=self.llm_type, temperature=0.1, stop_strs=['\n'])
         return principle
 
-class ReasoningHybridTOTSCSelfRefine():
+class ReasoningHybridTOTSCSelfRefine(ReasoningBase):
     def __call__(self, task_description: str, feedback :str= ''):
         examples, task_description = self.process_task_description(task_description)
         prompt = '''Solve the task step by step. Your output must follow the examples process.  Don't refine your search. You have to choose one from a list of items.
