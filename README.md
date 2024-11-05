@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Quick Start
 An exemplar script combining different agent modules to solve the task of ALFworld:
 ```bash
-export ALFWORLD_DATA=(Your path)/AgentSquare/alfworld
+export ALFWORLD_DATA=(Your path)/AgentSquare/tasks/alfworld
 cd tasks/alfworld
 sh run.sh or 
 python3 alfworld_run.py \
