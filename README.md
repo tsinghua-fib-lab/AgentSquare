@@ -68,7 +68,7 @@ We kindly invite you to participate in the modular design challenge by standardi
 ### Contribute New Modules
 For guidance on standardizing the I/O interfaces of the four types of agent modules, please refer to [module pools](modules), which provides some existing modules, along with a complete interface description available in [module interface description](modules/readme.md). [Click here](modules/test_new_modules.md) for a detailed procedure. You can submit your standardized modules through this [link](https://drive.google.com/drive/folders/1CrtW_s3n0-tCJRtUDzaKFWrBid7MuF9v?usp=sharing). The .py file format is preferred, examples can be seen in the `modules` folder. We will check your submission timely, once approved we will cite and acknowledge your works in this repository. 
 
-## How to Add your own Task
+## How to Add Your Own Task
 You can refer to the `workflow.py` to integrate it with your encapsulated tasks, just like in `tasks/alfworld`.
 
 ## Citations
