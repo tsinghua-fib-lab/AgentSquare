@@ -2,11 +2,17 @@
 <img src="pics/logo1.png" style="width: 20%;height: 10%">
 <h1> AgentSquare: Automatic LLM Agent Search In Modular Design Space </h1>
 </div>
+<div align="center">
+  
+![Code License](https://img.shields.io/badge/Code%20License-Apache--2.0-blue.svg)
+![Python 3.8+](https://img.shields.io/badge/python-3.9.12-blue.svg)
 
+</div>
 <div align="center">
   <!-- <a href="#model">Model</a> • -->
   🌐 <a href="https://tsinghua-fib-lab.github.io/AgentSquare_website">Website</a> |
   📃 <a href="https://arxiv.org/abs/2410.06153">Paper</a> |
+  
 </div>
 
 # AgentSquare
@@ -23,7 +29,7 @@ export OPENAI_API_KEY=<YOUR KEY HERE>
 2. Install dependencies
 ```bash
 git clone https://github.com/tsinghua-fib-lab/AgentSquare.git
-conda create -n agentsquare python=3.9
+conda create -n agentsquare python=3.9.12
 conda activate agentsquare
 cd AgentSquare
 pip install -r requirements.txt
