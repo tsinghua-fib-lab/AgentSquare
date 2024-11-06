@@ -29,7 +29,7 @@ def get_json_response_from_gpt_reflect(
     return json_dict
 
 
-def search():
+def search(args):
     archive_reasoning = get_init_archive_reasoning()
     archive_planning = get_init_archive_planning()
     archive_memory = get_init_archive_memory()
@@ -59,7 +59,7 @@ def search():
         next_solution_planning = get_json_response_from_gpt_reflect(msg_list_planning, args.model)
         next_solution_memory = get_json_response_from_gpt_reflect(msg_list_memory, args.model)
         next_solution_tooluse = get_json_response_from_gpt_reflect(msg_list_tooluse, args.model)
-        with open('output.jsonl', 'a') as jsonl_file:
+        with open('output_reasoning.jsonl', 'a') as jsonl_file:
                 jsonl_file.write(json.dumps(next_solution_reasoning) + '\n')
         for key, value in next_solution_reasoning.items():
             print(f"{key}: {value}")

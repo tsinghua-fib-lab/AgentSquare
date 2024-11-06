@@ -230,7 +230,7 @@ def agent_build(planning=None, reasoning=None, tooluse=None, memory=None, llms_t
         'none': None
     }
     reasoning_map = {
-        'cot=sc': REASONING_COT_SC,
+        'cot-sc': REASONING_COT_SC,
     }
     tooluse_map = {
         'anytool': TOOLUSE_ANYTOOL,
@@ -246,19 +246,19 @@ def agent_build(planning=None, reasoning=None, tooluse=None, memory=None, llms_t
     if planning.lower() in planning_map:
         planning_func = planning_map[planning.lower()]
     else:
-        raise KeyError("没有找到对应的规划功能")
+        raise KeyError("No corresponding planning module was found")
     if reasoning.lower() in reasoning_map:
         reasoning_func = reasoning_map[reasoning.lower()]
     else:
-        raise KeyError("没有找到对应的推理功能")
+        raise KeyError("No corresponding reasoning module was found")
     if tooluse.lower() in tooluse_map:
         tooluse_func = tooluse_map[tooluse.lower()]
     else:
-        raise KeyError("没有找到对应的工具调用功能")
+        raise KeyError("No corresponding tooluse module was found")
     if memory.lower() in memory_map:
         memory_func = memory_map[memory.lower()]
     else:
-        raise KeyError("没有找到对应的记忆功能")
+        raise KeyError("No corresponding memory module was found")
     feedback = ''
     M3toolSolver = AGENT("PddlSolver", '', memory_func, reasoning_func, tooluse_func, planning_func, llms_type)
     return M3toolSolver

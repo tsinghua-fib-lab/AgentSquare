@@ -1,6 +1,6 @@
 from utils import llm_response
 from collections import Counter
-class REASONING_COT():
+class REASONING_COT_SC():
     def __init__(self, profile_type_prompt, memory, tooluse, llms_type):
         self.feedback = ''
         self.profile_type_prompt = profile_type_prompt
