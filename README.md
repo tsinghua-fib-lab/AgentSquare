@@ -18,7 +18,7 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 ## Setup
 1. Set up OpenAI API key and store in environment.
 ```bash
-export OPENAI_API_KEY="YOUR KEY HERE"
+export OPENAI_API_KEY=<YOUR KEY HERE>
 ```
 2. Install dependencies
 ```bash
@@ -41,6 +41,14 @@ python3 alfworld_run.py \
     --tooluse none\
     --memory dilu\
     --model gpt-3.5-turbo-0125 \
+```
+
+## Other Tasks
+### webshop
+Install `webshop` environment following instructions [here](https://github.com/princeton-nlp/WebShop) and launch the `WebShop` webpage.
+```bash
+cd tasks/webshop
+sh run.sh
 ```
 
 ## Contribute to AgentSquare
