@@ -21,9 +21,9 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 ![intro](pics/intro.png)
 
 ## 🎉 News
-- [x] [2024.11.07]📢Add video.
-- [x] [2024.10.10]📢Release the code.
-- [x] [2024.10.08]📢Release the full paper[AgentSquare: Automatic LLM Agent Search in Modular Design Space](https://arxiv.org/abs/2410.06153)!
+- [x] [2024.11.07]📢Provide demos of AgentSquare.
+- [x] [2024.10.10]📢Release the source code and our searched new modules.
+- [x] [2024.10.08]📢Release the full paper [AgentSquare: Automatic LLM Agent Search in Modular Design Space](https://arxiv.org/abs/2410.06153)!
 
 ## Setup
 1. Set up OpenAI API key and store in environment.
