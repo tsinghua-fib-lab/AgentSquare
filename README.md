@@ -59,20 +59,31 @@ cd tasks
 pip install -r requirements.txt
 ```
 
-### webshop
+<details>
+  
+<summary> Webshop </summary>
+  
 Install `webshop` environment following instructions [here](https://github.com/princeton-nlp/WebShop) and launch the `WebShop` webpage.
 ```bash
 cd tasks/webshop
 sh run.sh
 ```
+</details>
 
-### M3Tooleval
+<details>
+
+<summary> M3Tooleval </summary>
+
 ```bash
 cd tasks/m3tooleval
 sh run.sh
 ```
+</details>
 
-### Sciworld
+<details>
+
+<summary> Sciworld </summary>
+
 Install `Sciworld` environment following instructions [here](https://github.com/hkust-nlp/AgentBoard) .
 ```bash
 cd tasks/sciworld/agentboard
@@ -84,6 +95,7 @@ python3 eval_main_sci.py \
     --tooluse none \
     --memory none \
 ```
+</details>
 
 ## Modular Design Challenge
 We kindly invite you to participate in the modular design challenge by standardizing your LLM agents with our recommended I/O interfaces.  Let's work together to offer a platform for fully exploiting the potential of successful agent designs and consolidating the collective efforts of LLM agent research community! 
