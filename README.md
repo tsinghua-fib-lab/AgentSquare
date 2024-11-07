@@ -53,7 +53,8 @@ python3 alfworld_run.py \
     --model gpt-3.5-turbo-0125 \
 ```
 
-## Other Tasks
+## Run Other Tasks
+### Install dependencies
 ```bash
 cd tasks
 pip install -r requirements.txt
