@@ -68,6 +68,19 @@ cd tasks/m3tooleval
 sh run.sh
 ```
 
+### Sciworld
+Install `Sciworld` environment following instructions [here](https://github.com/hkust-nlp/AgentBoard) .
+```bash
+cd tasks/sciworld/agentboard
+python3 eval_main_sci.py \
+    --cfg-path ../eval_configs/main_results_all_tasks.yaml     --tasks scienceworld     --wandb     --log_path ../results/gpt-4o-2024-08-06    --project_name evaluate-gpt-4o-2024-08-06     --baseline_dir ../data/baseline_results \
+    --model gpt-4o-2024-08-06 \
+    --planning none \
+    --reasoning cot \
+    --tooluse none \
+    --memory none \
+```
+
 ## Modular Design Challenge
 We kindly invite you to participate in the modular design challenge by standardizing your LLM agents with our recommended I/O interfaces.  Let's work together to offer a platform for fully exploiting the potential of successful agent designs and consolidating the collective efforts of LLM agent research community! 
 
