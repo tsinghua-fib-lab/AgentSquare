@@ -111,12 +111,10 @@ You can refer to the `workflow.py` to integrate it with your encapsulated tasks,
 Please considering citing our paper and staring this repo if you use AgentSquare and find it useful, thanks! Feel free to contact fenglixu@tsinghua.edu.cn or open an issue if you have any question.
 
 ```bibtex
-@misc{shang2024agentsquare,
-      title={AgentSquare: Automatic LLM Agent Search in Modular Design Space}, 
-      author={Yu Shang and Yu Li and Keyu Zhao and Likai Ma and Jiahe Liu and Fengli Xu and Yong Li},
-      year={2024},
-      eprint={2410.06153},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
+@article{shang2024agentsquare,
+  title={AgentSquare: Automatic LLM Agent Search in Modular Design Space},
+  author={Shang, Yu and Li, Yu and Zhao, Keyu and Ma, Likai and Liu, Jiahe and Xu, Fengli and Li, Yong},
+  journal={arXiv preprint arXiv:2410.06153},
+  year={2024}
 }
 ```
