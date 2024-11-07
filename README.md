@@ -20,6 +20,9 @@ The official implementation for paper [AgentSquare: Automatic LLM Agent Search i
 
 ![intro](pics/intro.png)
 
+## Demo
+![demo](https://github.com/tsinghua-fib-lab/AgentSquare/blob/main/pics/demo.mp4)
+
 ## 🎉 News
 - [x] [2024.11.07]🔥Provide demos of AgentSquare.
 - [x] [2024.10.10]🔥Release the source code and our searched new modules.
