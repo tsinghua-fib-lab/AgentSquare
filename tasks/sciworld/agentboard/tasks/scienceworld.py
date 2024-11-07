@@ -10,7 +10,7 @@ from environment import load_environment
 import jsonlines
 from common.registry import registry
 from utils_llm import get_price
-from REASONING_STEPBACK import REASONING_STEPBACK
+from reasoning_modules import REASONING_STEPBACK
 
 from utils.logging.logger import TaskLogger
 from utils.logging.agent_logger import AgentLogger
@@ -123,96 +123,96 @@ class EvalScienceworld(BaseTask):
         examples = self.init_prompt_dict['examples']
         system_message = self.init_prompt_dict['system_msg']
 
-        class SCIWORLD():
-            def __init__(self, env, solver, agent):
-                self.max_step_number = self.max_num_steps
-                if solver.planning is None:
-                    self.task_description = self.get_task_description()
-                else:
-                    self.task_description = modified_goal
-                self.task_type = task_name
-                self.max_step_number_plan = 6
-                self.tool_instruction = ''
-                self.feedback_previous_tools = ''
-                self.solver = solver
-                self.agent = agent
-                self.correct_action = []
-                self.memory = ''
-                self.prompt = ''
-                self.memory_pool = []
-                self.env= env
+        # class SCIWORLD():
+        #     def __init__(self, env, solver, agent):
+        #         self.max_step_number = self.max_num_steps
+        #         if solver.planning is None:
+        #             self.task_description = self.get_task_description()
+        #         else:
+        #             self.task_description = modified_goal
+        #         self.task_type = task_name
+        #         self.max_step_number_plan = 6
+        #         self.tool_instruction = ''
+        #         self.feedback_previous_tools = ''
+        #         self.solver = solver
+        #         self.agent = agent
+        #         self.correct_action = []
+        #         self.memory = ''
+        #         self.prompt = ''
+        #         self.memory_pool = []
+        #         self.env= env
                 
-            def get_task_description(self):
-                input_prompt = ''
-                input_prompt += instruction
+        #     def get_task_description(self):
+        #         input_prompt = ''
+        #         input_prompt += instruction
 
-                if len(examples) > 0:
-                    input_prompt += "\nHere are examples:\n"
-                # for example in examples:
-                input_prompt += examples + "\n"
+        #         if len(examples) > 0:
+        #             input_prompt += "\nHere are examples:\n"
+        #         # for example in examples:
+        #         input_prompt += examples + "\n"
                 
-                input_prompt += "You should output action in the command pool to accomplish the goal: " + modified_goal + "\n" 
+        #         input_prompt += "You should output action in the command pool to accomplish the goal: " + modified_goal + "\n" 
                 
-                input_prompt += "You should use the following command for help when your action cannot be understood: " + self.agent.check_actions + "\n"
+        #         input_prompt += "You should use the following command for help when your action cannot be understood: " + self.agent.check_actions + "\n"
                 
 
-                history = self.agent.memory
-                task_description = input_prompt + "\n".join([item[0] + ": " + item[1] for item in history])
-                if self.solver.memory is not None:
-                        memory = self.solver.memory(f"Task: {modified_goal} ")
-                        if memory is not None:
-                            task_description += memory
+        #         history = self.agent.memory
+        #         task_description = input_prompt + "\n".join([item[0] + ": " + item[1] for item in history])
+        #         if self.solver.memory is not None:
+        #                 memory = self.solver.memory(f"Task: {modified_goal} ")
+        #                 if memory is not None:
+        #                     task_description += memory
 
-                task_description += "\nAction: "
-                return task_description
-            def step(self, action):
-                action = self.agent.action_parser_for_special_llms(action[0])
-                observation, reward, done, info = self.env.step(action)
-                if reward > last_reward:
-                    self.correct_action.append({"Action": action,"Observation": observation})
-                    last_reward = reward
-                self.agent.update(action=action,
-                                state=observation)
-                return observation, reward, done
-            def memory_update(self):
-                return f"Task : {modified_goal} \nThe correct trajectory is : {self.correct_action}"
-            def prompt_reset():
-                self.prompt = ''
-            def prompt_exp_update(self, sub_task_id):
-                return ''
-            def init_prompt_update(self, sub_tasks, sub_task_id):
-                input_prompt = ''
-                input_prompt += instruction
+        #         task_description += "\nAction: "
+        #         return task_description
+        #     def step(self, action):
+        #         action = self.agent.action_parser_for_special_llms(action[0])
+        #         observation, reward, done, info = self.env.step(action)
+        #         if reward > last_reward:
+        #             self.correct_action.append({"Action": action,"Observation": observation})
+        #             last_reward = reward
+        #         self.agent.update(action=action,
+        #                         state=observation)
+        #         return observation, reward, done
+        #     def memory_update(self):
+        #         return f"Task : {modified_goal} \nThe correct trajectory is : {self.correct_action}"
+        #     def prompt_reset():
+        #         self.prompt = ''
+        #     def prompt_exp_update(self, sub_task_id):
+        #         return ''
+        #     def init_prompt_update(self, sub_tasks, sub_task_id):
+        #         input_prompt = ''
+        #         input_prompt += instruction
 
-                if len(examples) > 0:
-                    input_prompt += "\nHere are examples:\n"
-                input_prompt += examples + "\n"
+        #         if len(examples) > 0:
+        #             input_prompt += "\nHere are examples:\n"
+        #         input_prompt += examples + "\n"
                 
-                input_prompt += "The final task you should complete is : " + modified_goal + "\n"  
-                input_prompt += "The current subtask you should select the action in the command pool to complete is :" + sub_tasks[sub_task_id]['reasoning instruction'] + "\n" 
+        #         input_prompt += "The final task you should complete is : " + modified_goal + "\n"  
+        #         input_prompt += "The current subtask you should select the action in the command pool to complete is :" + sub_tasks[sub_task_id]['reasoning instruction'] + "\n" 
                 
-                input_prompt += "You should use the following commands for help when your action cannot be understood: " + self.agent.check_actions + "\n"
-                input_prompt += "If you think you've accomplished your goal, just output OK."
+        #         input_prompt += "You should use the following commands for help when your action cannot be understood: " + self.agent.check_actions + "\n"
+        #         input_prompt += "If you think you've accomplished your goal, just output OK."
 
-                history = self.agent.memory
-                task_description = input_prompt + "\n".join([item[0] + ": " + item[1] for item in history])
-                if self.solver.memory is not None:
-                    memory = self.solver.memory(f"Task: {modified_goal}")
-                    if memory is not None:
-                        task_description += memory
+        #         history = self.agent.memory
+        #         task_description = input_prompt + "\n".join([item[0] + ": " + item[1] for item in history])
+        #         if self.solver.memory is not None:
+        #             memory = self.solver.memory(f"Task: {modified_goal}")
+        #             if memory is not None:
+        #                 task_description += memory
 
-                task_description += "\nAction: "
-                return task_description
-            def memory_cache(self, sub_tasks, sub_task_id):
-                self.memory_pool.append(f"Task : {modified_goal} \nThe correct trajectory is : {self.correct_action}")
-            def flag(self, action, sub_tasks, sub_task_id):
-                if 'OK' in action :
-                    return True
-                else:
-                    return False
+        #         task_description += "\nAction: "
+        #         return task_description
+        #     def memory_cache(self, sub_tasks, sub_task_id):
+        #         self.memory_pool.append(f"Task : {modified_goal} \nThe correct trajectory is : {self.correct_action}")
+        #     def flag(self, action, sub_tasks, sub_task_id):
+        #         if 'OK' in action :
+        #             return True
+        #         else:
+        #             return False
 
-        sciworld = SCIWORLD(self.env, self.scienceworldSolver, self.agent)
-        return workflow(sciworld, self.scienceworldSolver)
+        # sciworld = SCIWORLD(self.env, self.scienceworldSolver, self.agent)
+        # return workflow(sciworld, self.scienceworldSolver)
 
         if self.scienceworldSolver.planning is None:
             for i in range(self.max_num_steps):

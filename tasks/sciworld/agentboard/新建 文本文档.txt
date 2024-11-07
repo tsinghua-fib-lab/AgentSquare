@@ -1,4 +1,4 @@
 conda activate AgentBoard
-cd AgentBoard_metasearch/agentboard
+cd sciworld/agentboard
 python3 eval_main_sci.py     --cfg-path ../eval_configs/main_results_all_tasks.yaml     --tasks scienceworld     --wandb     --log_path ../results/gpt-4o-2024-08-06    --project_name evaluate-gpt-4o-2024-08-06     --baseline_dir ../data/baseline_results     --model gpt-4o-2024-08-06 --planning none --reasoning cot --tooluse none --memory none
 
