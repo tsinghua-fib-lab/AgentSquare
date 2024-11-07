@@ -44,9 +44,11 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Quick Start: Demo with ALFWorld
+
 <video src="https://github.com/user-attachments/assets/8c755c77-491b-43ef-a6a5-1462df3587e4">
     Your browser does not support the video tag.
 </video>
+
 An exemplar script combining different agent modules to solve the task of ALFworld:
 ```bash
 export ALFWORLD_DATA=<Your path>/AgentSquare/tasks/alfworld
