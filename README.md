@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start: Demo with ALFWorld
 
-<video src="https://github.com/user-attachments/assets/9b4d6840-6594-411f-a376-4f1dd773e466">
+<video src="https://github.com/user-attachments/assets/a99bb02c-28fe-400b-9696-db8974ef0f97">
     Your browser does not support the video tag.
 </video>
 
