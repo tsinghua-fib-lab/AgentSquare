@@ -45,9 +45,7 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start: Demo with ALFWorld
 
-<video src="https://github.com/user-attachments/assets/23090869-8c60-4ee8-98ec-75dd6f4255a0">
-    Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/23090869-8c60-4ee8-98ec-75dd6f4255a0
 
 An exemplar script combining different agent modules to solve the task of ALFworld:
 ```bash
