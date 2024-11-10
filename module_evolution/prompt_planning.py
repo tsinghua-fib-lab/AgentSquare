@@ -101,7 +101,7 @@ planning_DEPS = {
     "name": "DEPS",
     "module type": "planning",
     "code": """
-    class PLANNING_IO():
+    class PLANNING_DEPS():
         # Initialization of the class, do not modify this part
         def __init__(self, llms_type):
             self.plan = []
