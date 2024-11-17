@@ -415,8 +415,8 @@ reasoning_Stepback = {
 system_prompt = """You are a helpful assistant. Make sure to return in a WELL-FORMED JSON object."""
 
 base = """# Overview
-As an expert in natural language processing research, you are experimenting with various LLM agents to enhance their capabilities. Your goal is to develop reasoning components, including prompt engineering and control structures, to tackle complex problems. These agents consist of four key modules: planning (breaking down a complex task into manageable sub-tasks), reasoning (solving individual sub-tasks), tool use (choosing and utilizing suitable external tools for task resolution), and memory (storing and retrieving experiences and observations).
-Your goal is to develop an agent equipped with a highly effective reasoning module that excels in ALFworld's sequential decision-making tasks, which involve steps such as locating hidden objects, relocating items, and using objects to manipulate other objects.
+You are an expert machine learning researcher testing various LLM agents. Your objective is to design reasoning modules such as prompts and control flows within these agents to solve complex tasks. The agents have four modules including planning (decomposing a large task into sub-tasks), reasoning (addressing a sub-task), tool use (selecting appropriate external tools for task solving) and memory (read and write experience, observations). \
+Your aim is to design an agent with optimal reasoning module performing well on ALFworld (sequential decision making tasks with steps including finding hidden objects, moving objects and manipulating objects with other objects ).
 
 # Task Overview:
 ALFworld is a suite of text-based environments that challenge an agent to solve multi-step tasks in a variety of interactive environments. It includes 6 types of tasks in which an agent needs to achieve a high-level goal (e.g. examine paper under desklamp) by navigating and interacting with a simulated household via text actions (e.g. go to coffeetable 1, take paper 2, use desklamp 1).
@@ -468,37 +468,39 @@ task_description(str) represents the ongoing task = 'You are in the middle of a 
 The expected next reasoning module output is 'go to toilet 1'. In order to accomplish this task, you must ensure that the output format is consistent with the example while you are reasoning, so you should pay attention to adding examples when writing prompts, and drive the output format of the large language model to be consistent with the example.
 ```
 
-# Repository of Discovered Architectures
-This repository contains the reasoning module architectures that have been explored:
+# Discovered architecture archive
+Here is the archive of the discovered reasoning module architectures:
 
-[REPOSITORY]
+[ARCHIVE]
 
-The performance metric indicates the task completion rate.
+The performance represents the completion rate of the task. 
 
 # Output Instruction and Example:
-The first key should be "thought", which documents your thought process for designing the next function. In this "thought" section, start by reasoning about what the next interesting agent to experiment with should be, followed by an explanation of your reasoning and the overall concept behind the agent’s design. Conclude with a detailed outline of the implementation steps.
-The second key, "name", represents the name of your upcoming agent architecture.
-Lastly, the third key, "code", contains the exact Python implementation of the corresponding module function. The "code" section must include COMPLETE CODE that is robust, reusable, and suitable as part of the overall project. Ensure that the implementation is thorough and reliable.
+The first key should be ("thought"), and it should capture your thought process for designing the next function. In the "thought" section, first reason about what should be the next interesting agent to try, then describe your reasoning and the overall concept behind the agent design, and finally detail the implementation steps.
+The second key ("name") corresponds to the name of your next agent architecture. 
+Finally, the last key ("code") corresponds to the exact module function in Python code that you would like to try. You must write a COMPLETE CODE in "code": Your code will be part of the entire project, so please implement complete, reliable, reusable code snippets.
 
 Here is an example of the output format for the next agent architecture:
 
 [Reasoning_example]
 
-You must adhere strictly to the specified input/output interface as defined above. Additionally, setting the LLM's role and temperature can be beneficial for better control over its responses. AVOID using any functions that are not defined. In the __call__() method, ensure you provide the instruction, input details, and the required output fields necessary for each LLM agent to perform its specific role within the architecture.
+You must strictly follow the exact input/output interface used above. Also, it could be helpful to set the LLM’s role and temperature to further control the LLM’s response. DON'T try to use some function that doesn't exist. In __call__(), you need to specify the instruction, input information, and the required output fields for various LLM agents to do their specific part of the architecture. 
 
 # Your task
-As an expert in prompting techniques and agent frameworks from the literature, your task is to enhance the specified performance metrics for the given task by proposing novel reasoning modules, including innovative prompts and control flows.
-Carefully analyze the discovered agents to extract valuable insights, lessons, and potential stepping stones for future designs.
-Be imaginative and innovative in conceptualizing the next compelling agent to experiment with. Drawing inspiration from related agent-focused papers or academic research in other fields is highly encouraged.
-Leverage the knowledge from the archive and academic literature to devise a creative and impactful agentic system design.
+You are deeply familiar with prompting techniques and the agent works from the literature. Your goal is to maximize the specified performance metrics on the given task by proposing interestingly new reasoning module including prompts and control flows.
+Observe the discovered agents carefully and think about what insights, lessons, or stepping stones can be learned from them.
+Be creative when thinking about the next interesting agent to try. You are encouraged to draw inspiration from related agent papers or academic papers from other research areas.
+Use the knowledge from the archive and inspiration from academic literature to propose the next interesting agentic system design.
 For the directly callable function methods mentioned in the inference module example, you can call them directly and do not need to define them. If you need to create new function methods, you need to make sure that the function is complete and runnable.
 You need to learn as much as possible from well-performed reasoning modules.
+THINK OUTSIDE THE BOX.
+
 """
 
 def get_prompt_reasoning(current_archive):
     archive_str = ",\n".join([json.dumps(sol) for sol in current_archive])
     archive_str = f"[{archive_str}]"
-    prompt = base.replace("[REPOSITORY]", archive_str)
+    prompt = base.replace("[ARCHIVE]", archive_str)
     prompt = prompt .replace("[Reasoning_example]", json.dumps(Reasoning_example))
 
     return system_prompt, prompt
