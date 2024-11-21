@@ -308,14 +308,14 @@ sub-task 1: {{'description': 'First I need to find and take a lettuce', 'reasoni
 sub-task 2: {{'description': 'Next, I need to clean it with sinkbasin', 'reasoning instruction': 'Clean the lettuce with sinkbasin', 'tool use instruction': None}}
 sub-task 3: {{'description': 'Finally, I need to put it in diningtable', 'reasoning instruction': 'Go to diningtable and put the lettuce in diningtable', 'tool use instruction': None}}
 
-# Planning module utility code:
+# Planning Module Template:
 ```python
 import re
 import ast
 from utils import llm_response
 from planning_prompt import *
 
-class PLANNING_IO():
+class PLANNING():
     def __init__(self, llms_type):
         self. plan = []
         self.llm_type = llms_type[0]
