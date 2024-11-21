@@ -286,7 +286,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma 
 from langchain.docstore.document import Document
 from utils import llm_response
-class MEMORY_DILU():
+class MEMORY():
     # Initialization of the class and database, do not modify this part
     def __init__(self, llms_type) -> None:
         self.llm_type = llms_type[0]  
