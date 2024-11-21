@@ -214,7 +214,7 @@ Action: budget_calculator, 450, 120, 5 End Action
 1050
 Answer: 1050
 
-# Tool-use module utility code:
+# Tool-use Module Template:
 ```python
 import os
 import re
@@ -224,7 +224,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain.docstore.document import Document
 from tooluse_IO_pool import *
-class TOOLUSE_IO():
+class TOOLUSE():
     def __init__(self, llms_type):
         self.llm_type = llms_type[0]
         '''
