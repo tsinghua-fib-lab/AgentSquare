@@ -1,6 +1,6 @@
 <div align="center">
 <img src="pics/logo1.png" style="width: 20%;height: 10%">
-<h1> AgentSquare: Automatic LLM Agent Search In Modular Design Space </h1>
+<h1> [ICLR 2025] AgentSquare: Automatic LLM Agent Search In Modular Design Space </h1>
 </div>
 <div align="center">
   
