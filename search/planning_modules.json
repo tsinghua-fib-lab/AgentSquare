@@ -1,0 +1,44 @@
+[
+    {
+        "thought": "Do not use planning module",
+        "name": "None",
+        "module type": "planning",
+        "code": "None",
+        "performance": 0
+    },
+    {
+        "thought": "Input the task description to a LLM and directly output the sub-tasks",
+        "name": "IO",
+        "module type": "planning",
+        "code": "class PlanningIO(PlanningBase):\n    def create_prompt(self, task_type, task_description, feedback, few_shot):\n        if feedback == '':\n            prompt = '''You are a planner who divides a {task_type} task into several subtasks. You also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nTask: {task_description}\n'''\n            prompt = prompt.format(example=few_shot, task_description=task_description, task_type=task_type)\n        else:\n            prompt = '''You are a planner who divides a {task_type} task into several subtasks. You also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nend\n--------------------\nReflexion:{feedback}\nTask:{task_description}\n'''\n            prompt = prompt.format(example=few_shot, task_description=task_description, task_type=task_type, feedback=feedback)\n        return prompt\n    ",
+        "performance": 0.6
+    },
+    {
+        "thought": "Input a task description in a LLM and output sub-goals. It is commonly used for embodied intelligence tasks.",
+        "name": "DEPS",
+        "module type": "planning",
+        "code": "class PlanningDEPS(PlanningBase):\n    def create_prompt(self, task_type, task_description, feedback, few_shot):\n        if feedback == '':\n            prompt = '''You are a helper AI agent in reasoning. You need to generate the sequences of sub-goals (actions) for a {task_type} task in multi-hop questions. You also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nTask: {task_description}\n'''\n            prompt = prompt.format(example=few_shot, task_description=task_description, task_type=task_type)\n        else:\n            prompt = '''You are a helper AI agent in reasoning. You need to generate the sequences of sub-goals (actions) for a {task_type} task in multi-hop questions. You also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nend\n--------------------\nReflexion:{feedback}\nTask:{task_description}\n'''\n            prompt = prompt.format(example=few_shot, task_description=task_description, task_type=task_type, feedback=feedback)\n        return prompt\n    ",
+        "performance": 0.54
+    },
+    {
+        "thought": "Input a task description into a LLM and output as few sub-tasks as possible. It is often used for image processing tasks and focuses on the correlation between sub-tasks.",
+        "name": "HUGGINGGPT",
+        "module type": "planning",
+        "code": "class PlanningHUGGINGGPT(PlanningBase):\n    def create_prompt(self, task_type, task_description, feedback, few_shot):\n        if feedback == '':\n            prompt = '''You are a planner who divides a {task_type} task into several subtasks. Think step by step about all the tasks needed to resolve the user's request. Parse out as few tasks as possible while ensuring that the user request can be resolved. Pay attention to the dependencies and order among tasks. you also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nTask: {task_description}\n'''\n        else:\n            prompt = '''You are a planner who divides a {task_type} task into several subtasks. Think step by step about all the tasks needed to resolve the user's request. Parse out as few tasks as possible while ensuring that the user request can be resolved. Pay attention to the dependencies and order among tasks. you also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nend\n--------------------\nReflexion:{feedback}\nTask:{task_description}\n'''\n        return prompt.format(example=few_shot, task_description=task_description, task_type=task_type, feedback=feedback)\n    ",
+        "performance": 0.52
+    },
+    {
+        "thought": "Input a task description in a LLM and output a to-do list. It is often used to solve tasks using various tools",
+        "name": "OPENAGI",
+        "module type": "planning",
+        "code": "class PlanningOPENAGI(PlanningBase):\n    def create_prompt(self, task_type, task_description, feedback, few_shot):\n        if feedback == '':\n            prompt = '''You are a planner who is an expert at coming up with a todo list for a given {task_type} objective.\nFor each task, you also need to give the reasoning instructions for each subtask and the instructions for calling the tool.\nEnsure the list is as short as possible, and tasks in it are relevant, effective and described in a single sentence.\nDevelop a concise to-do list to achieve the objective.  \nYour output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nTask: {task_description}\n'''\n        else:\n            prompt = '''You are a planner who is an expert at coming up with a todo list for a given {task_type} objective.\nFor each task, you also need to give the reasoning instructions for each subtask and the instructions for calling the tool.\nEnsure the list is as short as possible, and tasks in it are relevant, effective and described in a single sentence.\nDevelop a concise to-do list to achieve the objective.\nYour output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nend\n--------------------\nReflexion:{feedback}\nTask:{task_description}\n'''\n        return prompt.format(example=few_shot, task_description=task_description, task_type=task_type, feedback=feedback)\n    ",
+        "performance": 0.46
+    },
+    {
+        "thought": "Input a task description in a LLM and output sub-goals.  It is often used to solve open world exploration problems",
+        "name": "Voyager",
+        "module type": "planning",
+        "code": "class PlanningVoyager(PlanningBase):\n    def create_prompt(self, task_type, task_description, feedback, few_shot):\n        if feedback == '':\n            prompt = '''You are a helpful assistant that generates subgoals to complete any {task_type} task specified by me.\nI'll give you a final task, you need to decompose the task into a list of subgoals.\nYou must follow the following criteria:\n1) Return a  list of subgoals that can be completed in order to complete the specified task.\n2) Give the reasoning instructions for each subgoal and the instructions for calling the tool. \nYou also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nTask: {task_description}\n'''\n        else:\n            prompt = '''You are a helpful assistant that generates subgoals to complete any {task_type} task specified by me.\nI'll give you a final task, you need to decompose the task into a list of subgoals.\nYou must follow the following criteria:\n1) Return a list of subgoals that can be completed in order to complete the specified task.\n2) Give the reasoning instructions for each subgoal and the instructions for calling the tool. \nYou also need to give the reasoning instructions for each subtask and the instructions for calling the tool. Your output format should follow the example below.\nThe following are some examples:\nTask: {example}\n\nend\n--------------------\nreflexion:{feedback}\ntask:{task_description}\n    ",
+        "performance": 0.24
+    }
+]

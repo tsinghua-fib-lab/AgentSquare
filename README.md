@@ -105,6 +105,13 @@ python3 eval_main_sci.py \
 ```
 </details>
 
+## 🧪 Main Search Experiment
+
+```bash
+cd search
+python agent_search.py
+```
+
 ## 🌟 Modular Design Challenge
 We kindly invite you to participate in the modular design challenge by standardizing your LLM agents with our recommended I/O interfaces.  Let's work together to offer a platform for fully exploiting the potential of successful agent designs and consolidating the collective efforts of LLM agent research community! 
 

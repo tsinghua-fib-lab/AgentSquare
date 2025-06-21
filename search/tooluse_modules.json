@@ -1,0 +1,37 @@
+[
+    {
+        "thought": "Do not use tooluse module",
+        "name": "None",
+        "module type": "tooluse",
+        "code": "None",
+        "performance": 0
+    },
+    {
+        "thought": "Input the task description to a tool use module and directly output the response",
+        "name": "IO",
+        "module type": "tooluse",
+        "code": "",
+        "performance": 0
+    },
+    {
+        "thought": "Select the tool category based on the task description, and then select the specific tool",
+        "name": "ANYTOOL",
+        "module type": "tooluse",
+        "code": "",
+        "performance": 0
+    },
+    {
+        "thought": "Convert the instructions and API documentation into vector representations, and then retrieve the most relevant API by calculating the vector similarity.",
+        "name": "TOOLBENCH",
+        "module type": "tooluse",
+        "code": "",
+        "performance": 0
+    },
+    {
+        "thought": "Determine the best response using an LLM by inputting the problem description into a tool-use module, performing three selections, and directly outputting the best one.",
+        "name": "TOOLFORMER",
+        "module type": "tooluse",
+        "code": "",
+        "performance": 0
+    }
+]
