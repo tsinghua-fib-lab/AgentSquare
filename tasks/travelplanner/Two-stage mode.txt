@@ -1,0 +1,20 @@
+conda activate travelplanner
+cd 
+
+set OUTPUT_DIR=
+set MODEL_NAME=
+set OPENAI_API_KEY=
+set GOOGLE_API_KEY=
+set SET_TYPE=validation
+
+
+set STRATEGY=direct
+set MODE=two-stage
+set TMP_DIR=
+set SUBMISSION_DIR=
+
+set EVALUATION_FILE_PATH=
+
+python tool_agents_plan.py --set_type %SET_TYPE% --output_dir %OUTPUT_DIR% --model_name %MODEL_NAME% --planning none --reasoning cot --tooluse io --memory none
+
+

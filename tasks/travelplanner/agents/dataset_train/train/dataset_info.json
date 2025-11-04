@@ -1,0 +1,82 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "train",
+  "dataset_name": "travel_planner",
+  "dataset_size": 1307309,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/osunlp/TravelPlanner@8736504ecfc31b7f8b7e40122873c337e83fff7c/train.csv": {
+      "num_bytes": 1306372,
+      "checksum": null
+    }
+  },
+  "download_size": 1306372,
+  "features": {
+    "org": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "dest": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "days": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "visiting_city_number": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "people_number": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "local_constraint": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "budget": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "level": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "annotated_plan": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reference_information": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2613681,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1307309,
+      "num_examples": 45,
+      "dataset_name": "travel_planner"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
